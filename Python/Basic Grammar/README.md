@@ -4,4 +4,4 @@
 + [使用list和tuple](list-tuple.md)
 + [条件判断](if-else.md)
 + [循环](for-while.md)
-+ [使用dict和set]()
++ [使用dict和set](dict-set.md)
