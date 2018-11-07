@@ -21,6 +21,8 @@
 `path=%path%;C:\Python`
 > **注意:** `C:\Python` 是[Python]()的安装目录
 ### 在 [Visual Studio Code](https://code.visualstudio.com/) 中运行Python
-**第一步：** 打开VS code，在左边"扩展"一栏搜索`Python`，点击安装。
+**第一步：** 打开[VS code]()，在左边"扩展"一栏搜索`Python`，点击安装。
 
-**第二步：** 新建`.py`文件，写一段python代码，鼠标右键点击代码框，点击在终端运行。
+**第二步：** 新建`.py`文件，写一段[Python]()代码，鼠标右键点击代码框，点击在终端运行。
+
+![python.png](https://i.loli.net/2018/11/07/5be28e2af1ac7.png)
