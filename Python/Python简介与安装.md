@@ -3,6 +3,7 @@
 + **Python 是交互式语言：** 这意味着，您可以在一个[Python]()提示符，直接互动执行写你的程序。
 + **Python 是面向对象语言:** 这意味着[Python]()支持面向对象的风格或代码封装在对象的编程技术。
 + **Python 是初学者的语言：** [Python]() 对初级程序员而言，是一种伟大的语言，它支持广泛的应用程序开发，从简单的文字处理到 [WWW]() 浏览器再到游戏。
+---
 ### Python 特点
 1. **易于学习：** [Python]()有相对较少的关键字，结构简单，和一个明确定义的语法，学习起来更加简单。
 1. **易于阅读：** [Python]()代码定义的更清晰。
@@ -14,12 +15,15 @@
 1. **数据库：** [Python]()提供所有主要的商业数据库的接口。
 1. **GUI编程：** [Python]()支持GUI可以创建和移植到许多系统调用。
 1. **可嵌入:** 你可以将[Python]()嵌入到C/C++程序，让你的程序的用户获得"脚本化"的能力。
+---
 ### Python下载
 > [点击我下载python3.7.1安装包](https://www.python.org/ftp/python/3.7.1/python-3.7.1-webinstall.exe)
+---
 ### 在 Windows 设置环境变量
 在命令提示框中(cmd):输入
 `path=%path%;C:\Python`
 > **注意:** `C:\Python` 是[Python]()的安装目录
+---
 ### 在 [Visual Studio Code](https://code.visualstudio.com/) 中运行Python
 **第一步：** 打开[VS code]()，在左边"扩展"一栏搜索`Python`，点击安装。
 
