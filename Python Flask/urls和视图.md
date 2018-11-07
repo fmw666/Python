@@ -21,7 +21,7 @@ python
     
 ## 第一个flask程序：  
 建立一个hello.py项目
-```
+```python
 #encoding：utf-8
 
 # 从flask这个框架中导入Flask这个类
