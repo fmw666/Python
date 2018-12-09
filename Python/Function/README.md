@@ -10,7 +10,7 @@
 
 ---
 
-## 调用函数
+# 调用函数
 *[Python]()内置了很多有用的函数，我们可以直接调用。*
 
 可以在官方函数文档里查我们需要的函数，[https://docs.python.org/3/library/functions.html](https://docs.python.org/3/library/functions.html)
@@ -64,7 +64,7 @@ False
 ---
 <br>
 
-## 定义函数
+# 定义函数
 在[Python]()中，定义一个函数要使用[def]()语句，依次写出函数名、括号、括号中的参数和冒号[:]()，然后，在缩进块中编写函数体，函数的返回值用[return]()语句返回,也可以没有返回，在函数最后自动[return None]()。
 ```python
 def my_abs(x):
@@ -128,7 +128,7 @@ def move(x, y, step, angle=0):
 ---
 <br>
 
-## 位置参数
+# 位置参数
 计算 [x²]() 的函数：
 ```python
 def power(x):
@@ -374,7 +374,7 @@ a = 1 b = 2 c = 3 d = 88 kw = {'x': '#'}
 ---
 <br>
 
-## 递归函数
+# 递归函数
 在函数内部，可以调用其他函数。*如果一个函数在内部调用自身本身，这个函数就是递归函数。*
 
 计算阶乘`n! = 1 x 2 x 3 x ... x n`，用函数[fact(n)]()表示:<br>
