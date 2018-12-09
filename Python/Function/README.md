@@ -1,6 +1,6 @@
 ## ⚡函数
 *这是一个快捷目录栏*
-+ [调用函数](Function-Call.md)
++ [调用函数](# 调用函数)
 + [定义函数](Function-Define.md)
 + [函数的参数](Function-Param.md)
 + [递归函数](Function-Recursion.md)
@@ -53,6 +53,6 @@ False
 >>> a(-1)  # 所以也可以通过a调用abs函数
 1
 ```
-> [返回目录>>](#⚡函数)
+> [返回目录>>](# ⚡函数)
 ---
 
