@@ -1,5 +1,5 @@
 # 《跟我一起学Python好吗?》
-<div style="center">
+<div class="center">
     <img src="https://github.com/fmw666/Python/blob/master/pics/biaoqingbao1.jpeg?raw=true">
 </div>
 
