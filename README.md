@@ -1,7 +1,7 @@
 # 《跟我一起学Python好吗?》
 <div class="center">
     <img src="https://github.com/fmw666/Python/blob/master/pics/biaoqingbao1.jpeg?raw=true">
-</div>
+<\div>
 
 *这里包含Python全系列的笔记，以Python为基础，让我们向全栈出发！*
 
