@@ -1,5 +1,5 @@
-<div align="center" style="font-size: 16px;">
-    《跟我一起学Python好吗?》
+<div align="center">
+    <img src="https://github.com/fmw666/Python/blob/master/pics/title.png?raw=true">
 </div>
 
 <div align="center">
