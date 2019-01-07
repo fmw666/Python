@@ -1,7 +1,7 @@
-<div align="center" style="font-size:40px;">
-    《跟我一起学Python好吗?》
+<div align="center" style="font-size: 16px;">
+    <font face="STCAIYUN">《跟我一起学Python好吗?》</font>
 </div>
-
+<font face="STCAIYUN">《跟我一起学Python好吗?》</font>
 <div align="center">
     <img src="https://github.com/fmw666/Python/blob/master/pics/biaoqingbao1.jpeg?raw=true">
 </div>
