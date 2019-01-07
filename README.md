@@ -13,8 +13,8 @@
 <div align="center" style="width: 400px;height: 280px;">
     <img src="https://github.com/fmw666/Python/blob/master/pics/emoj.gif?raw=true" style="width: 400px;height: 280px;">
 </div>
-<br><br><br>
-迫不及待了吗？请戳进我的Python目录主页👉[https://fmw666.github.io/Python/](https://fmw666.github.io/Python/)
+<br>
+迫不及待了吗？赶快戳进我的Python目录主页👉[https://fmw666.github.io/Python/](https://fmw666.github.io/Python/)
 
 ---
 
