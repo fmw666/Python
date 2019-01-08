@@ -21,9 +21,10 @@
 <br>
 <div align="center">
     迫不及待了吗？赶快戳进我的Python目录主页
-    👉[https://fmw666.github.io/Python/ ](https://fmw666.github.io/Python/ )
 </div>
-
+<div align="center">
+    👉<a href="https://fmw666.github.io/Python/">https://fmw666.github.io/Python/</a>
+</div>
 
 
 ---
