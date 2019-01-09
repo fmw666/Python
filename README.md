@@ -12,7 +12,27 @@
 
 ---
 
-📖 *包含[Python基础语法学习](https://github.com/fmw666/Python/tree/master/Python)、[Pygame 游戏编程]()、[Python 数据结构与算法]()、[Python Web](https://github.com/fmw666/Python/tree/master/Python%20Flask)、[爬虫]()、[数据可视化]()等内容*
+<div align="center">
+    这里有什么？我将从以下几个方面带你一步一步走向Python全栈：
+</div>
+<div align="center">
+   📖<a href="">Python基础语法学习</a>
+</div>
+<div align="center">
+   📖<a href="">Pygame 游戏编程</a>
+</div>
+<div align="center">
+   📖<a href="">Python 数据结构与算法</a>
+</div>
+<div align="center">
+   📖<a href="">Python Web</a>
+</div>
+<div align="center">
+   📖<a href="">爬虫</a>
+</div>
+<div align="center">
+   📖<a href="">数据可视化</a>
+</div>
 
 ---
 <div align="center" style="width: 400px;height: 280px;">
