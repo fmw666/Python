@@ -16,22 +16,22 @@
     这里有什么？我将从以下几个方面带你一步一步走向Python全栈：
 </div>
 <div align="left">
-   📖<a href="">Python基础语法学习</a>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;📖<a href="">Python基础语法学习</a>
 </div>
 <div align="left">
-   📖<a href="">Pygame 游戏编程</a>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;📖<a href="">Pygame 游戏编程</a>
 </div>
 <div align="left">
-   📖<a href="">Python 数据结构与算法</a>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;📖<a href="">Python 数据结构与算法</a>
 </div>
 <div align="left">
-   📖<a href="">Python Web</a>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;📖<a href="">Python Web</a>
 </div>
 <div align="left">
-   📖<a href="">爬虫</a>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;📖<a href="">爬虫</a>
 </div>
 <div align="left">
-   📖<a href="">数据可视化</a>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;📖<a href="">数据可视化</a>
 </div>
 
 ---
