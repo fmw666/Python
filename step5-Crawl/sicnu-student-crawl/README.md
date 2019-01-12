@@ -3,10 +3,10 @@
 python 3环境 + 依赖库：requests 和beautifulsoup4.
 
 安装命令如下
-```
-pip install requests;
+```python
+pip install requests
 
-pip install beautifulsoup4;
+pip install beautifulsoup4
 ```
 
 ## 运行命令
