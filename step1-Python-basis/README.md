@@ -55,7 +55,7 @@
     * 第五步：点击右边"新建"，输入Python安装路径，完成环境变量配置。
       <br><br><img src="pics/1.8.png" width="500"><br><br>
   + 在任意路径处打开CMD窗口，输入`Python`，测试Python是否可以正常运行，输入`exit()`退出运行。
-    <br><br><img src="pics/1.9.png" width="600"><br><br>
+    <br><br><img src="pics/1.9.png" width="800"><br><br>
 
 
 [返回目录⬆](#快捷目录)
