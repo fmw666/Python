@@ -38,9 +38,11 @@
   > **注意:** `C:\Python` 是Python的安装路径
   
   [为什么要配置环境变量？](#answer)
-
   <a name="ansewer"></a>
-  当安装完成Python后，你只能在你的安装目录下（含`Python.exe`可执行文件）来执行Python.exe或在当前路径下的CMD里输入`Python`来执行Python程序。
+  + 当安装完成Python后，你只能在你的安装目录下（含`Python.exe`可执行文件）来执行Python.exe或在当前路径下的CMD里输入`Python`来执行Python程序。
+  + 当在电脑其他路径下的CMD中执行Python，会出现提示"[不是内部或外部命令，也不是可运行的程序或批处理文件。](https://blog.csdn.net/qq_42689684/article/details/82423727)"
+  + 如何在电脑全局中使用Python，就是我们为何要配置环境变量的原因。
+  + 下面介绍一种更常用的配置环境变量的方法：
 
 [返回目录⬆](#快捷目录)
 
