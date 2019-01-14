@@ -35,7 +35,12 @@
     <br><br><img src="pics/1.3.png" width="600"><br><br>
 
 - **配置环境变量：** 在命令提示框中(cmd):输入`path=%path%;C:\Python`
-  > **注意:** `C:\Python` 是[Python]()的安装目录
+  > **注意:** `C:\Python` 是Python的安装路径
+  
+  [为什么要配置环境变量？](#answer)
+
+  <a name="ansewer"></a>
+  当安装完成Python后，你只能在你的安装目录下（含`Python.exe`可执行文件）来执行Python.exe或在当前路径下的CMD里输入`Python`来执行Python程序。
 
 [返回目录⬆](#快捷目录)
 
