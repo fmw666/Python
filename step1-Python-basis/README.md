@@ -19,6 +19,9 @@
 - **Python 版本：** 3.7.2
 
 - **下载链接地址：** [点击此处开始下载](https://www.python.org/ftp/python/3.7.2/python-3.7.2-amd64.exe)
+  + 下载完成后双击运行安装程序，如图：
+    <img src="pics/1.1.png" width="600"><br><br>
+  + 勾选"Add Python 3.7 to PATH"选项后单击"Customize installation"选项。
 
 - **配置环境变量：** 在命令提示框中(cmd):输入`path=%path%;C:\Python`
   > **注意:** `C:\Python` 是[Python]()的安装目录
