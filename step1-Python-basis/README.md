@@ -30,19 +30,29 @@
     * "Python test suite" 表示安装Python的标准测试套件
     * "py launcher"和"for all users(requirfes elevation)" 表示允许版本更新
     
-    勾选完所有选项后，单击"Next"
+    👀勾选完所有选项后，单击"Next"
   + 保持默认勾选状态，单击"Browse"按钮，选择安装路径，然后点击"Install"开始安装。
     <br><br><img src="pics/1.3.png" width="600"><br><br>
 
 - **配置环境变量：** 在命令提示框中(cmd):输入`path=%path%;C:\Python`
   > **注意:** `C:\Python` 是Python的安装路径
   
-  [为什么要配置环境变量？](#answer)
+  🚩[为什么要配置环境变量？](#answer)
   <a name="ansewer"></a>
   + 当安装完成Python后，你只能在你的安装目录下（含`Python.exe`可执行文件）来执行Python.exe或在当前路径下的CMD里输入`Python`来执行Python程序。
   + 当在电脑其他路径下的CMD中执行Python，会出现提示"[不是内部或外部命令，也不是可运行的程序或批处理文件。](https://blog.csdn.net/qq_42689684/article/details/82423727)"
   + 如何在电脑全局中使用Python，就是我们为何要配置环境变量的原因。
   + 下面介绍一种更常用的配置环境变量的方法：
+    * 第一步：鼠标右键"此电脑"，选择"属性"
+      <br><br><img src="pics/1.4.png" width="600"><br><br>
+    * 第二步：选择窗口右边"高级系统设置"
+      <br><br><img src="pics/1.5.png" width="600"><br><br>
+    * 第三步：选择"环境变量"
+      <br><br><img src="pics/1.6.png" width="600"><br><br>
+    * 第四步：在系统变量里，双击"Path"以编辑环境变量
+      <br><br><img src="pics/1.7.png" width="600"><br><br>
+    * 第五步：点击右边"新建"，输入Python安装路径，完成环境变量配置。
+
 
 [返回目录⬆](#快捷目录)
 
