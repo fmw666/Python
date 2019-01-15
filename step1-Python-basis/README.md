@@ -16,7 +16,7 @@
 
 <a name="1"></a>
 ### 1. 安装Python环境
-🐍Python官网下载链接：[https://www.python.org/downloads/](https://www.python.org/downloads/)
+🐍Python官网下载链接：<a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a>
 
 *这里以 Windows环境下为例：*
 
@@ -44,7 +44,7 @@
   🚩[为什么要配置环境变量？](#answer)
   <a name="ansewer"></a>
   + 当安装完成Python后，你只能在你的安装目录下（含`Python.exe`可执行文件）来执行Python.exe或在当前路径下的CMD里输入`Python`来执行Python程序。
-  + 当在电脑其他路径下的CMD中执行Python，会出现提示"[不是内部或外部命令，也不是可运行的程序或批处理文件。](https://blog.csdn.net/qq_42689684/article/details/82423727)"
+  + 当在电脑其他路径下的CMD中执行Python，会出现提示"<a href="https://blog.csdn.net/qq_42689684/article/details/82423727" target="_blank">不是内部或外部命令，也不是可运行的程序或批处理文件。</a>"
   + 如何在电脑全局中使用Python，就是我们为何要配置环境变量的原因。
   + 下面介绍一种更常用的配置环境变量的方法：
     * 第一步：鼠标右键"此电脑"，选择"属性"
@@ -66,10 +66,10 @@
 
 <a name="2"></a>
 ### 2. 编译器选择
-&emsp;&emsp;Python的实际开发中最常用的是[PyCharm](https://baike.baidu.com/item/PyCharm/8143824?fr=aladdin)这款编译器。它带有一整套可以帮助用户在使用Python语言开发时提高其效率的工具，比如调试、语法高亮、Project管理、代码跳转、智能提示、自动完成、单元测试、版本控制。此外，该IDE提供了一些高级功能，以用于支持[Django](https://baike.baidu.com/item/django/61531?fr=aladdin)框架下的专业Web开发。
-> 以上关于PyCharm的介绍摘自[百度百科](https://baike.baidu.com/)
+&emsp;&emsp;Python的实际开发中最常用的是<a href="https://baike.baidu.com/item/PyCharm/8143824?fr=aladdin" target="_blank">PyCharm</a>这款编译器。它带有一整套可以帮助用户在使用Python语言开发时提高其效率的工具，比如调试、语法高亮、Project管理、代码跳转、智能提示、自动完成、单元测试、版本控制。此外，该IDE提供了一些高级功能，以用于支持<a href="https://baike.baidu.com/item/django/61531?fr=aladdin" target="_blank">Django</a>框架下的专业Web开发。
+> 以上关于PyCharm的介绍摘自<a href="https://baike.baidu.com/" target="_blank">百度百科</a>
 
-&emsp;&emsp;但是在当前学习阶段我比较推荐的是[Visual Studio Code](https://baike.baidu.com/item/visual&ensp;studio&ensp;code/17514281)（以下简称VS code）这款微软的跨平台编译器。因为轻便，这意味着你打开无需过多等待即能用。而且插件安装方便，对于[Sublime Text](https://baike.baidu.com/item/Sublime&ensp;Text/6284835?fr=aladdin)这种轻便好用，语法高亮的文本编辑器来说，插件安装可以说是傻瓜式的（用过Sublime Text这种编辑器的才能懂它的插件安装的苦）。
+&emsp;&emsp;但是在当前学习阶段我比较推荐的是<a href="https://baike.baidu.com/item/visual&ensp;studio&ensp;code/17514281" target="_blank">Visual Studio Code</a>（以下简称VS code）这款微软的跨平台编译器。因为轻便，这意味着你打开无需过多等待即能用。而且插件安装方便，对于<a href="https://baike.baidu.com/item/Sublime&ensp;Text/6284835?fr=aladdin" target="_blank">Sublime Text</a>这种轻便好用，语法高亮的文本编辑器来说，插件安装可以说是傻瓜式的（用过Sublime Text这种编辑器的才能懂它的插件安装的苦）。
 
 ok，我只介绍这两款软件，下面我会分别给出它们的详细安装教程，以及一些Python的相关配置。
 + [PyCharm下载安装教程](#pycharm-install)
@@ -81,7 +81,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 
 <a name="3"></a>
 ### 3. 写出你的第一个Python程序
-&emsp;&emsp;首先，我想说，从这一节到最后所有关于Python的基础我都不会着重去讲。打个比方，关于print这个函数就有三个可选参数。如果诸如print函数，其它的函数或者对象方法我也一并全部抛出它们的所有知识点，那么你一定消化不了。或许你是强人，天赋异禀，但相较于平白直抒的抛出知识，我更喜欢寓教于乐的方式。所以一些扩展的语法和知识点我会在[第二部分——Python 游戏编程](../step2-Pygame)中去讲述。我觉得学完一个知识点，你能知道它有什么用，为什么会用它，用它能做什么，并且你能实质性的做出什么来，是对你学习记忆最重要的。
+&emsp;&emsp;首先，我想说，从这一节到最后所有关于Python的基础我都不会着重去讲。打个比方，关于print这个函数就有三个可选参数。如果诸如print函数，其它的函数或者对象方法我也一并全部抛出它们的所有知识点，那么你一定消化不了。或许你是强人，天赋异禀，但相较于平白直抒的抛出知识，我更喜欢寓教于乐的方式。所以一些扩展的语法和知识点我会在<a href="../step2-Pygame" target="_blank">第二部分——Python 游戏编程</a>中去讲述。我觉得学完一个知识点，你能知道它有什么用，为什么会用它，用它能做什么，并且你能实质性的做出什么来，是对你学习记忆最重要的。
 
 
 ---
