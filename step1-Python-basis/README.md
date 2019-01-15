@@ -106,14 +106,14 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 🐾下面来看VS code来编写和执行Python的过程。
 + 在要存放Python代码的文件夹中右击空白部分，选择"Open with Code"
 <br><br><img src="pics/2.1.png" width="600"><br><br>
-+ 打开VS code后在左边你的文件夹下，选择"新建文件"，输入Python文件名（注意添加'.py'后缀）
-<br><br><img src="pics/2.2.png" width="600"><br><br>
++ 打开VS code后在左边你的文件夹下，选择"新建文件"，然后输入Python文件名（注意添加'.py'后缀）
+<br><br><img src="pics/2.2.png" width="500"><br><br>
 + 在建好的Python文件中输入<code>print('Hello World!')</code>，并按下`ctrl + s`保存文件
-<br><br><img src="pics/2.3.png" width="600"><br><br>
+<br><br><img src="pics/2.3.png" width="700"><br><br>
 + 在文件内鼠标右击，选择"在终端中运行 Python 文件"
-<br><br><img src="pics/2.4.png" width="600"><br><br>
+<br><br><img src="pics/2.4.png" width="700"><br><br>
 + 在下方终端中，能看到Python程序执行后的结果
-<br><br><img src="pics/2.5.png" width="600"><br><br>
+<br><br><img src="pics/2.5.png" width="700"><br><br>
 
 ---
 
