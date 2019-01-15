@@ -38,6 +38,7 @@
   当执行后上面三条指令后，会出现下面终端中显示的结果
   <br><br><img src="pics/1.2.png" width="800"><br><br>
   [但是怎么创建一个窗口呢？](#answer)
+  
   <a name="answer"></a>
   我们定义一个窗口屏幕的变量`screen`，然后用`pygame.display.set_mode((WIDTH,HEIGHT))`来初始化它
   ```python
