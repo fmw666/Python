@@ -101,7 +101,19 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 ### 3. 写出你的第一个Python程序
 &emsp;&emsp;首先，我想说，从这一节到最后所有关于Python的基础我都不会着重去讲。打个比方，关于print这个函数就有三个可选参数。如果诸如print函数，其它的函数或者对象方法我也一并全部抛出它们的所有知识点，那么你一定消化不了。或许你是强人，天赋异禀，但相较于平白直抒的抛出知识，我更喜欢寓教于乐的方式。所以一些扩展的语法和知识点我会在<a href="../step2-Pygame" target="_blank">第二部分——Python 游戏编程</a>中去讲述。我觉得学完一个知识点，你能知道它有什么用，为什么会用它，用它能做什么，并且你能实质性的做出什么来，是对你学习记忆最重要的。
 
+这里我选用的编译器是VS code（后面我都会选择用VS code来学习Python）
 
+🐾下面来看VS code来编写和执行Python的过程。
++ 在要存放Python代码的文件夹中右击空白部分，选择"Open with Code"
+<br><br><img src="pics/2.1.png" width="600"><br><br>
++ 打开VS code后在左边你的文件夹下，选择"新建文件"，输入Python文件名（注意添加'.py'后缀）
+<br><br><img src="pics/2.2.png" width="600"><br><br>
++ 在建好的Python文件中输入<code>print('Hello World!')</code>，并按下`ctrl + s`保存文件
+<br><br><img src="pics/2.3.png" width="600"><br><br>
++ 在文件内鼠标右击，选择"在终端中运行 Python 文件"
+<br><br><img src="pics/2.4.png" width="600"><br><br>
++ 在下方终端中，能看到Python程序执行后的结果
+<br><br><img src="pics/2.5.png" width="600"><br><br>
 
 ---
 
