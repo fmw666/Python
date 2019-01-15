@@ -25,6 +25,43 @@
   <img src="pics/1.1.png" width="600">
   
   > 这里我已经安装过这个包，所以出现了如上提醒。
++ **Pygame 的使用：**
+
+  ```python
+  # 使用Pygame的第一步是将Pygame库导入到Python程序中
+  import pygame
+  # 下一个步骤是导入Pygame中所有常量，已准备号可以在我们代码中访问它们
+  from pygame.locals import *
+  # 使用Pygame库前先对Pygame初始化
+  pygame.init()
+  ```
+  当执行后上面三条指令后，会出现下面终端中显示的结果
+  <br><br><img src="pics/1.2.png" width="800"><br><br>
+  但是怎么创建一个窗口呢？
+  
+  我们定义一个窗口屏幕的变量`screen`，然后用`pygame.display.set_mode((WIDTH,HEIGHT))`来初始化它
+  ```python
+  import pygame
+  from pygame.locals import *
+  pygame.init()
+  # 设置屏幕窗口大小为600×500，宽为600，高为500
+  screen = pygame.display.set_mode((600,500))
+  ```
+  🐌执行一下看出现了什么结果？屏幕一闪而过。而要解决这个问题我们只需利用一个while循环。<br>
+  不仅如此，我们还希望在这个出现的窗口中，我们点击右上角的叉号能关闭程序，所以，我们还需要添加事件处理。
+  ```python
+  import pygame
+  from pygame.locals import *
+  pygame.init()
+  screen = pygame.display.set_mode((600,500))
+  while True:
+      # 读取事件
+      for event in pygame.event.get():
+          # 如果按下右上角叉号
+          if event.type == QUIT:
+              # 程序退出
+              exit()
+  ```
 
 ---
 
