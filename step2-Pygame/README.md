@@ -22,7 +22,7 @@
   ```python
   pip install pygame
   ```
-  <img scr="pic/1.1.png">
+  <img scr="pics/1.1.png">
   
   > 这里我已经安装过这个包，所以出现了如上提醒。
 
