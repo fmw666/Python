@@ -8,6 +8,9 @@
 
 [2. 编译器选择](#2)
 
+[3. 写出你的第一个Python程序](#3)
+
+[4. Python数据类型](#4)
 
 ---
 
@@ -63,7 +66,8 @@
 
 <a name="2"></a>
 ### 2. 编译器选择
-
+Python的实际开发中最常用的是[PyCharm](https://baike.baidu.com/item/PyCharm/8143824?fr=aladdin)这款编译器。它带有一整套可以帮助用户在使用Python语言开发时提高其效率的工具，比如调试、语法高亮、Project管理、代码跳转、智能提示、自动完成、单元测试、版本控制。此外，该IDE提供了一些高级功能，以用于支持[Django](https://baike.baidu.com/item/django/61531?fr=aladdin)框架下的专业Web开发。
+> 以上关于PyCharm的介绍摘自[百度百科](https://baike.baidu.com/)
 
 ---
 
@@ -78,7 +82,7 @@
 
 [返回目录⬆](#快捷目录)
 
-<a name="2"></a>
+<a name="4"></a>
 ### 4. Python数据类型
 
 [返回目录⬆](#快捷目录)
