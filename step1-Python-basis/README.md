@@ -28,11 +28,11 @@
   + 勾选"Add Python 3.7 to PATH"选项后单击"Customize installation"选项。
     <br><br><img src="pics/1.2.png" width="600"><br><br>
   + 这里勾选所有选项。其中，
-    * "Documentation" 表示安装Python的帮助文档
-    * "pip" 表示安装Python的第三方包管理工具
-    * "tcl/tk and IDLE" 表示安装Python的集成开发环境
-    * "Python test suite" 表示安装Python的标准测试套件
-    * "py launcher"和"for all users(requirfes elevation)" 表示允许版本更新
+    * 🏷"Documentation" 表示安装Python的帮助文档
+    * 🏷"pip" 表示安装Python的第三方包管理工具
+    * 🏷"tcl/tk and IDLE" 表示安装Python的集成开发环境
+    * 🏷"Python test suite" 表示安装Python的标准测试套件
+    * 🏷"py launcher"和"for all users(requirfes elevation)" 表示允许版本更新
     
     👀勾选完所有选项后，单击"Next"
   + 保持默认勾选状态，单击"Browse"按钮，选择安装路径，然后点击"Install"开始安装。
@@ -72,8 +72,8 @@
 &emsp;&emsp;但是在当前学习阶段我比较推荐的是[Visual Studio Code](https://baike.baidu.com/item/visual studio code/17514281)（以下简称VS code）这款微软的跨平台编译器。因为轻便，这意味着你打开无需过多等待即能用。而且插件安装方便，对于[Sublime Text](https://baike.baidu.com/item/Sublime Text/6284835?fr=aladdin)这种轻便好用，语法高亮的文本编辑器来说，插件安装可以说是傻瓜式的（用过Sublime Text这种编辑器的才能懂它的插件安装的苦）。
 
 ok，我只介绍这两款软件，下面我会分别给出它们的详细安装教程，以及一些Python的相关配置。
-+ [PyCharm下载安装教程]()
-+ [VS code下载安装教程]()
++ [PyCharm下载安装教程](#pycharm-install)
++ [VS code下载安装教程](#vscode-install)
 
 ---
 
