@@ -69,7 +69,7 @@
 &emsp;&emsp;Python的实际开发中最常用的是[PyCharm](https://baike.baidu.com/item/PyCharm/8143824?fr=aladdin)这款编译器。它带有一整套可以帮助用户在使用Python语言开发时提高其效率的工具，比如调试、语法高亮、Project管理、代码跳转、智能提示、自动完成、单元测试、版本控制。此外，该IDE提供了一些高级功能，以用于支持[Django](https://baike.baidu.com/item/django/61531?fr=aladdin)框架下的专业Web开发。
 > 以上关于PyCharm的介绍摘自[百度百科](https://baike.baidu.com/)
 
-&emsp;&emsp;但是在当前学习阶段我比较推荐的是[Visual Studio Code](https://baike.baidu.com/item/visual studio code/17514281)（以下简称VS code）这款微软的跨平台编译器。因为轻便，这意味着你打开无需过多等待即能用。而且插件安装方便，对于[Sublime Text](https://baike.baidu.com/item/Sublime Text/6284835?fr=aladdin)这种轻便好用，语法高亮的文本编辑器来说，插件安装可以说是傻瓜式的（用过Sublime Text这种编辑器的才能懂它的插件安装的苦）。
+&emsp;&emsp;但是在当前学习阶段我比较推荐的是[Visual Studio Code](https://baike.baidu.com/item/visual&ensp;studio&ensp;code/17514281)（以下简称VS code）这款微软的跨平台编译器。因为轻便，这意味着你打开无需过多等待即能用。而且插件安装方便，对于[Sublime Text](https://baike.baidu.com/item/Sublime&ensp;Text/6284835?fr=aladdin)这种轻便好用，语法高亮的文本编辑器来说，插件安装可以说是傻瓜式的（用过Sublime Text这种编辑器的才能懂它的插件安装的苦）。
 
 ok，我只介绍这两款软件，下面我会分别给出它们的详细安装教程，以及一些Python的相关配置。
 + [PyCharm下载安装教程](#pycharm-install)
