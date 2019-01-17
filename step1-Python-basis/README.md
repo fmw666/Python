@@ -136,7 +136,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 
 <a name="4.1"></a>
 <div align="center">
-  <h3><a href="4.1">4.1</a> Python注释</h3>
+  <h3><a href="#4.1">4.1</a> Python注释</h3>
 </div>
 <br>
 
@@ -161,10 +161,9 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
   
 <a name="4.2"></a>
 <div align="center">
-  <strong><a href="4.2">4.2</a> Python 的行与缩进</strong>
+  <h3><a href="#4.2">4.2</a> Python 的行与缩进</h3>
 </div>
-
-  ---
+<br>
 
   &emsp;&emsp;Python 最具特色的就是使用缩进来表示代码块，即不需要使用大括号。缩进的空格数是可变的，但是同一个代码块的语句必须包含相同的缩进空格数，缩进不一致会导致代码运行错误。
   *正确示例：*
@@ -193,8 +192,9 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
   
 <a name="4.3"></a>
 <div align="center">
-  <h3><strong><a href="4.3">4.3</a> 多行语句</strong></h3>
+  <h3><a href="#4.3">4.3</a> 多行语句</h3>
 </div>
+<br>
   
   &emsp;&emsp;Python 通常是一行写完一条语句，但语句很长的话，可以通过反斜杠'\\'来实现多行语句。
   ```python
@@ -208,8 +208,9 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 
 <a name="4.4"></a>
 <div align="center">
-  <strong><a href="4.4">4.4</a> Python 输入与输出</strong>
+  <h3><a href="#4.4">4.4</a> Python 输入与输出</h3>
 </div>
+<br>
 
   ---
 
