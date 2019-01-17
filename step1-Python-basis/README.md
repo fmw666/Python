@@ -136,7 +136,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 
 <a name="4.1"></a>
 <div align="center">
-  <strong><a href="4.1">4.1</a> Python注释</strong>
+  <h3><a href="4.1">4.1</a> Python注释</h3>
 </div>
 <br>
 
