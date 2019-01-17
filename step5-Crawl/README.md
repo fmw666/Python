@@ -49,8 +49,8 @@
 
 <a name="1.1"></a>
 [1.1](#1.1) **请求库的安装**
-<div class="center">
-  haha
+<div align="center">
+  <strong>haha</strong>
 </div>
   
   ---
