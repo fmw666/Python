@@ -55,14 +55,14 @@
 </div>
   
   - ***requests 的安装*** <a name="1.1.1"></a>
-    ```html
+    ```python
     pip install requests
     ```
     
     ---
     
   - ***Selenium 的安装*** <a name="1.1.2"></a>
-    ```markdown
+    ```python
     pip install selenium
     ```
     
