@@ -113,7 +113,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 + 在要存放Python代码的文件夹中右击空白部分，选择"Open with Code"
 <br><br><img src="pics/2.1.png" width="600"><br><br>
 + 打开VS code后在左边你的文件夹下，选择"新建文件"，然后输入Python文件名（注意添加'.py'后缀）
-<br><br><img src="pics/2.2.png" width="500"><br><br>
+<br><br><img src="pics/2.2.png" width="400"><br><br>
 + 在建好的Python文件中输入<code>print('Hello World!')</code>，并按下`ctrl + s`保存文件
 <br><br><img src="pics/2.3.png" width="700"><br><br>
 + 在文件内鼠标右击，选择"在终端中运行 Python 文件"
@@ -138,6 +138,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 <div align="center">
   <strong><a href="4.1">4.1</a> Python注释</strong>
 </div>
+<br>
 
   &emsp;&emsp;注释的目的是让人能轻松阅读每一行代码的意义，同时也为程序员后期代码维护提供了方便。在Python中，一共有两种代码注释，一种是[单行注释](#4.1)，另一种是[多行注释](#4.1)
   
@@ -162,6 +163,8 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 <div align="center">
   <strong><a href="4.2">4.2</a> Python 的行与缩进</strong>
 </div>
+
+  ---
 
   &emsp;&emsp;Python 最具特色的就是使用缩进来表示代码块，即不需要使用大括号。缩进的空格数是可变的，但是同一个代码块的语句必须包含相同的缩进空格数，缩进不一致会导致代码运行错误。
   *正确示例：*
@@ -190,7 +193,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
   
 <a name="4.3"></a>
 <div align="center">
-  <strong><a href="4.3">4.3</a> 多行语句</strong>
+  <h3><strong><a href="4.3">4.3</a> 多行语句</strong></h3>
 </div>
   
   &emsp;&emsp;Python 通常是一行写完一条语句，但语句很长的话，可以通过反斜杠'\\'来实现多行语句。
