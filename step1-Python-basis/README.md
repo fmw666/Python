@@ -224,7 +224,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
   </html>
   """
   ```
-  <img scr="pics/4.3.png" width="800">
+  <img src="pics/4.3.png" width="800">
 
   ---
 
