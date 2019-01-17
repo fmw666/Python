@@ -202,7 +202,29 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
   多行语句，我们像这样就实现了写一条长句子的麻烦！"
   print(sentence)
   ```
-  输出结果为："让我们以Python为舟，驶向全栈。这一节讲得是Python基础中的多行语句，我们像这样就实现了写一条长句子的麻烦！"
+  > 输出结果为："让我们以Python为舟，驶向全栈。这一节讲得是Python基础中的多行语句，我们像这样就实现了写一条长句子的麻烦！"
+  
+  &emsp;&emsp;这里有第二种方法，一般来说适合一段长文本的赋值，比如下面这个例子。
+  ```python
+  html = """
+  <html>
+      <head>
+          <title>网页标题</title>
+      </head>
+      <body>
+          <div class="container">
+              <div class="list">
+                  <ul>
+                      <li><a herf="#">列表1</a></li>
+                      <li><a herf="#">列表2</a></li>
+                  </ul>
+              </div>
+          </div>
+      <body>
+  </html>
+  """
+  ```
+  <img scr="pics/4.3" width="800">
 
   ---
 
