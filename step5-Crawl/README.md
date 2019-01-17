@@ -48,11 +48,26 @@
 ---
 
 <a name="1.1"></a>
-### [1.1](#1.1) 请求库的安装
+[1.1](#1.1) **请求库的安装**
+  
+  ---
+  
   - ***requests 的安装***
     ```python
     pip install requests
     ```
+    
+    ---
+    
+  - ***Selenium 的安装***
+    ```python
+    pip install selenium
+    ```
+    
+    ---
+    
+  - ***ChromeDriver 的安装***
+    
 
 ---
 
