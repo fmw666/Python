@@ -8,13 +8,21 @@
 
 [2. 编译器选择](#2)
 
-  [安装PyCharm教程](#)
-  
-  [安装VS code教程](#)
+&emsp;&emsp;[- 安装PyCharm教程](#pycharm-install)
+
+&emsp;&emsp;[- 安装VS code教程](#vscode-install)
 
 [3. 写出你的第一个Python程序](#3)
 
 [4. Python基本操作](#4)
+
+&emsp;&emsp;[4.1. Python注释](#4.1)
+
+&emsp;&emsp;[4.2. Python 的行与缩进](#4.2)
+
+&emsp;&emsp;[4.3. 多行语句](#4.3)
+
+&emsp;&emsp;[4.4. Python 输入与输出](#4.4)
 
 [5. Python数据类型](#5)
 
