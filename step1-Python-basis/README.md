@@ -379,9 +379,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
     import keyword
     print(keyword.kwlist)
     ```
-    <img src="pics/1.41111.png" width="700">
-  
-    --- 
+    <img src="pics/1.41111.png" width="900">
 
 ---
 
