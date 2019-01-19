@@ -421,7 +421,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
   print(type(var_bool))
   print(type(var_complex))
   ```
-  <img src="pics/5.1.png" width="700">
+  <img src="pics/5.1.png" width="1000">
 
 [返回目录⬆](#快捷目录)
 
