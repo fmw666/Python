@@ -100,6 +100,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
   <h3><a name="pycharm-install"></a>⚙ PyCharm5.0.3 下载安装详细教程</h3>
 </div>
 <br>
+
 1. [点击我开始下载 PyCharm5.0.3](https://github.com/fmw666/Python/raw/master/step1-Python-basis/files/pycharm5.0.3.zip)
 1. 右击软件压缩包选择解压到pycharm5.0.3
   <br><br><img src="pics/1.10.png" width="400"><br><br>
@@ -147,6 +148,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
   <h3><a name="vscode-install"></a>⚙ VS code 下载安装详细教程</h3>
 </div>
 <br>
+
 1. 在VS code官网首页中选择下载对应操作系统的安装包，注意：请选择'Stable'(稳定版)。官网戳这个链接：[https://code.visualstudio.com](https://code.visualstudio.com/)
   <br><br><img src="pics/1.vs1.png" width="800"><br><br>
 1. 在解压文件夹中找到VSCodeUserSetup-x64-1.30.2.exe，右击打开
