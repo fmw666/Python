@@ -28,6 +28,18 @@
 
 [5. Python数据类型](#5)
 
+&emsp;&emsp;[5.1. number(数字)](#5.1)
+
+&emsp;&emsp;[5.2. string(字符串)](#5.2)
+
+&emsp;&emsp;[5.3. list(列表)](#5.3)
+
+&emsp;&emsp;[5.4. tuple(元组)](#5.4)
+
+&emsp;&emsp;[5.5. sets(集合)](#5.5)
+
+&emsp;&emsp;[5.6. dictionary(字典)](#5.6)
+
 ---
 
 <a name="1"></a>
