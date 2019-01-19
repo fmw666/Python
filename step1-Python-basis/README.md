@@ -484,7 +484,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
     print(name + '有' + str(age) + '岁')
     ```
     如果不加`str()`则会出现提醒：
-    <img src="pics/5.2.png" width="1000">
+    <br><br><img src="pics/5.2.png" width="1000">
     
   ---
     
