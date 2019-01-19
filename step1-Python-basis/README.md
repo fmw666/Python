@@ -141,8 +141,10 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 
 ---
 
-<a name="vscode-install"></a>
-***⚙这里是 VS code的下载安装步骤***
+<div align="center">
+  <h3><a href="vscode-install"></a>⚙这里是 VS code的下载安装步骤</h3>
+</div>
+<br>
 1. 在VS code官网首页中选择下载对应操作系统的安装包，注意：请选择'Stable'(稳定版)。官网戳这个链接：[https://code.visualstudio.com/](https://code.visualstudio.com/)
   <br><br><img src="pics/1.vs1.png" width="800"><br><br>
 1. 在解压文件夹中找到VSCodeUserSetup-x64-1.30.2.exe，右击打开
