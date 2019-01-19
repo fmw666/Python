@@ -397,7 +397,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 
 <div align="center">
   <a href="#5.1">number(数字)</a> / <a href="#5.2">string(字符串)</a> / <a href="#5.3">list(列表)</a> / <a href="#5.4">tuple(元组)</a> / <a href="#5.5">sets(集合)</a> / <a href="#5.6">dictionary(字典)</a>
-</div>
+</div><br><br>
 
 > **⚡Python3中可以使用 [type()](#no-jump) 函数来查看变量数据类型！**
 
