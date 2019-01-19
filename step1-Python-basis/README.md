@@ -510,6 +510,45 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 </div>
 <br>
 
+  &emsp;&emsp;Python列表是任意对象的有序集合，列表写在中括号`[]`中，元素之间用逗号隔开。这里的任意对象，既可以是列表嵌套列表，也可以是字符串等其他数据类型。
+  ```python
+  >>> list = ['python', 123, [1, 2, 3], 3.14, True]
+  >>> print(list)
+  ['python', 123, [1, 2, 3], 3.14, True]
+  ```
+  列表的切片和索引和字符串的方法一样：
+  ```python
+  >>> list = ['python', 123, [1, 2, 3], 3.14, True]
+  >>> print(list[2])
+  [1, 2, 3]
+  >>> print(list[1:3])
+  [123, [1, 2, 3]]
+  ```
+  列表内内置很多方法，比如排序[sort()](#no-jump)、倒序[reverse()](#no-jump)等等。（有兴趣和需求自行探索，后续阶段中会再讲解。）
+  ```python
+  >>> list = ['python', 123, [1, 2, 3], 3.14, True]
+  >>> list.reverse()
+  >>> print(list)
+  [True, 3.14, [1, 2, 3], 123, 'python']
+  
+  >>> list = [4, 5, 3, 1, 2]
+  >>> print(list)
+  [4, 5, 3, 1, 2]
+  >>> list.sort() 
+  >>> print(list)
+  [1, 2, 3, 4, 5]
+  ```
+  
+  ---
+  
+<a name="5.4"></a>
+<div align="center">
+  <h3><a href="#5.4">5.4</a> 元组</h3>
+</div>
+<br>
+
+
+  
 
 ---
 
