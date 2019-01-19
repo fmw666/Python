@@ -393,9 +393,33 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 
 <a name="5"></a>
 ## 5. Python数据类型
-Python中有六大数据类型：
+🐍Python中有六大数据类型：
 
   [number(数字)](#5.1) / [string(字符串)](#5.2) / [list(列表)](#5.3) / [tuple(元组)](#5.4) / [sets(集合)](#5.5) / [dictionary(字典)](#5.6)
+
+⚡Python3中可以使用 [type()](#no-jump) 函数来查看变量数据类型！
+
+---
+
+<a name="5.1"></a>
+<div align="center">
+  <h3><a href="#5.1">5.1</a> 数字</h3>
+</div>
+<br>
+
+  Python3中支持4种类型的数字：int(整数类型)、float(浮点类型)、bool(布尔类型)、complex(复数类型)
+  ```python
+  var_int = 123
+  var_float = 1.23
+  var_bool = True
+  var_complex = 1+2j
+
+  print(type(var_int))
+  print(type(var_float))
+  print(type(var_bool))
+  print(type(var_complex))
+  ```
+  <img src="pics/5.1.png" width="700">
 
 [返回目录⬆](#快捷目录)
 
