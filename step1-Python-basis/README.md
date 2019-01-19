@@ -614,6 +614,26 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
   ```python
   dict = {key1: value1, key2: value2}
   ```
+  字典的创建方法如下：
+  ```python
+  dict = {
+      'name': 'fmw',
+      'age': 18
+  }
+  print(dict)         # 输出：{'name': 'fmw', 'age': 18}
+  ```
+  字典添加数据和删除数据：
+  ```python
+  dict = {
+      'name': 'fmw',
+      'age': 18
+  }
+  dict['sex'] = 'boy'
+  print(dict)         # 输出：{'name': 'fmw', 'age': 18, 'sex': 'boy'}
+  
+  del dict['age']
+  print(dict)         # 输出：{'name': 'fmw', 'sex': 'boy'}
+  ```
 
 ---
 
