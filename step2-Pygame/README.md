@@ -71,10 +71,8 @@
 ---
 
 <br><br><br>
-<div align="left">
-    <a href="../step1-Python-basis">⬅Python基础</a>
-</div>
-<div align="right">
-    <a href="../step3-Algorithm">Python数据结构与算法➡</a>
+    
+<div>
+    <a align="left" href="../step1-Python-basis">⬅Python基础</a><a align="right" href="../step3-Algorithm">Python数据结构与算法➡</a>
 </div>
 
