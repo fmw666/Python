@@ -7,7 +7,7 @@
 &ensp;&ensp;&ensp;&ensp; *简介 : 一个Python全系列的笔记。笔者以一个初学者的立场，用笔记、分享等形式来给大家总结一些东西。总之，Python为基础，让我们向全栈出发！（如果本文有任何问题，欢迎发起 Issues，如果本文帮助了你，欢迎 Star）*
 
 <div align="center">
-    <img src="https://github.com/fmw666/Python/blob/master/pics/biaoqingbao1.jpeg?raw=true">
+    <img src="https://github.com/fmw666/Python/blob/master/pics/cute1.jpg?raw=true">
 </div>
 
 ---
