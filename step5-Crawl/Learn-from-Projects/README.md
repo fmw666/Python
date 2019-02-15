@@ -198,3 +198,52 @@
 
   get_item_info(url)
   ```
+
+## 使用 MongoDB 存入数据
+- ***存入豆瓣流浪地球短评***
+  ```python
+  from bs4 import BeautifulSoup
+  import requests
+  import time
+  import pymongo
+
+  client = pymongo.MongoClient('localhost',27017)
+  movie = client['movie']
+  liulangdiqiu = movie['liulangdiqiu']
+
+  # 爬取前5页(100条)评论
+  urls = ['https://movie.douban.com/subject/26266893/comments?start={}&limit=20&sort=new_score&status=P'.format(str(i)) for i in range(100, 120, 20)] 
+
+  # 全局变量索引
+  index = 1
+
+  def get_info_to_db(url):
+      html = requests.get(url)
+      soup = BeautifulSoup(html.text,'lxml')
+
+      users_img = soup.select('div.avatar > a > img')
+      users     = soup.select('span.comment-info > a')
+      dates     = soup.select('span.comment-info > span.comment-time')
+      stars     = soup.select('span.comment-info > span.rating')
+      votes     = soup.select('span.comment-vote > span')
+      contents  = soup.select('div.comment > p > span')
+      print(stars)
+      for user_img,user,date,star,vote,content in zip(users_img,users,dates,stars,votes,contents):
+          data = {
+              'user_img' : user_img.get('src'),
+              'user_name': user.get_text(),
+              'user_id'  : user.get('href')[30:].rstrip('/'),
+              'date'     : date.get_text().strip(),
+              'star'     : star.get('class')[0].strip('allstar')[:1],
+              'vote'     : vote.get_text(),
+              'content ' : content.get_text().strip()
+          }
+          liulangdiqiu.insert_one(data)
+          global index
+          print('插入第{}条完成...'.format(index))
+          index += 1
+          # print(data)
+
+  for url in urls:
+      get_info_to_db(url)
+  ```
