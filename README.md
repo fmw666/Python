@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/fmw666/Python/blob/master/pics/tit.png?raw=true">
+    <img src="https://github.com/fmw666/Python/blob/master/pics/cute1.jpg?raw=true">
 </div>
 
 ---
