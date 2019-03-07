@@ -357,6 +357,10 @@ while True:
     pygame.display.update()
 ```
 <img src="pics/1.9.gif" width="600">
+
+---
+
+[返回目录⬆](#快捷目录)
  
 ---
 
