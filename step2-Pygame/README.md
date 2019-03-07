@@ -128,7 +128,138 @@
 ## 3. 绘制图形
 &emsp;&emsp;我们可以使用`pygame.draw`来绘制众多不同的形状。
 + **绘制圆**
+  
+  *要绘制圆，我们使用`pygame.draw.circle(screen, color, position, radius, width)`，传递的参数为圆的大小、颜色和位置：*
+  
+  ```python
+  import pygame,sys
+  from pygame.locals import *
+  
+  pygame.init()
+  screen = pygame.display.set_mode((600,500))
+  pygame.display.set_caption("Drawing Circles")
+  
+  while True:
+      for event in pygame.event.get():
+          if event.type in (QUIT,KEYDOWN):
+              sys.exit()
 
+          screen.fill((0,0,200))
+
+          #draw a circle
+          color = 255,255,0
+          position = 300,250
+          radius = 100
+          width = 10
+          pygame.draw.circle(screen,color,position,radius,width)
+
+          pygame.display.update()
+  ```
+  <img src="pics/1.5.png" width="600">
+  
++ **绘制矩形**
+
+  *要绘制矩形，我们使用`pygame.draw.rect(screen, color, pos, with)`函数，这里程序中，我们去实现移动矩形，在while循环外我没用`pos_x`和`pos_y`来记录矩形的位置，并创建一对速度变量`vel_x`和`vel_y`：*
+  
+  ```python
+  import pygame
+  from pygame.locals import *
+
+  pygame.init()
+  screen = pygame.display.set_mode((600,500))
+  pygame.display.set_caption("Drawing Rectangles")
+  pos_x = 300
+  pos_y = 250
+  vel_x = 0.2
+  vel_y = 0.1
+
+  while True:
+      for event in pygame.event.get():
+          if event.type == QUIT:
+              exit()
+
+      screen.fill((0,0,200))
+
+      #move the rectangle
+      pos_x += vel_x
+      pos_y += vel_y
+
+      #keep rectangle on the screen
+      if pos_x > 500 or pos_x < 0:
+          vel_x = -vel_x
+      if pos_y > 400 or pos_y < 0:
+          vel_y = -vel_y
+
+      #draw the rectangle
+      color = 255,255,0
+      width = 0 #solid fill
+      pos = pos_x,pos_y,100,100
+      pygame.draw.rect(screen,color,pos,width)
+
+      pygame.display.update()
+  ```
+  <img src="pics/1.6.gif" width="600">
+  
++ **绘制线条**
+
+  *要绘制线条，我们使用`pygame.draw.line(screen, color, (start_x,start_y), (end_x,end_y), width)`函数：*
+  
+  ```python
+  import pygame
+  from pygame.locals import *
+
+  pygame.init()
+  screen = pygame.display.set_mode((600,500))
+  pygame.display.set_caption("Drawing Lines")
+
+  while True:
+      for event in pygame.event.get():
+          if event.type == QUIT:
+              exit()
+
+      screen.fill((0,80,0))
+
+      #draw the line
+      color = 100,255,200
+      width = 8
+      pygame.draw.line(screen,color,(100,100),(500,400),width)
+
+      pygame.display.update()
+  ```
+  <img src="pics/1.7.png" width="600">
+  
++ **绘制弧形**
+
+  *要绘制弧形，我们使用`pygame.draw.arc(screen,color,position,start_angle,end_angle,width)`函数，其中由于弧形是圆的一部分，所以我们得需要其他函数来表示额外的参数（比如角度）：*
+  
+  ```python
+  import pygame
+  from pygame.locals import *
+  import math
+
+  pygame.init()
+  screen = pygame.display.set_mode((600, 500))
+  pygame.display.set_caption("Drawing Arcs")
+
+  while True:
+      for event in pygame.event.get():
+          if event.type == QUIT:
+              exit()
+
+      screen.fill((0, 0, 200))
+
+      #draw the arc
+      color = 255,0,255
+      position = 200,150,200,200
+      start_angle = math.radians(0)
+      end_angle = math.radians(180)
+      width = 8
+      pygame.draw.arc(screen,color,position,start_angle,end_angle,width)
+
+      pygame.display.update()
+  ```
+  <img src="pics/1.8.png" width="600">
+  
 ---
 
 <br><br><br>
