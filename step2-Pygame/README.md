@@ -70,11 +70,54 @@
 [返回目录⬆](#快捷目录)
 
 ## 2. 打印文本
-&emsp;&emsp;Pygame支持使用`Pygame.font`将文本输出到图形窗口。要绘制文本，我们必须先创建一个字体对象：
-    ```python
-    myfont = pygame.font.Font(None,60)
-    ```
-    > 使用`None`是让pygame使用默认字体，`60`为字体大小
+Pygame支持使用`Pygame.font`将文本输出到图形窗口。要绘制文本，我们必须先创建一个字体对象：
+
+```python
+myfont = pygame.font.Font(None,60)
+```
+> 使用`None`是让pygame使用默认字体，`60`为字体大小。
+
+要说明的是，pygame中打印文本不是一个轻量型的进程，而是一个重量型的进程，所以文本不能快速地绘制到屏幕上，而是渲染到一个平面，然后再将其绘制到屏幕上。由于这是一个极其费时的过程，所以一般来说，建议首先在内存中创建文本平面（或图像），然后再将文本当作一个图像来绘制。
+
+```python
+myfont = pygame.font.Font(None,60)
+white = 255,255,255
+blue = 0,0,255
+textImage = myfont.render('Hello Pygame', True, white)
+```
+> textImage对象是可以使用`screen.blit()`绘制的平面，我们的高难度的绘制函数，将会在所有的游戏和示例中广泛地使用。`my.font.render()`函数中，第一个参数为文本消息，第二个参数是抗锯齿字体（为了提高质量）的一个标志，第三个参数是颜色（RGB值）
+
+*现在我们在之前写好的循环中加入屏幕绘制函数来显示我们的文本：*
+```python
+screen.fill(blue)
+screen.blit(textImage, (100,100))
+pygame.display.update()
+```
+
+*完整代码如下：*
+```python
+import pygame
+from pygame.locals import *
+
+pygame.init()
+screen = pygame.display.set_mode((600,500))
+
+myfont = pygame.font.Font(None,60)
+white = 255,255,255
+blue = 0,0,255
+textImage = myfont.render('Hello Pygame', True, white)
+while True:
+    # 读取事件
+    for event in pygame.event.get():
+        # 如果按下右上角叉号
+        if event.type == QUIT:
+            # 程序退出
+            exit()
+    screen.fill(blue)
+    screen.blit(textImage, (100,100))
+    pygame.display.update()
+```
+
 
 ---
 
