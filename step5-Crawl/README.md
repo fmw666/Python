@@ -70,12 +70,11 @@
       <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/bluegirl2.jpg" width="100">
   </div>
   
-&emsp;&emsp;***📚 [requests 的安装](#1.1.1)*** <a name="1.1.1"></a>
+&emsp;***📚 [requests 的安装](#1.1.1)*** <a name="1.1.1"></a>
  
- 
-    ```cmd
-    pip install requests
-    ```
+  ```cmd
+  pip install requests
+  ```
     
 &emsp;&emsp;***📚 [Selenium 的安装](#1.1.2)*** <a name="1.1.2"></a>
   
