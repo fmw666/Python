@@ -72,9 +72,9 @@
   
 &emsp;&emsp;***📚 [requests 的安装](#1.1.1)*** <a name="1.1.1"></a>
  
-  ```cmd
-  pip install requests
-  ```
+    ```cmd
+    pip install requests
+    ```
     
 &emsp;&emsp;***📚 [Selenium 的安装](#1.1.2)*** <a name="1.1.2"></a>
   
