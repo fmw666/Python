@@ -38,9 +38,10 @@
 
 #### [15. 分布式爬虫的部署](#15)
 
-<div align="left">
-    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/bluegirl1.jpg" width="100">
+<div align="center">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/bluegirl1.jpg" width="50">
 </div>
+
 ---
 
 ## 1. 开发环境配置
@@ -49,6 +50,7 @@
     ```python
     pip install ***
     ```
+
 
 #### *📜 目录：*
   1.1. [请求库的安装](#1.1)<br>
