@@ -67,7 +67,11 @@
 
 ---
 
-### 🛠 1.1. 请求库的安装
+### 1.1. 请求库的安装
+
+  <div align="center">
+      <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/bluegirl2.jpg" width="150">
+  </div>
   
   - ***requests 的安装*** <a name="1.1.1"></a>
     ```python
