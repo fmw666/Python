@@ -2,7 +2,7 @@
 &emsp;&emsp;"得数据者得天下"。在大数据盛行的今天，你或许很容易能在网上看到什么"年度总结"，这些东西就是一系列的数据。网上还有很流行的词云，也是通过爬虫爬取下来的数据整理的。总之，会爬虫者得数据，得数据者得天下。
 
 <div align="center">
-    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/bluecutegirl1.gif" width="300">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/bluecutegirl2.gif" width="300">
 </div>
 
 ---
