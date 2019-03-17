@@ -65,10 +65,6 @@
 ---
 
 ### 1.1. 请求库的安装
-
-<div align="center">
-  <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/bluegirl2.jpg" width="100">
-</div>
   
 &emsp;&emsp;***📚 [requests 的安装](#1.1.1)*** <a name="1.1.1"></a>
  
@@ -87,14 +83,18 @@
 &emsp;&emsp;***📚 [ChromeDriver 的安装](#1.1.3)*** 
 
 &emsp;&emsp;&emsp;&emsp;暂时未更~
+
+<div align="center">
+  <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/bluegirl2.jpg" width="100">
+</div>
     
 ### 1.2. 解析库的安装
+
+&emsp;&emsp;***📚 [lxml 的安装](#1.2.1)*** <a name="1.2.1"></a>
 
 <div align="center">
   <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/bluegirl3.jpg" width="100">
 </div>
-
-&emsp;&emsp;***📚 [lxml 的安装](#1.2.1)*** <a name="1.2.1"></a>
 
 ---
 
