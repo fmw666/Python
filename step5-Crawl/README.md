@@ -39,12 +39,12 @@
 #### [15. 分布式爬虫的部署](#15)
 
 <div align="center">
-    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/bluegirl1.jpg" width="100">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/bluegirl1.jpg" width="150">
 </div>
 
 ---
 
-## 1. 开发环境配置
+# 1. 开发环境配置
 &emsp;&emsp;⚙ 安装库的方法有很多种，但我们选用最简单的第三方包管理工具 **[pip](#no-jump)** 来安装。使用的方法很简单，只需要打开命令行，输入：
 
 ```python
@@ -52,7 +52,7 @@
 ```
 
 
-#### *📜 目录：*
+## *📜 目录：*
   1.1. [请求库的安装](#1.1)<br>
   > 包含[requests](#1.1.1)、[Selenium](#1.1.2)、
 
