@@ -71,14 +71,15 @@
   </div>
   
 &emsp;&emsp;***📚 [requests 的安装](#1.1.1)*** <a name="1.1.1"></a>
-  
+
     ```cmd
     pip install requests
     ```
     
 &emsp;&emsp;***📚 [Selenium 的安装](#1.1.2)*** <a name="1.1.2"></a>
   
-    &emsp;&emsp;Selenium 是一个自动化测试工具，利用它我们可以驱动浏览器执行特定的动作，如点击、下拉等等操作，对于一些 JavaScript 渲染的页面来说，此种抓取方式非常有效。
+&emsp;&emsp;&emsp;&emsp;Selenium 是一个自动化测试工具，利用它我们可以驱动浏览器执行特定的动作，如点击、下拉等等操作，对于一些 JavaScript 渲染的页面来说，此种抓取方式非常有效。
+    
     ```pip
     pip install selenium
     ```
@@ -88,7 +89,7 @@
 
 ---
 
-[返回目录⬆](#快捷目录)
+[返回目录⬆](#-章节目录)
 
 <a name="2"></a>
 ## 2. 爬虫基础
