@@ -7,7 +7,7 @@
 
 ---
 
-## *📑快捷目录：* 
+### *📑快捷目录：* 
 [1. 网页编程语言——前端](#1-网页编程语言前端)
 
 [2. 计算机网络](#2-计算机网络)
@@ -25,7 +25,7 @@
 [8. 底层自定义协议网络框架——Twisted](#8-底层自定义协议网络框架twisted)
 
 <div align="center">
-    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute1.gif" width="200">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute1.png" width="200">
 </div>
 
 ---
@@ -36,7 +36,7 @@
 如果你在之前还没系统的了解过前端，可以在我的另一个库中学习了解。[点我跳转](https://github.com/fmw666/Front-end/)
 
 <div align="center">
-    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute2.gif" width="200">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute2.png" width="200">
 </div>
 
 ---
@@ -49,7 +49,7 @@
 如果你在之前还没系统的了解过网络相关知识，可以在我的另一个库中学习了解。[点我跳转](https://github.com/fmw666/Linux/Network/)
 
 <div align="center">
-    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute3.gif" width="200">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute3.png" width="200">
 </div>
 
 ---
