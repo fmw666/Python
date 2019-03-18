@@ -25,7 +25,7 @@
 [8. 底层自定义协议网络框架——Twisted](#8-底层自定义协议网络框架twisted)
 
 <div align="center">
-    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute1.png" width="200">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute1.jpeg" width="200">
 </div>
 
 ---
@@ -36,7 +36,7 @@
 如果你在之前还没系统的了解过前端，可以在我的另一个库中学习了解。[点我跳转](https://github.com/fmw666/Front-end/)
 
 <div align="center">
-    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute2.png" width="200">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute2.jpeg" width="200">
 </div>
 
 ---
@@ -49,7 +49,7 @@
 如果你在之前还没系统的了解过网络相关知识，可以在我的另一个库中学习了解。[点我跳转](https://github.com/fmw666/Linux/Network/)
 
 <div align="center">
-    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute3.png" width="200">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute3.jpeg" width="200">
 </div>
 
 ---
@@ -66,7 +66,7 @@
 ORM的作用是在关系型数据库和业务实体对象之间做一个映射，这样开发者在操作数据库的数据时，就不需要再去和复杂的 SQL 语句打交道，只需简单地操作对象地属性和方法。所有的 ORM 必须具备3方面地基本能力：映射技术、CRUD操作（Create增加、Retrieve读取、Update更新、Delete删除）和缓存优化。
 
 <div align="center">
-    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute4.gif" width="200">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute4.jpeg" width="200">
 </div>
 
 ---
