@@ -96,6 +96,10 @@ Django 是 Python 世界中应用最广泛、发展最成熟的 Web 框架。因
     - 后台管理系统自动生成：只需要几行简单的配置和代码就可以实现完整的后台数据管理 Web 控制台。
     - 错误信息非常完整。
     
+<div align="center">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute5.jpeg" width="100">
+</div>
+    
 + Django 是遵循 MVC 架构的 Web 开发框架，其主要由以下几部分组成。
     - 管理工具（Management）：
     - 模型（Model）
