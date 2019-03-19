@@ -90,19 +90,46 @@ Django 是 Python 世界中应用最广泛、发展最成熟的 Web 框架。因
 </div>
 
 + Django 相比于 Python 的其他 Web 框架，其功能是最完整的，Django 定义了服务发布、路由映射、模板编程、数据处理的一整套功能。这也意味着 Django 的模块之间紧密耦合，开发者需要学习 Django 自己定义的这一整套技术。Django 的主要特点如下。
-    - 完整的文档：经过 10 多年的发展和完善，Django 有广泛的应用和完善的在线文档。
-    - 集成数据访问组件：Django 的 Model 层自带数据库 ORM 组件。
-    - 强大的 URL 映射技术：Django 使用正则表达式管理 URL 映射。
-    - 后台管理系统自动生成：只需要几行简单的配置和代码就可以实现完整的后台数据管理 Web 控制台。
-    - 错误信息非常完整。
+    - **完整的文档：** 经过 10 多年的发展和完善，Django 有广泛的应用和完善的在线文档。
+    - **集成数据访问组件：** Django 的 Model 层自带数据库 ORM 组件。
+    - **强大的 URL 映射技术：** Django 使用正则表达式管理 URL 映射。
+    - **后台管理系统自动生成：** 只需要几行简单的配置和代码就可以实现完整的后台数据管理 Web 控制台。
+    - **错误信息非常完整。**
     
 <div align="center">
-    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute5.jpeg" width="100">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute6.jpeg" width="100">
 </div>
     
 + Django 是遵循 MVC 架构的 Web 开发框架，其主要由以下几部分组成。
-    - 管理工具（Management）：
-    - 模型（Model）
+    - **管理工具（Management）：** 一套内置的创建站点、迁移数据、维护静态文件的命令工具。
+    - **模型（Model）：** 提供数据访问接口和模块，包括数据字段、元数据、数据关系等的定义及操作。
+    - **视图（View）：** Django 的视图层封装了 HTTP Request 和 Response 的一系列操作和数据流，其主要功能包括 URL 映射机制、绑定模板等。
+    - **模板（Template）：** 是一套 Django 自己的页面渲染模板语言，用若干内置的 tags 和 filters 定义页面的生产方式。
+    - **表单（Form）：** 通过内置的数据类型和控件生产 HTML 表单。
+    - **管理站（Admin）：** 通过声明需要管理的 Model，快速生成后台数据管理网站。
+    
+<div align="center">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute7.jpeg" width="100">
+</div>
+
++ Django 的安装及测试
+    
+    ```python
+    pip install django
+    ```
+    
+    ```python
+    #python
+    >>>import django
+    >>>print(django.VERSION)
+    (2, 1, 7, 'final', 0)
+    ```
+    
+<div align="center">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute8.jpeg" width="100">
+</div>
+
+### 5.2 开发 Django 站点
 
 ---
 
