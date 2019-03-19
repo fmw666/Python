@@ -16,11 +16,11 @@
 
 [4. Python网络框架](#4-Python网络框架)
 
-[5. 支持快速建站的框架——Flask](#5-支持快速建站的框架flask)
+[5. 企业级开发框架——Django](#5-企业级开发框架django)
 
-[6. 企业级开发框架——Django](#6-企业级开发框架django)
+[6. 高并发处理框架——Tornado](#6-高并发处理框架tornado)
 
-[7. 高并发处理框架——Tornado](#7-高并发处理框架tornado)
+[7. 支持快速建站的框架——Flask](#7-支持快速建站的框架flask)
 
 [8. 底层自定义协议网络框架——Twisted](#8-底层自定义协议网络框架twisted)
 
@@ -79,19 +79,23 @@ ORM的作用是在关系型数据库和业务实体对象之间做一个映射�
 
 [返回目录⬆](#快捷目录)
 
-## 5. 支持快速建站的框架——Flask
+## 5. 企业级开发框架——Django
+Django 是 Python 世界中应用最广泛、发展最成熟的 Web 框架。因为 Django 足够完整，所以使用 Django 本身就可以开发出非常完整的 Web 应用，而无须借助诸如 SQLAlchemy 等其他数据访问组件。
+
+### 5.1 Django 综述
++ Django 于 2003 年诞生于美国堪萨斯（Kansas）州，最初是劳伦斯出版集团为了用来制作在线新闻 Web 站点而开发的。Django 于 2005 年加入了 BSD 许可证家族，成为开源网络框架。Django 根据比利时的爵士音乐家 [Django Reinhardt](#https://en.wikipedia.org/wiki/Django_Reinhardt) 命名，作者这样命名 Django 意味着 Django 能优雅地演奏（开发）功能丰富的乐曲（Web 应用）。
 
 ---
 
 [返回目录⬆](#快捷目录)
 
-## 6. 企业级开发框架——Django
+## 6. 高并发处理框架——Tornado
 
 ---
 
 [返回目录⬆](#快捷目录)
 
-## 7. 高并发处理框架——Tornado
+## 7. 支持快速建站的框架——Flask
 
 ---
 
