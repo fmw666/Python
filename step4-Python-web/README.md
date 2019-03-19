@@ -85,6 +85,10 @@ Django 是 Python 世界中应用最广泛、发展最成熟的 Web 框架。因
 ### 5.1 Django 综述
 + Django 于 2003 年诞生于美国堪萨斯（Kansas）州，最初是劳伦斯出版集团为了用来制作在线新闻 Web 站点而开发的。Django 于 2005 年加入了 BSD 许可证家族，成为开源网络框架。Django 根据比利时的爵士音乐家 [Django Reinhardt](https://en.wikipedia.org/wiki/Django_Reinhardt) 命名，*作者这样命名 Django 意味着 Django 能优雅地演奏（开发）功能丰富的乐曲（Web 应用）*。
 
+<div align="center">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute5.jpeg" width="100">
+</div>
+
 + Django 相比于 Python 的其他 Web 框架，其功能是最完整的，Django 定义了服务发布、路由映射、模板编程、数据处理的一整套功能。这也意味着 Django 的模块之间紧密耦合，开发者需要学习 Django 自己定义的这一整套技术。Django 的主要特点如下。
     - 完整的文档：经过 10 多年的发展和完善，Django 有广泛的应用和完善的在线文档。
     - 集成数据访问组件：Django 的 Model 层自带数据库 ORM 组件。
