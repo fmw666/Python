@@ -5,7 +5,7 @@
 
 ### *前期安装及其配置：*
 + 下载django
-    ```python
+    ```shell
     pip3 install django
     ```
     ```python
@@ -25,6 +25,24 @@
 
     ※解决方案：
     1. 使用指令查找执行文件所在目录：
+        ```shell
+        cd ~
+        sudo find -name django-admin
+        ```
+        得到位置：`./.local/bin/django-admin`
+
+    1. 在项目文件夹下执行指令：
+        ```shell
+        python3  ~/.local/bin/django-admin.py startproject mysite
+        ```
+
+    1. ok，大功告成！
++ 运行django项目
     ```shell
-    sudo find -name django-admin
+    cd mysite
+    python3 manage.py runserver 127.0.0.1:8000
     ```
+    成功跑起～
+
+
+
