@@ -6,10 +6,10 @@
 > 参考书籍：《跟老齐学 Python：Django实战》
 ### *前期安装及其配置：*
 + **下载django**
-    ```bash
+    ```shell
     pip3 install django
     ```
-    ```bash
+    ```shell
     # 如果还没有安装pip3：
     sudo apt-get install python3-pip
     ```
