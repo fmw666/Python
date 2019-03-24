@@ -14,7 +14,7 @@
     sudo apt-get install python3-pip
     ```
 + **建立django项目**
-    ```python
+    ```django
     # 在项目文件夹下执行指令
     django-admin startproject mysite
     ```
