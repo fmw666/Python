@@ -1,4 +1,4 @@
-> <h3><a href="#no-jump">《本文是基于 Ubuntu 18.04.2 LTS 操作系统下 Django 开发的博客实战爬坑篇》</a></h3>
+> <h3><a href="#no-jump">《本文是基于 Ubuntu 18.04.2 LTS 操作系统下 Django 开发的爬虫展示网站实战爬坑篇》</a></h3>
 
 .<br>.<br>.<br>.<br>.<br>
 
@@ -6,10 +6,10 @@
 > 参考书籍：《跟老齐学 Python：Django实战》
 ### *前期安装及其配置：*
 + **下载django**
-    ```shell
+    ```cmd
     pip3 install django
     ```
-    ```python
+    ```cmd
     # 如果还没有安装pip3：
     sudo apt-get install python3-pip
     ```
