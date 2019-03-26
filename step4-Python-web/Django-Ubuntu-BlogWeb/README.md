@@ -7,7 +7,12 @@
 1. [编写博客的数据模型类](#编写博客的数据模型类)
 1. [html显示博客信息](#html显示博客信息)
 
+.<br>.<br>
+
 > 参考书籍：《跟老齐学 Python：Django实战》
+
+.<br>.<br>
+
 ### *前期安装及其配置：*
 + **下载django**
     ```shell
@@ -237,7 +242,34 @@
     ```
 + **编写前段展示页面**
 
+    static文件夹下复制过去我们要的文件：
+    ```shell
+    static$ ls
+    css  fonts  images  js
+    ```
+    
+    在`./crawlweb/setting.py`中配置static和templates路径：
+    ```python
+    TEMPLATES = [
+        {
+            ...
+            'DIRS': [os.path.join(BASE_DIR, 'templates'),],
+            'APP_DIRS': False,
+            ...
+        },
+    ]
+    ```
+    ```python
+    STATIC_URL = '/static/'
+    # 在其下方添加：
+    STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, 'static'),
+    )
+    ```
+
     templates文件夹下建立 `base.html` 文件：
     ```html
+    
+    ```
 
 
