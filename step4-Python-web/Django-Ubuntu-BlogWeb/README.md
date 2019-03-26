@@ -227,9 +227,17 @@
 + **建立templates和static目录**
     
     templates文件夹用于存放html代码，static文件夹用于存放静态文件。在`crawlweb`目录下：
-    ```shell
+    ```bash
     crawlweb$ ls
     blog  crawlweb  db.sqlite3  manage.py
     crawlweb$ mkdir templates
     crawlweb$ mkdir static
+    crawlweb$ ls
+    blog  crawlweb  db.sqlite3  manage.py  static  templates
     ```
++ **编写前段展示页面**
+
+    templates文件夹下建立 `base.html` 文件：
+    ```html
+
+
