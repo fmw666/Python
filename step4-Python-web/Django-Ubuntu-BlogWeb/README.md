@@ -3,9 +3,9 @@
 .<br>.<br>.<br>.<br>.<br>
 
 ### 目录
-1. [前期安装及其配置](#)
-1. [编写博客的数据模型类](#)
-1. [Html显示博客信息](#)
+1. [前期安装及其配置](#前期安装及其配置)
+1. [编写博客的数据模型类](#编写博客的数据模型类)
+1. [html显示博客信息](#html显示博客信息)
 
 > 参考书籍：《跟老齐学 Python：Django实战》
 ### *前期安装及其配置：*
@@ -223,4 +223,13 @@
 
 [返回目录↑](#目录) 
 
-### *Html显示博客信息：*
+### *html显示博客信息：*
++ **建立templates和static目录**
+    
+    templates文件夹用于存放html代码，static文件夹用于存放静态文件。在`crawlweb`目录下：
+    ```shell
+    crawlweb$ ls
+    blog  crawlweb  db.sqlite3  manage.py
+    crawlweb$ mkdir templates
+    crawlweb$ mkdir static
+    ```
