@@ -6,6 +6,7 @@
 1. [前期安装及其配置](#前期安装及其配置)
 1. [编写博客的数据模型类](#编写博客的数据模型类)
 1. [html显示博客信息](#html显示博客信息)
+1. [重置后台模板与实现用户登录](#重置后台模板与实现用户登录)
 
 .<br>.<br>
 
@@ -440,4 +441,25 @@
         article = get_object_or_404(BlogArticles, id=article_id)
         pub = article.publish
         return render(request, 'blog/content.html',{'article':article,'publish':pub})
+    ```
+    
+[返回目录↑](#目录) 
+
+---
+
+### *重置后台模板与实现用户登录*
++ **重置后台模板**
+
+    由于之前设定了模板访问位置只能在templates文件夹下，所以我们重新打开`127.0.0.1:8000/admin`会出现 [TemplateDoesNotExist](#welcome) 的报错信息。
+    
+    打开终端，查找文件：
+    ```shell
+    sudo find / -name "templates"
+    ```
+    
+    找到`python3.6/site-packages/django/contrib/admin/templates`这个路径，复制完后然后继续进入目录：
+    ```shell
+    $ / cd /home/fmw/.local/lib/python3.6/site-packages/django/contrib/admin/templates
+    $ ls
+    admin  registration
     ```
