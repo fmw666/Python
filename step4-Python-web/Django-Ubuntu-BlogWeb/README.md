@@ -273,7 +273,93 @@
 
     templates文件夹下建立 `base.html` 文件：
     ```html
-    
+    {% load staticfiles %}
+    <!DOCTYPE html>
+    <html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="icon" href="{% static 'images/icon.png' %}">
+        <link rel="stylesheet" href="{% static 'css/semantic.css' %}">
+    </head>
+    <body>
+    <div class="ui thin big large left visible vertical inverted sidebar labeled icon menu">
+        <div class="header item">
+            <img src="{% static 'images/logo.gif' %}" style="height: 60px">
+    <!--        <i class="massive home icon"></i>-->
+        </div>
+        <a class="item">
+            <i class="bar chart line icon"></i>
+            图表
+        </a>
+        <a class="item">
+            <i class="database icon"></i>
+            数据
+        </a>
+        <a class="item">
+            <i class="code icon"></i>
+            代码
+        </a>
+    </div>
+
+    <div class="pusher">
+        <div class="ui very big large top attached stackable menu" >
+    <!--        <div class="ui black big launch right attached fixed button" onclick="leftsidebar()">-->
+    <!--            <i class="content icon">-->
+    <!--            </i>-->
+    <!--            <span class="text">菜单</span>-->
+    <!--        </div>-->
+            <div class=" ui container">
+                <a class="active item">
+                    <i class="home icon"></i> Home
+                </a>
+                <a class="item">
+                    <i class="grid layout icon"></i> Browse
+                </a>
+                <a class="item">
+                    <i class="mail icon"></i> Messages
+                </a>
+            <div class="ui simple dropdown item">
+                More
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item"><i class="edit icon"></i> Edit Profile</a>
+                    <a class="item"><i class="globe icon"></i> Choose Language</a>
+                    <a class="item"><i class="settings icon"></i> Account Settings</a>
+                </div>
+            </div>
+
+             <div class="right menu">
+                   <div class="item">
+                        <a class="ui button">登录</a>
+                    </div>
+                    <div class="item">
+                        <a class="ui primary button">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </div>
+
+
+        <script>
+            function leftsidebar(){
+              $('.ui.labeled.icon.sidebar')
+              .sidebar('toggle');
+            }
+        </script>
+
+        {% block javascript %}{% endblock %}
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/semantic.js' %}"></script>
+        <script src="{% static 'js/exporting.js' %}"></script>
+        <script src="{% static 'js/highcharts.js' %}"></script>
+        <script src="{% static 'js/highcharts-more.js' %}"></script>
+    </body>
+    </html>
     ```
 
 
