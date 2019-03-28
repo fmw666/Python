@@ -361,5 +361,83 @@
     </body>
     </html>
     ```
+    
+    建立视图函数。在`./blog/views.py`文件中：
+    ```python
+    from django.shortcuts import render
+    from .models import BlogArticles
 
+    # Create your views here.
 
+    def blog_title(request):
+        blogs = BlogArticles.objects.all()
+        return render(request, 'blog/titles.html', {'blogs':blogs})
+    ```
+    
+    建立基础模板。即在`./templates/blog/`文件夹下建立 `titles.html` 文件：
+    ```html
+    {% extends "base.html" %}
+    {% load staticfiles %}
+    {% block title %}博客专栏{% endblock %}
+
+    {% block content %}
+    <div class="ui very padded text segment" style="width:80%;">
+        <h1 align="center">我的博客</h1>
+        <div class="ui items">
+            文章目录：
+            <div class="item">
+                <ul>
+                    {% for blog in blogs %}
+                        <li><a href="{{ blog.id }}">{{ blog.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    ```
+
+    显示每篇文章：编辑`./blog/views.py`文件，继续建立视图函数。
+    ```python
+    def blog_article(request, article_id):
+        article = BlogArticles.objects.get(id=article_id)
+        pub = article.publish
+        return render(request, 'blog/content.html',{'article':article,'publish':pub})
+    ```
+
+    创建与之对应的模板，在`./templates/blog/`文件夹下，建立`content.html`文件：
+    ```html
+    {% extends "base.html" %}
+    {% load staticfiles %}
+    {% block title %}文章内容{% endblock %}
+
+    {% block content %}
+    <div class="ui very padded text segment" style="width:80%;">
+        <h1 align="center">{{ article.title }}</h1>
+        <div class="ui container">
+            {{ article.author.username }}
+            {{ publish }}
+            <div class="">
+                {{ article.body }}
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    ```
+    
+    接着配置URL，在`./blog/urls.py`中增添新的路径：
+    ```python
+    path('<int:article_id>/', views.blog_article, name='blog_article'),
+    ```
+    
+    添加请求对象不存在时的异常处理，在`./blog/views.py`中：
+    ```python
+    from django.shortcuts import render, get_object_or_404
+    from .models import BlogArticles
+    
+    def blog_article(request, article_id):
+        # article = BlogArticles.objects.get(id=article_id)
+        article = get_object_or_404(BlogArticles, id=article_id)
+        pub = article.publish
+        return render(request, 'blog/content.html',{'article':article,'publish':pub})
+    ```
