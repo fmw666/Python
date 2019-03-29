@@ -553,3 +553,13 @@
             login_form = LoginForm()
             return render(request, 'account/login.html', {'form':login_form})
     ```
+
+    在`./templates/account/login.html`中编辑：
+    ```html
+
+    ```
+    
+    改写`./templates/base.html`文件中登录按钮跳转：
+    ```html
+    <a class="ui button" href="{% url 'account:user_login' %}">登录</a>
+    ```
