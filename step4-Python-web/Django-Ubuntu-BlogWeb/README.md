@@ -465,7 +465,13 @@
     
     找到`python3.6/site-packages/django/contrib/admin/templates`这个路径，复制完后然后继续进入目录：
     ```shell
-    $ / cd /home/fmw/.local/lib/python3.6/site-packages/django/contrib/admin/templates
+    $ cd /home/fmw/.local/lib/python3.6/site-packages/django/contrib/admin/templates
     $ ls
     admin  registration
+    $ sudo find / -name "crawlweb"
+    # 找到并复制项目路径
+    $ cp -r admin 项目路径/templates
+    $ cp -r registration 项目路径/templates
     ```
+    
+    重启服务器，打开`127.0.0.1:8000/admin`，完美～
