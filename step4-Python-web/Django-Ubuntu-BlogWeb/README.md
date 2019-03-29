@@ -475,3 +475,34 @@
     ```
     
     重启服务器，打开`127.0.0.1:8000/admin`，完美～
+    
++ **用户登录**
+
+    创建一个用于实现用户登录、退出、注册功能的应用：
+    ```shell
+    crawlweb$ python3 manage.py startapp account
+    crawlweb$ ls
+    account blog crawlweb db.sqlite3 manage.py static templates
+    ```
+    
+    在`./crawlweb/settings.py`中配置新的应用：
+    ```python
+    INSTALLED_APPS = [
+        ...,
+        'blog',
+        'account',
+    ]
+    ```
+    
+    在`./crawlweb/urls.py`中配置路径：
+    ```python
+    urlpatterns = [
+        ...,
+        path('account/', include('account.urls', namespace='account')),
+    ]
+    ```
+    
+    在`./account`目录中创建 `urls.py` 文件，并设置好本应用中的路径：
+    ```python
+    
+    ```
