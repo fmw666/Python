@@ -504,5 +504,52 @@
     
     在`./account`目录中创建 `urls.py` 文件，并设置好本应用中的路径：
     ```python
+    from django.urls import path
+    from . import views
+
+    from django.conf import settings
+
+    app_name = 'account'
+
+    urlpatterns = [
+        path('login/', views.user_login, name='user_login'),
+    ]
+    ```
     
+    编写表单类。在`./account`目录中创建一个`forms.py`文件，并编辑：
+    ```python
+    from django import forms
+
+    class LoginForm(forms.Form):
+        username = forms.CharField()
+        password = forms.CharField(widget=forms.PasswordInput)
+    ```
+    
+    在`./account/views.py`中编辑视图函数：
+    ```python
+    from django.shortcuts import render
+    from django.http import HttpResponse
+    from django.contrib.auth import authenticate, login
+    from .forms import LoginForm
+
+    # Create your views here.
+
+    def user_login(request):
+        if request.method == 'POST':
+            login_form = LoginForm(request.POST)
+            if login_form.is_valid():
+                cd = login_form.cleaned_data
+                user = authenticate(username=cd['username'],password=cd['password'])
+
+                if user:
+                    login(request, user)
+                    return HttpResponse('欢迎')
+                else:
+                    return HttpResponse('账户或密码错误！')
+            else:
+                return HttpResponse('登录失败')
+
+        if request.method == 'GET':
+            login_form = LoginForm()
+            return render(request, 'account/login.html', {'form':login_form})
     ```
