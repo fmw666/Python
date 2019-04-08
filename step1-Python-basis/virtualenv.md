@@ -20,3 +20,8 @@
   ```python
   deactivate
   ```
++ pip一键导出和安装
+  ```python
+  pip freeze > requirements.txt
+  pip install -r requirements.txt
+  ```
