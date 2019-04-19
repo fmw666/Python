@@ -28,7 +28,7 @@
 ### [2. 编译器选择](#2)
 &emsp;&emsp;[- 安装 PyCharm 教程](#-安装-pycharm-教程)
 
-&emsp;&emsp;[- 安装 VS code 教程](#-安装-vs-code-教程)
+&emsp;&emsp;[- 安装 VS Code 教程](#-安装-vs-code-教程)
 
 ### [3. 写出你的第一个Python程序](#3)
 
@@ -196,7 +196,6 @@
 
 <div align="right"><a href="#章节目录">返回目录⬆</a></div>
 
-<a name="2"></a>
 ## 2. 编译器选择
 &emsp;&emsp;Python的实际开发中最常用的是<a href="https://baike.baidu.com/item/PyCharm/8143824?fr=aladdin" target="_blank">PyCharm</a>这款编译器。它带有一整套可以帮助用户在使用Python语言开发时提高其效率的工具，比如调试、语法高亮、Project管理、代码跳转、智能提示、自动完成、单元测试、版本控制。此外，该IDE提供了一些高级功能，以用于支持<a href="https://baike.baidu.com/item/django/61531?fr=aladdin" target="_blank">Django</a>框架下的专业Web开发。
 > 以上关于PyCharm的介绍摘自[百度百科](https://baike.baidu.com/)
@@ -205,26 +204,28 @@
 
 ok，我只介绍这两款软件，下面我会分别给出它们的详细安装教程，以及一些Python的相关配置。
 
----
+<div align="right"><a href="#章节目录">返回目录⬆</a></div>
 
-+ [PyCharm下载安装教程](#pycharm-install)
-+ [VS code下载安装教程](#vscode-install)
+### ⚡ 安装 PyCharm 教程
+&emsp;---
 
----
+PyCharm安装包笔者已提供，[点击我开始下载 PyCharm5.0.3](https://github.com/fmw666/Python/raw/master/step1-Python-basis/files/pycharm5.0.3.zip)
 
-[点击我开始下载 PyCharm5.0.3](https://github.com/fmw666/Python/raw/master/step1-Python-basis/files/pycharm5.0.3.zip)
-
----
-
-
-
----
-
-[返回目录⬆](#章节目录)
+安装 PyCharm 及汉化详细教程见文档 [PyCharm安装教程.md](#https://github.com/fmw666/Python/blob/master/step1-Python-basis/PyCharm%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
 
 <br>
 
-<a name="3"></a>
+<div align="right"><a href="#章节目录">返回目录⬆</a></div>
+
+### ⚡ 安装 VS Code 教程
+&emsp;---
+
+安装 VS Code 详细教程见文档 [VS-Code安装教程.md](#https://github.com/fmw666/Python/blob/master/step1-Python-basis/VS-Code%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
+
+---
+
+<div align="right"><a href="#章节目录">返回目录⬆</a></div>
+
 ## 3. 写出你的第一个Python程序
 &emsp;&emsp;首先，我想说，从这一节到最后所有关于Python的基础我都不会着重去讲。打个比方，关于print这个函数就有三个可选参数。如果诸如print函数，其它的函数或者对象方法我也一并全部抛出它们的所有知识点，那么你一定消化不了。或许你是强人，天赋异禀，但相较于平白直抒的抛出知识，我更喜欢寓教于乐的方式。所以一些扩展的语法和知识点我会在<a href="../step2-Pygame" target="_blank">第二部分——Python 游戏编程</a>中去讲述。我觉得学完一个知识点，你能知道它有什么用，为什么会用它，用它能做什么，并且你能实质性的做出什么来，是对你学习记忆最重要的。
 
