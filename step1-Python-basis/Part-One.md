@@ -74,7 +74,7 @@
 ### ⚡ 配置 Python 环境变量
 &emsp;---
 
-→在命令提示框中(cmd):输入`path=%path%;C:\Python`
+→ 在命令提示框中(cmd):输入`path=%path%;C:\Python`
 
   > **注意:** `C:\Python` 是Python的安装路径
   <br>
@@ -107,17 +107,17 @@
 ### ⚡ 创建虚拟环境
 &emsp;---
 
-→在命令提示框(cmd)或任意终端中执行下面指令以安装 [python虚拟环境](#welcome)：
+→ 在命令提示框(cmd)或任意终端中执行下面指令以安装 [python虚拟环境](#welcome)：
   ```python
   pip install virtualenv
   ```
 
-  > **tips:** 可在完成后执行 [`pip list`](#welcome) 来检查是否安装成功，以及执行 `virtualenv --version` 来查看当前虚拟环境版本。
+  > **tips:** 可在完成后执行 [`pip list`](#welcome) 来检查是否安装成功，以及执行 [`virtualenv --version`](#welcome) 来查看当前虚拟环境版本。
   <br>
 
 #### 🚩[为什么要创建虚拟环境？](#answer)
   <a name="answer"></a>
-  1. 当安装完成 Python 后，你只能在你的安装目录下（含`Python.exe`可执行文件的目录）来执行 Python.exe 或者引用此路径下的 Python.exe 来执行Python程序。
+  1. 当安装完成 Python 后，你只能在你的安装目录下（含 [`Python.exe`](#welcome) 可执行文件的目录）来执行 Python.exe 或者引用此路径下的 Python.exe 来执行 Python 程序。
   1. 当在计算机中的其他路径下的执行 Python，会出现报错提示"<a href="https://blog.csdn.net/qq_42689684/article/details/82423727" target="_blank">不是内部或外部命令，也不是可运行的程序或批处理文件。</a>"
   1. 如何在
 
