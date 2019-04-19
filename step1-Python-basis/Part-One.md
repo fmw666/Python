@@ -110,7 +110,7 @@
   pip install virtualenv
   ```
 
-  > **注意:** 可在完成后执行 `pip list` 来检查是否安装完成成功。
+  > **tips:** 可在完成后执行 `pip list` 来检查是否安装成功，以及执行 `virtualenv --version` 来查看当前虚拟环境版本。
   <br>
 
 #### 🚩[为什么要创建虚拟环境？](#answer)
