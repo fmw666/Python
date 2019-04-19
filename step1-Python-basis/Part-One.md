@@ -31,7 +31,7 @@
 &emsp;&emsp;[- 安装 VS Code 教程](#-安装-vs-code-教程)
 
 ### [3. 写出你的第一个Python程序](#3-写出你的第一个Python程序-1)
-&emsp;&emsp;&ensp; *基于 VS Code 编译器，特此说明*
+&emsp;&emsp;*(基于 VS Code 编译器，特此说明)*
 
 &emsp;&emsp;[- 执行全局的 Python](#-执行全局的-python)
 
@@ -232,11 +232,17 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 <div align="right"><a href="#章节目录">返回目录⬆</a></div>
 
 ## 3. 写出你的第一个Python程序
-&emsp;&emsp;首先，我想说，从这一节到最后所有关于Python的基础我都不会着重去讲。打个比方，关于print这个函数就有三个可选参数。如果诸如print函数，其它的函数或者对象方法我也一并全部抛出它们的所有知识点，那么你一定消化不了。或许你是强人，天赋异禀，但相较于平白直抒的抛出知识，我更喜欢寓教于乐的方式。所以一些扩展的语法和知识点我会在<a href="../step2-Pygame" target="_blank">第二部分——Python 游戏编程</a>中去讲述。我觉得学完一个知识点，你能知道它有什么用，为什么会用它，用它能做什么，并且你能实质性的做出什么来，是对你学习记忆最重要的。 
++ 首先，我想说，从这一节到最后所有关于 Python 的基础我都不会着重去讲。打个比方，关于 [print](#welcome) 这个函数就有三个可选参数。如果诸如 [print](#welcome) 函数，其它的函数或者对象方法我也一并全部抛出它们的所有知识点，那么你一定消化不了。或许你是强人，天赋异禀，但相较于平白直抒的抛出知识，我更喜欢寓教于乐的方式。所以一些扩展的语法和知识点我会在 [第二部分——Python 游戏编程](../step2-Pygame) 中去讲述。我觉得学完一个知识点，你能知道它有什么用，为什么会用它，用它能做什么，并且你能实质性的做出什么来，是对你学习记忆最重要的。 
 
-> 这里我选用的编译器是[VS code](#vscode-install)（后面我都会选择用VS code来学习Python）
++ 这里我选用的编译器是[VS code](#vscode-install)（后面我都会选择用VS code来学习Python）
 
-🐾下面来看VS code来编写和执行Python的过程。
+<br>
+
+<div align="right"><a href="#章节目录">返回目录⬆</a></div>
+
+### ⚡ 执行全局的 Python
+&emsp;---
+
 + 在要存放Python代码的文件夹中右击空白部分，选择"Open with Code"
 <br><br><img src="pics/2.1.png" width="600"><br><br>
 + 打开VS code后在左边你的文件夹下，选择"新建文件"，然后输入Python文件名（注意添加'.py'后缀）
@@ -247,6 +253,13 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 <br><br><img src="pics/2.4.png" width="700"><br><br>
 + 在下方终端中，能看到Python程序执行后的结果
 <br><br><img src="pics/2.5.png" width="700"><br><br>
+
+<br>
+
+<div align="right"><a href="#章节目录">返回目录⬆</a></div>
+
+### ⚡ 执行虚拟环境下的 Python
+&emsp;---
 
 ---
 
