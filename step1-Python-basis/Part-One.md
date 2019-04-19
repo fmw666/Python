@@ -49,9 +49,9 @@
 
 - **下载链接地址：** [点击此处开始下载](https://www.python.org/ftp/python/3.7.2/python-3.7.2-amd64.exe)
   + 下载完成后双击运行安装程序，如图：
-    <br><br><img src="pics/1.1.png" width="600"><br><br>
+    <br><br><img src="pics/1.1.png" width="400"><br><br>
   + 勾选"Add Python 3.7 to PATH"选项后单击"Customize installation"选项。
-    <br><br><img src="pics/1.2.png" width="600"><br><br>
+    <br><br><img src="pics/1.2.png" width="400"><br><br>
   + 这里勾选所有选项。其中，
     * 🏷"Documentation" 表示安装Python的帮助文档
     * 🏷"pip" 表示安装Python的第三方包管理工具
