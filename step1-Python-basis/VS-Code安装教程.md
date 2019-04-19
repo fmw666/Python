@@ -1,5 +1,5 @@
 <div align="center">
-  <h3><a name="vscode-install"></a>⚙ VS Code 下载安装教程</h3>
+  <h2><a name="vscode-install"></a>⚙ VS Code 安装详细教程</h2>
 </div>
 <br>
 
