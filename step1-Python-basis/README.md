@@ -11,10 +11,13 @@
 > ⭐推荐使用 `ctrl+f` 在网页上查询你想要查找的内容的关键词。
 ## 第一部分
 ### [1. 安装Python环境](#1)
-#### &emsp;&emsp;[- Windows 操作系统下的安装](#pycharm-install)
-#### &emsp;&emsp;[- 配置 Python 环境变量](#pycharm-install)
-#### &emsp;&emsp;[- 创建虚拟环境](#create-env)
-#### &emsp;&emsp;[- 虚拟环境的使用及说明](#pycharm-install)
+ &emsp;&emsp;[- Windows 操作系统下的安装](#pycharm-install)
+ 
+ &emsp;&emsp;[- 配置 Python 环境变量](#pycharm-install)
+ 
+ &emsp;&emsp;[- 创建虚拟环境](#create-env)
+ 
+ &emsp;&emsp;[- 虚拟环境的使用及说明](#pycharm-install)
 ### [2. 编译器选择](#2)
 #### &emsp;&emsp;[- 安装PyCharm教程](#pycharm-install)
 #### &emsp;&emsp;[- 安装VS code教程](#vscode-install)
