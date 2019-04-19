@@ -65,15 +65,20 @@
   + 保持默认勾选状态，单击"Browse"按钮，选择安装路径，然后点击"Install"开始安装。
     <br><br><img src="pics/1.3.png" width="500"><br><br>
 
-- **配置环境变量：** 在命令提示框中(cmd):输入`path=%path%;C:\Python`
+### ⚡ 配置 Python 环境变量
+<br>
+
+在命令提示框中(cmd):输入`path=%path%;C:\Python`
+
   > **注意:** `C:\Python` 是Python的安装路径
   
   🚩[为什么要配置环境变量？](#answer)
   <a name="ansewer"></a>
-  + 当安装完成Python后，你只能在你的安装目录下（含`Python.exe`可执行文件）来执行Python.exe或在当前路径下的CMD里输入`Python`来执行Python程序。
-  + 当在电脑其他路径下的CMD中执行Python，会出现提示"<a href="https://blog.csdn.net/qq_42689684/article/details/82423727" target="_blank">不是内部或外部命令，也不是可运行的程序或批处理文件。</a>"
-  + 如何在电脑全局中使用Python，就是我们为何要配置环境变量的原因。
+  + 当安装完成 Python 后，你只能在你的安装目录下（含`Python.exe`可执行文件的目录）来执行 Python.exe 或者引用此路径下的 Python.exe 来执行Python程序。
+  + 当在计算机中的其他路径下的执行 Python，会出现报错提示"<a href="https://blog.csdn.net/qq_42689684/article/details/82423727" target="_blank">不是内部或外部命令，也不是可运行的程序或批处理文件。</a>"
+  + 如何在电脑全局中使用 Python，就是我们为何要配置环境变量的原因。
   + 下面介绍一种更常用的配置环境变量的方法：
+  
     * 第一步：鼠标右键"此电脑"，选择"属性"
       <br><br><img src="pics/1.4.png" width="300"><br><br>
     * 第二步：选择窗口右边"高级系统设置"
