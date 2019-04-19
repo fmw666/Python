@@ -132,7 +132,7 @@
   > **注意:** [`dir_name`](#welcome) 是虚拟环境文件夹名
   <br>
   
-+ 比如我创建一个文件夹名为 [`partone_env`](#welcome) 的虚拟环境目录：
++ 比如我这里创建一个文件夹名为 [`partone_env`](#welcome) 的虚拟环境目录：
   <br><br><img src="pics/6.0.png" width="800"><br><br>
   
 + 我们来看一下这个文件夹下有哪些文件？
@@ -143,7 +143,36 @@
 
 &emsp;&emsp;除此之外，还有一个 [`pip-selfcheck.json`](#welcome) 文件，它是虚拟环境自我检查的文件，暂不作说明。
 
-&emsp;&emsp;我们如果用 Python 全局 pip 来安装第三方模块，会安装在 [`C:\Python37\Lib\site-packages`](#welcome) 目录下，但是在虚拟环境下安装，则会安装在 [`partone_env\Lib\site-packages`](#welcome) 目录下。
+&emsp;&emsp;**说明：** 我们如果用 Python 全局 pip 来安装第三方模块，会安装在 [`C:\Python37\Lib\site-packages`](#welcome) 目录下，但是在虚拟环境下安装，则会安装在 [`partone_env\Lib\site-packages`](#welcome) 目录下。
+
+<br>
+
+<div align="right"><a href="#章节目录">返回目录⬆</a></div>
+
+### ⚡ 虚拟环境的使用及说明
+&emsp;---
+
+**→** 在你创建好的虚拟环境文件夹下，输入 [`s`](#welcome) 字符，按下键盘 [`tab`](#welcome)，自动补齐 [`Scripts`](#welcome)（如果没有，请检查是否在当前虚拟环境文件夹下），在 [`Scripts`](#welcome) 后面继续输入反斜杠 [`\`](#welcome)，再输入字符 [`a`](#welcome)，按下键盘 [`tab`](#welcome) 键自动补齐 [`Scripts\activate`](#welcome)，然后回车...
+  ```python
+  D:\My-Project\partone-env>Scripts\activate
+  ```
+  
+  > **tips:** 虽然多图片方式会让读者更好的完成指示，但是由于 GitHub 网络代理商原因，访问速度会很慢，图片加载也需要很长时间，所以在非特殊时候，我会尽可能少用图片方式。
+  <br>
+  
+**→** 完成回车运行后，我们看一下发生了什么情况。在终端路径前面，多了一个 [（partone_env）](#welcome) （名称为虚拟环境名，所以读者可能与我的不同），这表示我们已进入了当前的虚拟环境。然后执行 [`pip list`](#welcome)，好干净有没有？
+  ```python
+  Package    Version
+  ---------- -------
+  pip        19.0.3
+  setuptools 41.0.0
+  wheel      0.33.1
+  ```
+  
+**→** 要退出虚拟环境也很简单，同样在虚拟环境文件夹下，输入 [`s`](#welcome) 然后 [`tab`](#welcome)，输入反斜杠 [`\`](#welcome) 再加一个 [`d`](#welcome) 然后 [`tab`](#welcome) 。
+  ```python
+  (partone_env) D:\My-Project\partone_env>Scripts\deactivate.bat
+  ```
 
 ---
 
