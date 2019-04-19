@@ -1,9 +1,15 @@
 <div align="center">
-  <h3><a name="vscode-install"></a>⚙ VS code 下载安装详细教程</h3>
+  <h3><a name="vscode-install"></a>⚙ VS Code 下载安装教程</h3>
 </div>
 <br>
 
-1. 在VS code官网首页中选择下载对应操作系统的安装包，注意：请选择'Stable'(稳定版)。官网戳这个链接：[https://code.visualstudio.com](https://code.visualstudio.com/)
+> *tips：因网速原因可能会出现图片加载过慢的情况。*
+
+<br>.
+<br>.
+<br>.
+
+1. 在VS Code官网首页中选择下载对应操作系统的安装包，注意：请选择'Stable'(稳定版)。官网戳这个链接：[https://code.visualstudio.com](https://code.visualstudio.com/)
   <br><br><img src="pics/1.vs1.png" width="800"><br><br>
 1. 在解压文件夹中找到VSCodeUserSetup-x64-1.30.2.exe，右击打开
   <br><br><img src="pics/1.vs2.png" width="400"><br><br>
