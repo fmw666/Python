@@ -61,7 +61,7 @@
     
     👀勾选完所有选项后，单击"Next"
   + 保持默认勾选状态，单击"Browse"按钮，选择安装路径，然后点击"Install"开始安装。
-    <br><br><img src="pics/1.3.png" width="600"><br><br>
+    <br><br><img src="pics/1.3.png" width="500"><br><br>
 
 - **配置环境变量：** 在命令提示框中(cmd):输入`path=%path%;C:\Python`
   > **注意:** `C:\Python` 是Python的安装路径
@@ -73,7 +73,7 @@
   + 如何在电脑全局中使用Python，就是我们为何要配置环境变量的原因。
   + 下面介绍一种更常用的配置环境变量的方法：
     * 第一步：鼠标右键"此电脑"，选择"属性"
-      <br><br><img src="pics/1.4.png" width="400"><br><br>
+      <br><br><img src="pics/1.4.png" width="300"><br><br>
     * 第二步：选择窗口右边"高级系统设置"
       <br><br><img src="pics/1.5.png" width="800"><br><br>
     * 第三步：选择"环境变量"
