@@ -174,21 +174,23 @@
   (partone_env) D:\My-Project\partone_env>Scripts\deactivate.bat
   ```
   
-**⋙** 请掌握一个必备的技能--一键导出/入 pip 安装后的包：
+**⋙** 另外，请掌握一个必备的技能 —— 一键导出/入 pip 安装后的包：
   + 在虚拟环境根文件夹下将 pip 安装的所有包/模块导入 [`requirements.txt`](#welcome) 文件：
     ```python
     (partone_env) D:\My-Project\partone_env>pip freeze > requirements.txt
     ```
     
-    > **tips:** txt 文件前缀可换成任意名，不限定为 requirements，但一般大家都默认为此。注意两点：1. 一定要启用虚拟环境，不然导入的就是全局的 pip 安装过的包。2. 一般都默认在虚拟环境根目录下执行，如果在其他文件夹下执行你在导出时还得去找此 [`requirements.txt`](#welcome) 文件。
+    > **tips:** txt 文件前缀可换成任意名，不限定为 requirements，但一般大家都默认为此。注意两点：1. 一定要启用虚拟环境，不然导入的就是全局的 pip 安装过的包。2. 一般都默认在虚拟环境根目录下执行，如果在其他文件夹下执行你在导出时还得去找此 [`requirements.txt`](#welcome) 文件的目录。
   <br>
   
   + 打开 [`requirements.txt`](#welcome) 文件，（如果有内容）我们发现全是我们之前在此虚拟环境下安装过的模块和包。如果没有内容也很正常，说明我们还没在此虚拟环境下安装过第三方模块或包。
   
-  + 那么如何导出这个文件？即 [一键安装这个文件下所有的模块/包](#welcome)，在这个文件对应的目录下执行：
+  + 那么如何导出这个文件？即 [一键安装这个文件下所有的模块/包](#welcome)，很简单，只需要在这个文件对应的目录下执行：
     ```python
     pip install -r requirements.txt
     ```
+    
+&emsp;&emsp;总言之，虚拟环境是个既简单又极其方便的东西。我们后面会将不同的项目建立在不同的虚拟环境下。
 
 ---
 
