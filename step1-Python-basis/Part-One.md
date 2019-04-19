@@ -30,7 +30,12 @@
 
 &emsp;&emsp;[- 安装 VS Code 教程](#-安装-vs-code-教程)
 
-### [3. 写出你的第一个Python程序](#3)
+### [3. 写出你的第一个Python程序](#3-写出你的第一个Python程序-1)
+&emsp;&emsp;- 基于 VS Code 编译器，特此说明
+
+&emsp;&emsp;[- 执行全局的 Python](#-安装-pycharm-教程)
+
+&emsp;&emsp;[- 执行虚拟环境下的 Python](#-安装-pycharm-教程)
 
 <br>.
 <br>.
@@ -153,7 +158,7 @@
 &emsp;---
 
 + 在你创建好的虚拟环境文件夹下，输入 [`s`](#welcome) 字符，按下键盘 [`tab`](#welcome)，自动补齐 [`Scripts`](#welcome)（如果没有，请检查是否在当前虚拟环境文件夹下），在 [`Scripts`](#welcome) 后面继续输入反斜杠 [`\`](#welcome)，再输入字符 [`a`](#welcome)，按下键盘 [`tab`](#welcome) 键自动补齐 [`Scripts\activate`](#welcome)，然后回车...
-  ```python
+  ```
   D:\My-Project\partone-env>Scripts\activate
   ```
   
@@ -161,7 +166,7 @@
   <br>
   
 + 完成回车运行后，我们看一下发生了什么情况。在终端路径前面，多了一个 [（partone_env）](#welcome) （名称为虚拟环境名，所以读者可能与我的不同），这表示我们已进入了当前的虚拟环境。然后执行 [`pip list`](#welcome)，好干净有没有？
-  ```python
+  ```
   Package    Version
   ---------- -------
   pip        19.0.3
@@ -170,7 +175,7 @@
   ```
   
 + 要退出虚拟环境也很简单，同样在虚拟环境文件夹下，输入 [`s`](#welcome) 然后 [`tab`](#welcome)，输入反斜杠 [`\`](#welcome) 再加一个 [`d`](#welcome) 然后 [`tab`](#welcome) 。
-  ```python
+  ```
   (partone_env) D:\My-Project\partone_env>Scripts\deactivate.bat
   ```
   
