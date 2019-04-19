@@ -31,7 +31,7 @@
 &emsp;&emsp;[- 安装 VS Code 教程](#-安装-vs-code-教程)
 
 ### [3. 写出你的第一个Python程序](#3-写出你的第一个Python程序-1)
-&emsp;&emsp;*基于 VS Code 编译器，特此说明*
+&emsp;&emsp;&ensp; *基于 VS Code 编译器，特此说明*
 
 &emsp;&emsp;[- 执行全局的 Python](#-执行全局的-python)
 
