@@ -115,12 +115,14 @@
   > **tips:** 可在完成后执行 [`pip list`](#welcome) 来检查是否安装成功，以及执行 [`virtualenv --version`](#welcome) 来查看当前虚拟环境版本。
   <br>
 
-#### 🚩[为什么要创建虚拟环境？](#answer)
-  <a name="answer"></a>
+<a name="answer"></a>
+#### 🚩[为什么要创建虚拟环境？](#answer1)
+  
   1. 虚拟环境是一个虚拟化，从电脑独立开辟出来的环境。通俗的来讲，虚拟环境就是借助虚拟机docker来把一部分内容独立出来，我们把这部分独立出来的东西称作“容器”，在这个容器中，我们可以只安装我们需要的依赖包，各个容器之间互相隔离，互不影响。<sup><a href="#jumpto">[1]</a></sup>
   1. 安装在虚拟环境里的所有包，均不会对环境外的其他包产生影响。反之，在虚拟环境下运行时只能调用虚拟环境中安装的包，不会调用外部的包。
   1. 在很多时候，我们通过 pip 安装的第三方库会有多个版本，而不使用虚拟环境进行隔离，库的版本之间可能会有不兼容情况发生，我们就会遇到无法预期的bug。
   1. 其中 virtualenv 就是创建一个独立的 Python 运行环境（虚拟环境）的工具。
+  <br>
   
 **→** 在安装完 [virtualenv] 后，可在你要创建项目的文件夹下执行：
   ```python
@@ -132,6 +134,16 @@
   
 + 比如我创建一个文件夹名为 [`partone_env`](#welcome) 的虚拟环境目录：
   <br><br><img src="pics/6.0.png" width="800"><br><br>
+  
++ 我们来看一下这个文件夹下有哪些文件？
+  ```
+  Include        Lib        Scripts        tcl
+  ```
+&emsp;&emsp;暂且不管这些文件都有什么用，但是细心的你也许会发现，这些文件夹在我们安装的 Python 目录下都有，说明我们创建的虚拟环境给我们提供了一个完整的能独立运行 Python 的环境。
+
+&emsp;&emsp;除此之外，还有一个 [`pip-selfcheck.json`](#welcome) 文件，它是虚拟环境自我检查的文件，暂不作说明。
+
+&emsp;&emsp;我们如果用 Python 全局 pip 来安装第三方模块，会安装在 [`C:\Python37\Lib\site-packages`](#welcome) 目录下，但是在虚拟环境下安装，则会安装在 [`partone_env\Lib\site-packages`](#welcome) 目录下。
 
 ---
 
