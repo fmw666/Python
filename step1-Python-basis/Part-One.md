@@ -107,7 +107,7 @@
 ### ⚡ 创建虚拟环境
 &emsp;---
 
-→ 在命令提示框(cmd)或任意终端中执行下面指令以安装 [python虚拟环境](#welcome)：
+**→** 在命令提示框(cmd)或任意终端中执行下面指令以安装 [python虚拟环境](#welcome)：
   ```python
   pip install virtualenv
   ```
@@ -122,13 +122,13 @@
   1. 在很多时候，我们通过 pip 安装的第三方库会有多个版本，而不使用虚拟环境进行隔离，库的版本之间可能会有不兼容情况发生，我们就会遇到无法预期的bug。
   1. 其中 virtualenv 就是创建一个独立的 Python 运行环境（虚拟环境）的工具。
   
-→ 在安装完 [virtualenv] 后，可在你要创建项目的文件夹下执行：
+**→** 在安装完 [virtualenv] 后，可在你要创建项目的文件夹下执行：
   ```python
   virtualenv dir_name
   ```
   
-比如我创建一个文件夹名为 [`partone_env`](#welcome) 的虚拟环境目录：
-<br><br><img src="pics/2.0.png" width="400"><br><br>
++ 比如我创建一个文件夹名为 [`partone_env`](#welcome) 的虚拟环境目录：
+  <br><br><img src="pics/6.0.png" width="400"><br><br>
 
 ---
 
