@@ -40,9 +40,9 @@
 <br>.
 
 <a name="1"></a>
-# 1. 安装Python环境
+## 1. 安装Python环境
 
-## ⚡ Windows 操作系统下的安装
+### ⚡ Windows 操作系统下的安装
 
 - **🐍Python官网下载链接：** [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
