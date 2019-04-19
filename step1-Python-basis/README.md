@@ -2,7 +2,7 @@
 &emsp;&emsp;欢迎来到Python学习的第一大板块—— Python基础学习。要知道，任何一门语言没有前期基础的建立，后期的学习都是不牢固的，所以基础这一部分就显得尤为重要。但是呢，为保证我们能快速进入到后面学习中，在基础这一部分，语法我不会讲得过于深奥，重要的语法扩展我们留到后面的学习中遇到再展开学习。
 
 <div align="center">
-    <img src="https://github.com/fmw666/Python/blob/master/pics/cute-gif.gif" width="200px">
+    <img src="https://github.com/fmw666/my-image-file/blob/master/images/cat/cat1.png" width="200px">
 </div>
 
 🏷本章作者推荐阅读文档
