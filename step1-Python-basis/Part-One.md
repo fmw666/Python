@@ -67,7 +67,7 @@
 
 <br>
 
-<div align="right"><a href="#快捷目录">返回目录⬆</a></div>
+<div align="right"><a href="#章节目录">返回目录⬆</a></div>
 
 ### ⚡ 配置 Python 环境变量
 &emsp;---
@@ -100,7 +100,7 @@
 
 ---
 
-<div align="right"><a href="#快捷目录">返回目录⬆</a></div>
+<div align="right"><a href="#章节目录">返回目录⬆</a></div>
 
 <a name="2"></a>
 ## 2. 编译器选择
