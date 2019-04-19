@@ -246,11 +246,11 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 + 打开VS code后在左边你的文件夹下，选择"新建文件"，然后输入Python文件名（注意添加'.py'后缀）
 <br><br><img src="pics/2.2.png" width="400"><br><br>
 + 在建好的Python文件中输入<code>print('Hello World!')</code>，并按下`ctrl + s`保存文件
-<br><br><img src="pics/2.3.png" width="700"><br><br>
+<br><br><img src="pics/2.3.png" width="800"><br><br>
 + 在文件内鼠标右击，选择"在终端中运行 Python 文件"
-<br><br><img src="pics/2.4.png" width="700"><br><br>
+<br><br><img src="pics/2.4.png" width="800"><br><br>
 + 在下方终端中，能看到Python程序执行后的结果
-<br><br><img src="pics/2.5.png" width="700"><br><br>
+<br><br><img src="pics/2.5.png" width="800"><br><br>
 
 <br>
 
@@ -262,17 +262,17 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 + 在**虚拟环境文件夹**下新建文件夹 [`my_code`](#welcome) 用以存放我们的 Python 代码，右击此新创建的文件夹选择"Open with Code"。我们将我们的项目文件夹建在虚拟环境文件夹中，虽然我们的项目文件夹与虚拟环境文件夹不关联，但是我们仍为方便，统一在一个文件夹下进行管理。
 <br><br><img src="pics/2.6.png" width="600"><br><br>
 + 打开 VS code 后在建立终端，后续我们均用命令行来操纵。
-<br><br><img src="pics/2.7.png" width="700"><br><br>
+<br><br><img src="pics/2.7.png" width="800"><br><br>
 + 然后依次执行如下命令（新建文件夹 → 进入文件夹 → 创建py文件）
-<br><br><img src="pics/2.8.png" width="700"><br><br>
+<br><br><img src="pics/2.8.png" width="800"><br><br>
 + 快捷键 [`Ctrl+Shift+P`](#welcome) 打开命令面板，输入 [settings](#welcome)，找到并选择 [首选项：打开工作区设置](#welcome)  
-<br><br><img src="pics/2.9.png" width="700"><br><br>
+<br><br><img src="pics/2.9.png" width="800"><br><br>
 + 设置里面搜索 [`json`](#welcome)，找到 [`功能 -> 调试 -> Launch -> 在 settings.json 中编辑`](#welcome) 并打开。
-<br><br><img src="pics/2.10.png" width="700"><br><br>
+<br><br><img src="pics/2.10.png" width="800"><br><br>
 + 在 [settings.json] 中输入 [`"python.pythonPath": "D:\\My-Project\\partone_env\\Scripts\\python",`](#welcome) ，保存并关闭此文件。
-<br><br><img src="pics/2.11.png" width="700"><br><br>
+<br><br><img src="pics/2.11.png" width="800"><br><br>
 + 我们能发现在左边资源管理器中多了一个 `.vscode` 文件夹，里面包含我们刚刚配置的 `settings.json` 文件。
-<br><br><img src="pics/2.12.png" width="700"><br><br>
+<br><br><img src="pics/2.12.png" width="800"><br><br>
 
 <br>
 
