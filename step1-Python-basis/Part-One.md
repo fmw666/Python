@@ -16,7 +16,7 @@
 <br>
 
 ## *📑章节目录：* 
-### [1. 安装Python环境](#1-安装Python环境)
+### [1. 安装Python环境](#1-安装python环境-1)
 &emsp;&emsp;[- Windows 操作系统下的安装](#-windows-操作系统下的安装)
 
 &emsp;&emsp;[- 配置 Python 环境变量](#-配置-python-环境变量)
@@ -41,6 +41,8 @@
 
 <a name="1"></a>
 ## 1. 安装Python环境
+
+<div align="right"><a href="#章节目录">返回目录⬆</a></div>
 
 ### ⚡ Windows 操作系统下的安装
 &emsp;---
