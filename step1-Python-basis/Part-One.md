@@ -74,7 +74,7 @@
 ### ⚡ 配置 Python 环境变量
 &emsp;---
 
-**⋙** 在命令提示框中(cmd):输入 [`path=%path%;C:\Python`](#welcome)
+**▶** 在命令提示框中(cmd):输入 [`path=%path%;C:\Python`](#welcome)
 
   > **注意:** [`C:\Python`](#welcome) 是 Python 的安装路径
   <br>
@@ -107,7 +107,7 @@
 ### ⚡ 创建虚拟环境
 &emsp;---
 
-**⋙** 在命令提示框(cmd)或任意终端中执行下面指令以安装 [python虚拟环境](#welcome)：
+**▶** 在命令提示框(cmd)或任意终端中执行下面指令以安装 [python虚拟环境](#welcome)：
   ```python
   pip install virtualenv
   ```
@@ -124,7 +124,7 @@
   1. 其中 virtualenv 就是创建一个独立的 Python 运行环境（虚拟环境）的工具。
   <br>
   
-**⋙** 在安装完 [virtualenv] 后，可在你要创建项目的文件夹下执行：
+**▶** 在安装完 [virtualenv] 后，可在你要创建项目的文件夹下执行：
   ```python
   virtualenv dir_name
   ```
@@ -152,7 +152,7 @@
 ### ⚡ 虚拟环境的使用及说明
 &emsp;---
 
-**⋙** 在你创建好的虚拟环境文件夹下，输入 [`s`](#welcome) 字符，按下键盘 [`tab`](#welcome)，自动补齐 [`Scripts`](#welcome)（如果没有，请检查是否在当前虚拟环境文件夹下），在 [`Scripts`](#welcome) 后面继续输入反斜杠 [`\`](#welcome)，再输入字符 [`a`](#welcome)，按下键盘 [`tab`](#welcome) 键自动补齐 [`Scripts\activate`](#welcome)，然后回车...
+**▶** 在你创建好的虚拟环境文件夹下，输入 [`s`](#welcome) 字符，按下键盘 [`tab`](#welcome)，自动补齐 [`Scripts`](#welcome)（如果没有，请检查是否在当前虚拟环境文件夹下），在 [`Scripts`](#welcome) 后面继续输入反斜杠 [`\`](#welcome)，再输入字符 [`a`](#welcome)，按下键盘 [`tab`](#welcome) 键自动补齐 [`Scripts\activate`](#welcome)，然后回车...
   ```python
   D:\My-Project\partone-env>Scripts\activate
   ```
@@ -160,7 +160,7 @@
   > **tips:** 虽然多图片方式会让读者更好的完成指示，但是由于 GitHub 网络代理商原因，访问速度会很慢，图片加载也需要很长时间，所以在非特殊时候，我会尽可能少用图片方式。
   <br>
   
-**⋙** 完成回车运行后，我们看一下发生了什么情况。在终端路径前面，多了一个 [（partone_env）](#welcome) （名称为虚拟环境名，所以读者可能与我的不同），这表示我们已进入了当前的虚拟环境。然后执行 [`pip list`](#welcome)，好干净有没有？
+**▶** 完成回车运行后，我们看一下发生了什么情况。在终端路径前面，多了一个 [（partone_env）](#welcome) （名称为虚拟环境名，所以读者可能与我的不同），这表示我们已进入了当前的虚拟环境。然后执行 [`pip list`](#welcome)，好干净有没有？
   ```python
   Package    Version
   ---------- -------
@@ -169,7 +169,7 @@
   wheel      0.33.1
   ```
   
-**⋙** 要退出虚拟环境也很简单，同样在虚拟环境文件夹下，输入 [`s`](#welcome) 然后 [`tab`](#welcome)，输入反斜杠 [`\`](#welcome) 再加一个 [`d`](#welcome) 然后 [`tab`](#welcome) 。
+**▶** 要退出虚拟环境也很简单，同样在虚拟环境文件夹下，输入 [`s`](#welcome) 然后 [`tab`](#welcome)，输入反斜杠 [`\`](#welcome) 再加一个 [`d`](#welcome) 然后 [`tab`](#welcome) 。
   ```python
   (partone_env) D:\My-Project\partone_env>Scripts\deactivate.bat
   ```
