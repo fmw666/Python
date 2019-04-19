@@ -43,7 +43,7 @@
 ## 1. 安装Python环境
 
 ### ⚡ Windows 操作系统下的安装
-<br>
+&emsp;---
 
 🐍Python官网下载链接： [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
@@ -65,8 +65,9 @@
 + 保持默认勾选状态，单击"Browse"按钮，选择安装路径，然后点击"Install"开始安装。
   <br><br><img src="pics/1.3.png" width="500"><br><br>
 
-### ⚡ 配置 Python 环境变量
 <br>
+### ⚡ 配置 Python 环境变量
+&emsp;---
 
 在命令提示框中(cmd):输入`path=%path%;C:\Python`
 
