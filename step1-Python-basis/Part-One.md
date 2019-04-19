@@ -43,7 +43,7 @@
 ## 1. 安装Python环境
 ### 📚 Windows 操作系统下的安装
 
-🐍Python官网下载链接：<a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a>
+- **🐍Python官网下载链接：** <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a>
 
 - **Python 版本：** 3.7.2
 
