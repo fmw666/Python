@@ -16,19 +16,19 @@
 <br>
 
 ## *📑章节目录：* 
-### [1. 安装Python环境](#1)
-&emsp;&emsp;[- Windows 操作系统下的安装](#pycharm-install)
+### [1. 安装Python环境](#1-安装Python环境)
+&emsp;&emsp;[- Windows 操作系统下的安装](#-windows-操作系统下的安装)
 
-&emsp;&emsp;[- 配置 Python 环境变量](#pycharm-install)
+&emsp;&emsp;[- 配置 Python 环境变量](#-配置-python-环境变量)
 
-&emsp;&emsp;[- 创建虚拟环境](#create-env)
+&emsp;&emsp;[- 创建虚拟环境](#-创建虚拟环境)
 
-&emsp;&emsp;[- 虚拟环境的使用及说明](#pycharm-install)
+&emsp;&emsp;[- 虚拟环境的使用及说明](#-虚拟环境的使用及说明)
 
 ### [2. 编译器选择](#2)
-&emsp;&emsp;[- 安装PyCharm教程](#pycharm-install)
+&emsp;&emsp;[- 安装 PyCharm 教程](#-安装-pycharm-教程)
 
-&emsp;&emsp;[- 安装VS code教程](#vscode-install)
+&emsp;&emsp;[- 安装 VS code 教程](#-安装-vs-code-教程)
 
 ### [3. 写出你的第一个Python程序](#3)
 
