@@ -1,5 +1,5 @@
 <div align="center">
-  <h2><a name="pycharm-install"></a>⚙ PyCharm5.0.3 下载安装详细教程</h2>
+  <h2><a name="pycharm-install"></a>⚙ PyCharm5.0.3 安装详细教程</h2>
 </div>
 <br>
 
