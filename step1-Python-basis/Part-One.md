@@ -25,7 +25,7 @@
 
 &emsp;&emsp;[- 虚拟环境的使用及说明](#-虚拟环境的使用及说明)
 
-### [2. 编译器选择](#2-编译器选择-2)
+### [2. 编译器选择](#2-编译器选择-1)
 &emsp;&emsp;[- 安装 PyCharm 教程](#-安装-pycharm-教程)
 
 &emsp;&emsp;[- 安装 VS Code 教程](#-安装-vs-code-教程)
@@ -209,9 +209,9 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 ### ⚡ 安装 PyCharm 教程
 &emsp;---
 
-PyCharm安装包笔者已提供，[点击我开始下载 PyCharm5.0.3](https://github.com/fmw666/Python/raw/master/step1-Python-basis/files/pycharm5.0.3.zip)
++ PyCharm安装包笔者已提供，[点击我开始下载 PyCharm5.0.3](https://github.com/fmw666/Python/raw/master/step1-Python-basis/files/pycharm5.0.3.zip)
 
-安装 PyCharm 及汉化详细教程见文档 [PyCharm安装教程.md](#https://github.com/fmw666/Python/blob/master/step1-Python-basis/PyCharm%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
++ 安装 PyCharm 及汉化详细教程见文档 [PyCharm安装教程.md](https://github.com/fmw666/Python/blob/master/step1-Python-basis/PyCharm%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
 
 <br>
 
@@ -220,7 +220,7 @@ PyCharm安装包笔者已提供，[点击我开始下载 PyCharm5.0.3](https://g
 ### ⚡ 安装 VS Code 教程
 &emsp;---
 
-安装 VS Code 详细教程见文档 [VS-Code安装教程.md](#https://github.com/fmw666/Python/blob/master/step1-Python-basis/VS-Code%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
++ 安装 VS Code 详细教程见文档 [VS-Code安装教程.md](https://github.com/fmw666/Python/blob/master/step1-Python-basis/VS-Code%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
 
 ---
 
