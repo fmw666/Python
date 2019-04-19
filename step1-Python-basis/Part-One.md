@@ -74,7 +74,7 @@
 ### ⚡ 配置 Python 环境变量
 &emsp;---
 
-**⋙** 在命令提示框中(cmd):输入 [`path=%path%;C:\Python`](#welcome)
++ 在命令提示框中(cmd):输入 [`path=%path%;C:\Python`](#welcome)
 
   > **注意:** [`C:\Python`](#welcome) 是 Python 的安装路径
   <br>
@@ -85,20 +85,20 @@
   1. 当在计算机中的其他路径下的执行 Python，会出现报错提示"<a href="https://blog.csdn.net/qq_42689684/article/details/82423727" target="_blank">不是内部或外部命令，也不是可运行的程序或批处理文件。</a>"
   1. 如何在电脑全局中使用 Python，就是我们为何要配置环境变量的原因。
   
-  + 下面介绍一种更常用的配置环境变量的方法：
++ 下面介绍一种更常用的配置环境变量的方法：
   
-    * 第一步：鼠标右键"此电脑"，选择"属性"
-      <br><br><img src="pics/1.4.png" width="300"><br><br>
-    * 第二步：选择窗口右边"高级系统设置"
-      <br><br><img src="pics/1.5.png" width="800"><br><br>
-    * 第三步：选择"环境变量"
-      <br><br><img src="pics/1.6.png" width="400"><br><br>
-    * 第四步：在系统变量里，双击"Path"以编辑环境变量
-      <br><br><img src="pics/1.7.png" width="400"><br><br>
-    * 第五步：点击右边"新建"，输入Python安装路径，完成环境变量配置。
-      <br><br><img src="pics/1.8.png" width="400"><br><br>
-  + 在任意路径处打开CMD窗口，输入`Python`，测试Python是否可以正常运行，输入`exit()`退出运行。
-    <br><br><img src="pics/1.9.png" width="700"><br><br>
+  * 第一步：鼠标右键"此电脑"，选择"属性"
+    <br><br><img src="pics/1.4.png" width="300"><br><br>
+  * 第二步：选择窗口右边"高级系统设置"
+    <br><br><img src="pics/1.5.png" width="800"><br><br>
+  * 第三步：选择"环境变量"
+    <br><br><img src="pics/1.6.png" width="400"><br><br>
+  * 第四步：在系统变量里，双击"Path"以编辑环境变量
+    <br><br><img src="pics/1.7.png" width="400"><br><br>
+  * 第五步：点击右边"新建"，输入Python安装路径，完成环境变量配置。
+    <br><br><img src="pics/1.8.png" width="400"><br><br>
++ 在任意路径处打开CMD窗口，输入`Python`，测试Python是否可以正常运行，输入`exit()`退出运行。
+  <br><br><img src="pics/1.9.png" width="700"><br><br>
 
 <br>
 
@@ -107,7 +107,7 @@
 ### ⚡ 创建虚拟环境
 &emsp;---
 
-**⋙** 在命令提示框(cmd)或任意终端中执行下面指令以安装 [python虚拟环境](#welcome)：
++ 在命令提示框(cmd)或任意终端中执行下面指令以安装 [python虚拟环境](#welcome)：
   ```python
   pip install virtualenv
   ```
@@ -124,7 +124,7 @@
   1. 其中 virtualenv 就是创建一个独立的 Python 运行环境（虚拟环境）的工具。
   <br>
   
-**⋙** 在安装完 [virtualenv] 后，可在你要创建项目的文件夹下执行：
++ 在安装完 [virtualenv] 后，可在你要创建项目的文件夹下执行：
   ```python
   virtualenv dir_name
   ```
@@ -139,11 +139,11 @@
   ```
   Include        Lib        Scripts        tcl
   ```
-&emsp;&emsp;暂且不管这些文件都有什么用，但是细心的你也许会发现，这些文件夹在我们安装的 Python 目录下都有，说明我们创建的虚拟环境给我们提供了一个完整的能独立运行 Python 的环境。
+  + 暂且不管这些文件都有什么用，但是细心的你也许会发现，这些文件夹在我们安装的 Python 目录下都有，说明我们创建的虚拟环境给我们提供了一个完整的能独立运行 Python 的环境。
 
-&emsp;&emsp;除此之外，还有一个 [`pip-selfcheck.json`](#welcome) 文件，它是虚拟环境自我检查的文件，暂不作说明。
+  + 除此之外，还有一个 [`pip-selfcheck.json`](#welcome) 文件，它是虚拟环境自我检查的文件，暂不作说明。
 
-&emsp;&emsp;**说明：** 我们如果用 Python 全局 pip 来安装第三方模块，会安装在 [`C:\Python37\Lib\site-packages`](#welcome) 目录下，但是在虚拟环境下安装，则会安装在 [`partone_env\Lib\site-packages`](#welcome) 目录下。
+  + **说明：** 我们如果用 Python 全局 pip 来安装第三方模块，会安装在 [`C:\Python37\Lib\site-packages`](#welcome) 目录下，但是在虚拟环境下安装，则会安装在 [`partone_env\Lib\site-packages`](#welcome) 目录下。
 
 <br>
 
@@ -152,7 +152,7 @@
 ### ⚡ 虚拟环境的使用及说明
 &emsp;---
 
-**⋙** 在你创建好的虚拟环境文件夹下，输入 [`s`](#welcome) 字符，按下键盘 [`tab`](#welcome)，自动补齐 [`Scripts`](#welcome)（如果没有，请检查是否在当前虚拟环境文件夹下），在 [`Scripts`](#welcome) 后面继续输入反斜杠 [`\`](#welcome)，再输入字符 [`a`](#welcome)，按下键盘 [`tab`](#welcome) 键自动补齐 [`Scripts\activate`](#welcome)，然后回车...
++ 在你创建好的虚拟环境文件夹下，输入 [`s`](#welcome) 字符，按下键盘 [`tab`](#welcome)，自动补齐 [`Scripts`](#welcome)（如果没有，请检查是否在当前虚拟环境文件夹下），在 [`Scripts`](#welcome) 后面继续输入反斜杠 [`\`](#welcome)，再输入字符 [`a`](#welcome)，按下键盘 [`tab`](#welcome) 键自动补齐 [`Scripts\activate`](#welcome)，然后回车...
   ```python
   D:\My-Project\partone-env>Scripts\activate
   ```
@@ -160,7 +160,7 @@
   > **tips:** 虽然多图片方式会让读者更好的完成指示，但是由于 GitHub 网络代理商原因，访问速度会很慢，图片加载也需要很长时间，所以在非特殊时候，我会尽可能少用图片方式。
   <br>
   
-**⋙** 完成回车运行后，我们看一下发生了什么情况。在终端路径前面，多了一个 [（partone_env）](#welcome) （名称为虚拟环境名，所以读者可能与我的不同），这表示我们已进入了当前的虚拟环境。然后执行 [`pip list`](#welcome)，好干净有没有？
++ 完成回车运行后，我们看一下发生了什么情况。在终端路径前面，多了一个 [（partone_env）](#welcome) （名称为虚拟环境名，所以读者可能与我的不同），这表示我们已进入了当前的虚拟环境。然后执行 [`pip list`](#welcome)，好干净有没有？
   ```python
   Package    Version
   ---------- -------
@@ -169,14 +169,14 @@
   wheel      0.33.1
   ```
   
-**⋙** 要退出虚拟环境也很简单，同样在虚拟环境文件夹下，输入 [`s`](#welcome) 然后 [`tab`](#welcome)，输入反斜杠 [`\`](#welcome) 再加一个 [`d`](#welcome) 然后 [`tab`](#welcome) 。
++ 要退出虚拟环境也很简单，同样在虚拟环境文件夹下，输入 [`s`](#welcome) 然后 [`tab`](#welcome)，输入反斜杠 [`\`](#welcome) 再加一个 [`d`](#welcome) 然后 [`tab`](#welcome) 。
   ```python
   (partone_env) D:\My-Project\partone_env>Scripts\deactivate.bat
   ```
   
-**⋙** 另外，请掌握一个必备的技能 —— 一键导出/入 pip 安装后的包：
++ 另外，请掌握一个必备的技能 —— 一键导出/入 pip 安装后的包：
   + 在虚拟环境根文件夹下将 pip 安装的所有包/模块导入 [`requirements.txt`](#welcome) 文件：
-    ```python
+    ```
     (partone_env) D:\My-Project\partone_env>pip freeze > requirements.txt
     ```
     
@@ -190,7 +190,7 @@
     pip install -r requirements.txt
     ```
     
-&emsp;&emsp;总言之，虚拟环境是个既简单又极其方便的东西。我们后面会将不同的项目建立在不同的虚拟环境下。
++ 总言之，虚拟环境是个既简单又极其方便的东西。我们后面会将不同的项目建立在不同的虚拟环境下。
 
 ---
 
