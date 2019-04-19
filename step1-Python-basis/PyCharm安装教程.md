@@ -5,6 +5,10 @@
 
 > *tips：因网速原因可能会出现图片加载过慢的情况。*
 
+<br>.
+<br>.
+<br>.
+
 0. PS：请确保你已经安装了我提供的 [PyCharm5.0.3](https://github.com/fmw666/Python/raw/master/step1-Python-basis/files/pycharm5.0.3.zip) 文件。（若没有，请点击前面文件名开始下载）<br><br>
 1. 右击软件压缩包选择解压到pycharm5.0.3
   <br><br><img src="pics/1.10.png" width="400"><br><br>
