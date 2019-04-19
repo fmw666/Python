@@ -88,13 +88,13 @@
     * 第二步：选择窗口右边"高级系统设置"
       <br><br><img src="pics/1.5.png" width="800"><br><br>
     * 第三步：选择"环境变量"
-      <br><br><img src="pics/1.6.png" width="500"><br><br>
+      <br><br><img src="pics/1.6.png" width="400"><br><br>
     * 第四步：在系统变量里，双击"Path"以编辑环境变量
-      <br><br><img src="pics/1.7.png" width="500"><br><br>
+      <br><br><img src="pics/1.7.png" width="400"><br><br>
     * 第五步：点击右边"新建"，输入Python安装路径，完成环境变量配置。
-      <br><br><img src="pics/1.8.png" width="500"><br><br>
+      <br><br><img src="pics/1.8.png" width="400"><br><br>
   + 在任意路径处打开CMD窗口，输入`Python`，测试Python是否可以正常运行，输入`exit()`退出运行。
-    <br><br><img src="pics/1.9.png" width="800"><br><br>
+    <br><br><img src="pics/1.9.png" width="700"><br><br>
 
 ---
 
