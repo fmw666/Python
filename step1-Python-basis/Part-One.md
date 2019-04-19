@@ -15,8 +15,8 @@
 
 <br>
 
-# *📑章节目录：* 
-## [1. 安装Python环境](#1)
+## *📑章节目录：* 
+### [1. 安装Python环境](#1)
 &emsp;&emsp;[- Windows 操作系统下的安装](#pycharm-install)
 
 &emsp;&emsp;[- 配置 Python 环境变量](#pycharm-install)
@@ -40,10 +40,9 @@
 <br>.
 
 <a name="1"></a>
-## 1. 安装Python环境
-<br>
+# 1. 安装Python环境
 
-### ⚡ Windows 操作系统下的安装
+## ⚡ Windows 操作系统下的安装
 
 - **🐍Python官网下载链接：** [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
