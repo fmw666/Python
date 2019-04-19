@@ -44,7 +44,7 @@
 
 ### ⚡ Windows 操作系统下的安装
 
-- **🐍Python官网下载链接：** [https://www.python.org/downloads/](https://www.python.org/downloads/)
+🐍Python官网下载链接： [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
 - **Python 版本：** 3.7.2
 
