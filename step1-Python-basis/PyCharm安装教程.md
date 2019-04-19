@@ -3,7 +3,7 @@
 </div>
 <br>
 
-0. PS：请确保你已经安装了我提供的 PyCharm5.0.3 文件。若没有，请[点击我](https://github.com/fmw666/Python/raw/master/step1-Python-basis/files/pycharm5.0.3.zip)开始下载
+0. PS：请确保你已经安装了我提供的 [PyCharm5.0.3](https://github.com/fmw666/Python/raw/master/step1-Python-basis/files/pycharm5.0.3.zip) 文件。（若没有，请点击前面文件名开始下载）<br><br>
 1. 右击软件压缩包选择解压到pycharm5.0.3
   <br><br><img src="pics/1.10.png" width="400"><br><br>
 1. 在解压文件夹中找到pycharm-professional-5.0.3，右击打开
