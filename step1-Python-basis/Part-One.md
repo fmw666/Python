@@ -131,7 +131,7 @@
   <br>
   
 + 比如我创建一个文件夹名为 [`partone_env`](#welcome) 的虚拟环境目录：
-  <br><br><img src="pics/6.0.png" width="600"><br><br>
+  <br><br><img src="pics/6.0.png" width="800"><br><br>
 
 ---
 
