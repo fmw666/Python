@@ -141,7 +141,7 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 
 ---
 
-
+[点击我开始下载 PyCharm5.0.3](https://github.com/fmw666/Python/raw/master/step1-Python-basis/files/pycharm5.0.3.zip)
 
 ---
 
