@@ -2,6 +2,8 @@
   <h2><a name="head"></a>📖</h2>
 </div>  
 <div align="center">
+  <a href="../">首页</a>
+  /
   <strong>⭐第一部分</strong> 
   / 
   <a href="">第二部分</a> 
