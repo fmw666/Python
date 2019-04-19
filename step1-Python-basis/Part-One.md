@@ -98,6 +98,27 @@
   + 在任意路径处打开CMD窗口，输入`Python`，测试Python是否可以正常运行，输入`exit()`退出运行。
     <br><br><img src="pics/1.9.png" width="700"><br><br>
 
+<br>
+
+<div align="right"><a href="#章节目录">返回目录⬆</a></div>
+
+### ⚡ 创建虚拟环境
+&emsp;---
+
+在命令提示框(cmd)或任意终端中执行下面指令以安装 python虚拟环境：
+  ```python
+  pip install virtualenv
+  ```
+
+  > **注意:** 可在完成后执行`pip list` 来检查是否安装完成成功。
+  <br>
+
+#### 🚩[为什么要配置环境变量？](#answer)
+  <a name="ansewer"></a>
+  1. 当安装完成 Python 后，你只能在你的安装目录下（含`Python.exe`可执行文件的目录）来执行 Python.exe 或者引用此路径下的 Python.exe 来执行Python程序。
+  1. 当在计算机中的其他路径下的执行 Python，会出现报错提示"<a href="https://blog.csdn.net/qq_42689684/article/details/82423727" target="_blank">不是内部或外部命令，也不是可运行的程序或批处理文件。</a>"
+  1. 如何在
+
 ---
 
 <div align="right"><a href="#章节目录">返回目录⬆</a></div>
