@@ -263,18 +263,13 @@ ok，我只介绍这两款软件，下面我会分别给出它们的详细安装
 
 + 在**虚拟环境文件夹**下新建文件夹 [`my_code`](#welcome) 用以存放我们的 Python 代码，右击此新创建的文件夹选择"Open with Code"。我们将我们的项目文件夹建在虚拟环境文件夹中，虽然我们的项目文件夹与虚拟环境文件夹不关联，但是我们仍为方便，统一在一个文件夹下进行管理。
 <br><br><img src="pics/2.6.png" width="600"><br><br>
-+ 打开 VS code 后在建立终端，后续我们均用命令行来操纵。
++ 打开 VS code 后在建立终端，后续我们均用命令行来操纵，能帮我们熟悉 Linux 指令（VS Code 终端默认是 Linux 的shell）。
 <br><br><img src="pics/2.7.png" width="800"><br><br>
-+ 然后依次执行如下命令（新建文件夹 → 进入文件夹 → 创建py文件）
++ 然后依次执行如下命令（新建文件夹 → 在此文件夹下创建py文件）
 <br><br><img src="pics/2.8.png" width="800"><br><br>
-+ 快捷键 [`Ctrl+Shift+P`](#welcome) 打开命令面板，输入 [settings](#welcome)，找到并选择 [首选项：打开工作区设置](#welcome)  
++ 要进入虚拟环境我们使用如下命令：[`$ source ../Scripts/activate`](#welcome)（`/` 为 linux 命令行中目录分隔符，`\` 为 windows 命令行中特有，这里不始用。还有，我们同样按下一个 `s` 再按 `tab` 键智能补齐，以增加速度，显得自己开发技能成熟），然后回车执行，能发现我们已经进入了虚拟环境，如下图：
 <br><br><img src="pics/2.9.png" width="800"><br><br>
-+ 设置里面搜索 [`json`](#welcome)，找到 [`功能 -> 调试 -> Launch -> 在 settings.json 中编辑`](#welcome) 并打开。
-<br><br><img src="pics/2.10.png" width="800"><br><br>
-+ 在 [settings.json] 中输入 [`"python.pythonPath": "D:\\My-Project\\partone_env\\Scripts\\python",`](#welcome) ，保存并关闭此文件。
-<br><br><img src="pics/2.11.png" width="800"><br><br>
-+ 我们能发现在左边资源管理器中多了一个 `.vscode` 文件夹，里面包含我们刚刚配置的 `settings.json` 文件。
-<br><br><img src="pics/2.12.png" width="800"><br><br>
++ 要退出虚拟环境很简单，在任意路径中，在终端输入 [`deactivate`](#welcome) 然后回车即可~ 这里就不用图片展示了。
 
 <br>
 
