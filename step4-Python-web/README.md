@@ -31,9 +31,9 @@
 ---
 
 ## 1. 网页编程语言——前端
-前端即网站前台部分，运行在PC端，移动端等浏览器上展现给用户浏览的网页。
++ 前端即网站前台部分，运行在PC端，移动端等浏览器上展现给用户浏览的网页。
 
-如果你在之前还没系统的了解过前端，可以在我的另一个库中学习了解。[点我跳转](https://github.com/fmw666/Front-end/)
++ 如果你在之前还没系统的了解过前端，可以在我的另一个库中学习了解。[点我跳转](https://github.com/fmw666/Front-end/)
 
 <div align="center">
     <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute2.jpeg" width="150">
@@ -44,9 +44,9 @@
 [返回目录⬆](#快捷目录)
 
 ## 2. 计算机网络
-计算机网络是指将地理位置不同的具有独立功能的多台计算机及其外部设备，通过通信线路连接起来，在网络操作系统，网络管理软件及网络通信协议的管理和协调下，实现资源共享和信息传递的计算机系统。
++ 计算机网络是指将地理位置不同的具有独立功能的多台计算机及其外部设备，通过通信线路连接起来，在网络操作系统，网络管理软件及网络通信协议的管理和协调下，实现资源共享和信息传递的计算机系统。
 
-如果你在之前还没系统的了解过网络相关知识，可以在我的另一个库中学习了解。[点我跳转](https://github.com/fmw666/Linux/Network/)
++ 如果你在之前还没系统的了解过网络相关知识，可以在我的另一个库中学习了解。[点我跳转](https://github.com/fmw666/Linux/Network/)
 
 <div align="center">
     <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute3.jpeg" width="150">
@@ -58,12 +58,12 @@
 
 ## 3. 数据库及 ORM
 ### 数据库
-为了方便管理和存储数据，对数据进行增删查改，我们往往要用到数据库，而且是基本是必学和必用的。
++ 为了方便管理和存储数据，对数据进行增删查改，我们往往要用到数据库，而且是基本是必学和必用的。
 
-如果你在之前还没系统的了解过数据库相关知识，可以在我的另一个库中学习了解。[点我跳转](https://github.com/fmw666/Database-System)
++ 如果你在之前还没系统的了解过数据库相关知识，可以在我的另一个库中学习了解。[点我跳转](https://github.com/fmw666/Database-System)
 
 ### ORM（Object-Relational Mapping，对象关系映射）
-ORM的作用是在关系型数据库和业务实体对象之间做一个映射，这样开发者在操作数据库的数据时，就不需要再去和复杂的 SQL 语句打交道，只需简单地操作对象地属性和方法。所有的 ORM 必须具备3方面地基本能力：映射技术、CRUD操作（Create增加、Retrieve读取、Update更新、Delete删除）和缓存优化。
++ ORM的作用是在关系型数据库和业务实体对象之间做一个映射，这样开发者在操作数据库的数据时，就不需要再去和复杂的 SQL 语句打交道，只需简单地操作对象地属性和方法。所有的 ORM 必须具备3方面地基本能力：映射技术、CRUD操作（Create增加、Retrieve读取、Update更新、Delete删除）和缓存优化。
 
 <div align="center">
     <img src="https://github.com/fmw666/my-image-file/blob/master/images/anime/cute4.jpeg" width="150">
@@ -80,7 +80,7 @@ ORM的作用是在关系型数据库和业务实体对象之间做一个映射�
 [返回目录⬆](#快捷目录)
 
 ## 5. 企业级开发框架——Django
-Django 是 Python 世界中应用最广泛、发展最成熟的 Web 框架。因为 Django 足够完整，所以使用 Django 本身就可以开发出非常完整的 Web 应用，而无须借助诸如 SQLAlchemy 等其他数据访问组件。
++ Django 是 Python 世界中应用最广泛、发展最成熟的 Web 框架。因为 Django 足够完整，所以使用 Django 本身就可以开发出非常完整的 Web 应用，而无须借助诸如 SQLAlchemy 等其他数据访问组件。
 
 ### 5.1 Django 综述
 + Django 于 2003 年诞生于美国堪萨斯（Kansas）州，最初是劳伦斯出版集团为了用来制作在线新闻 Web 站点而开发的。Django 于 2005 年加入了 BSD 许可证家族，成为开源网络框架。Django 根据比利时的爵士音乐家 [Django Reinhardt](https://en.wikipedia.org/wiki/Django_Reinhardt) 命名，*作者这样命名 Django 意味着 Django 能优雅地演奏（开发）功能丰富的乐曲（Web 应用）*。
