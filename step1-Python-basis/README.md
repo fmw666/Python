@@ -17,21 +17,21 @@
 ### [1. 安装Python环境](Part-One.md#1-安装python环境-1)
 &emsp;&emsp;[- Windows 操作系统下的安装](Part-One.md#-windows-操作系统下的安装)
 
-&emsp;&emsp;[- 配置 Python 环境变量](#-配置-python-环境变量)
+&emsp;&emsp;[- 配置 Python 环境变量](Part-One.md#-配置-python-环境变量)
 
-&emsp;&emsp;[- 创建虚拟环境](#-创建虚拟环境)
+&emsp;&emsp;[- 创建虚拟环境](Part-One.md#-创建虚拟环境)
 
-&emsp;&emsp;[- 虚拟环境的使用及说明](#-虚拟环境的使用及说明 )
+&emsp;&emsp;[- 虚拟环境的使用及说明](Part-One.md#-虚拟环境的使用及说明 )
 
-### [2. 编译器选择](#2-编译器选择-1)
-&emsp;&emsp;[- 安装 PyCharm 教程](#-安装-pycharm-教程)
+### [2. 编译器选择](Part-One.md#2-编译器选择-1)
+&emsp;&emsp;[- 安装 PyCharm 教程](Part-One.md#-安装-pycharm-教程)
 
-&emsp;&emsp;[- 安装 VS Code 教程](#-安装-vs-code-教程)
+&emsp;&emsp;[- 安装 VS Code 教程](Part-One.md#-安装-vs-code-教程)
 
-### [3. 写出你的第一个Python程序](#3-写出你的第一个Python程序-1)
-&emsp;&emsp;[- 执行全局的 Python](#-执行全局的-python)
+### [3. 写出你的第一个Python程序](Part-One.md#3-写出你的第一个Python程序-1)
+&emsp;&emsp;[- 执行全局的 Python](Part-One.md#-执行全局的-python)
 
-&emsp;&emsp;[- 执行虚拟环境下的 Python](#-执行虚拟环境下的-python)
+&emsp;&emsp;[- 执行虚拟环境下的 Python](Part-One.md#-执行虚拟环境下的-python)
 
 ## 第二部分
 ### [4. Python基本操作](#4)
