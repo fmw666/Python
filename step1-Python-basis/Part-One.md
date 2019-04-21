@@ -15,8 +15,6 @@
 
 <br>
 
-<a href=""><img src="http://image.baidu.com/search/detail?ct=503316480&z=&tn=baiduimagedetail&ipn=d&word=%E8%BF%94%E5%9B%9E%E9%A6%96%E9%A1%B5&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=-1&hd=&latest=&copyright=&cs=86939234,4203582730&os=144901868,2923899603&simid=0,0&pn=34&rn=1&di=162841996240&ln=1823&fr=&fmq=1555692337768_R&ic=&s=undefined&se=&sme=&tab=0&width=&height=&face=undefined&is=0,0&istype=2&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fcbu01.alicdn.com%2Fimg%2Fibank%2F2016%2F238%2F268%2F3485862832_1480548005.jpg&rpstart=0&rpnum=0&adpicid=0&force=undefined" width=""></a>
-
 ## *📑章节目录：* 
 ### [1. 安装Python环境](#1-安装python环境-1)
 &emsp;&emsp;[- Windows 操作系统下的安装](#-windows-操作系统下的安装)
