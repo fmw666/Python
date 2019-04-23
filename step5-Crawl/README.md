@@ -51,11 +51,6 @@
 <div align="right"><a href="#-章节目录">返回目录⬆</a></div>
 
 ### *📜 目录：*
-<details>
-    <summary><a href="#11-请求库的安装"><b>1.1. 请求库的安装</b></a></summary>
-    &emsp;&emsp;&emsp;&emsp;<a href="#1.1.1">- requests 的安装</a><br>
-    &emsp;&emsp;&emsp;&emsp;<a href="#1.1.2">- Selenium 的安装</a><br>
-</details>
 &emsp;&emsp;**[1.1. 请求库的安装](#11-请求库的安装)**
 
 &emsp;&emsp;&emsp;&emsp;[- requests 的安装](#1.1.1)
