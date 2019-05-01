@@ -62,7 +62,7 @@
     ```shell
     ~/crawlweb$ ls
     db.sqlite3 manage.py crawlweb
-    ~/crawlweb$ python3 manage.py startapp crawlweb
+    ~/crawlweb$ python3 manage.py startapp blog
     ~/crawlweb$ ls
     blog db.sqlite3 manage.py crawlweb
     ```
