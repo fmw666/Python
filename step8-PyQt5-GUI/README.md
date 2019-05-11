@@ -3,7 +3,8 @@
 
 ---
 
-[PyQt5 中文教程](https://maicss.gitbooks.io/pyqt5/content/)
+🏷PyQt5 学习参考网站
++ [PyQt5 中文教程](https://maicss.gitbooks.io/pyqt5/content/)
 
 #### *📑快捷目录：*
 [1. 初识 Pygame](#1-初识-pygame)
