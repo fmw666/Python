@@ -33,6 +33,8 @@
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;📖<a href="#no-jump">Step7：Python 机器学习</a>
 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;📖<a href="#no-jump">Step8：PyQt5 GUI编程</a>
+
 ---
 <div align="center" style="width: 400px;height: 280px;">
     <img src="https://github.com/fmw666/Python/blob/master/pics/emoj.gif?raw=true" style="width:400px;height:280px;">
