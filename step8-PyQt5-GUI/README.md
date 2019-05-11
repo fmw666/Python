@@ -6,7 +6,7 @@
 🏷PyQt5 学习参考网站
 + [PyQt5 中文教程](https://maicss.gitbooks.io/pyqt5/content/)
 
-## *目录*
+## 目录
 [1. 初识 Pygame](#1-初识-pygame)
 
 [2. 打印文本](#2-打印文本)
@@ -21,5 +21,5 @@
 &emsp;&emsp;Pygame这个游戏库，能方便我们绘制图形
 
 <div align="right">
-    <a href="#快捷目录">返回目录⬆</a>
+    <a href="#目录">返回目录⬆</a>
 </div>
