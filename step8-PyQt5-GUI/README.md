@@ -18,3 +18,7 @@
 
 ## 1. 初识 Pygame
 &emsp;&emsp;Pygame这个游戏库，能方便我们绘制图形
+
+<div align="right">
+    <a href="#快捷目录">返回目录⬆</a>
+</div>
