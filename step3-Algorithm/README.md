@@ -4,7 +4,7 @@
 ---
 
 <div align="center">
-    <img src="pics/binarytree.jpg" width="600">
+    <img src="pics/binarytree.jpg" width="500">
 </div>
 
 ### *⭐ 本章作者呕心沥血推荐读物*
