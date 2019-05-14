@@ -1,9 +1,9 @@
 # 💬《Python之 GUI 编程——PyQt5》
 &emsp;&emsp;图形用户界面（Graphical User Interface，简称 GUI，又称图形用户接口）是指采用图形方式显示的计算机操作用户界面。我们利用 GUI 编程可以写出很多实用的桌面应用程序，这样可以使我们更多的 python 函数和脚本更好的封装起来以此来方便用户的使用。
 
----
-
 > ⭐ python 的图形界面库有很多，常用的有 [Tkinter](#welcome)、[PyQt](#welcome)、[wxPython](#welcome)、[PyGTK](#welcome)、[PySide](#welcome)。我们这里采用的是跨平台的 GUI 工具，Qt 所有类的 Python 封装 PyQt5 这个库。
+
+---
 
 🏷PyQt5 学习参考网站
 + [PyQt5 中文教程](https://maicss.gitbooks.io/pyqt5/content/)
