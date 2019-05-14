@@ -22,6 +22,8 @@
 
 [4. 制作pie游戏](#4-制作pie游戏)
 
+[5. 使用 QSS 来美化界面](#)
+
 ---
 
 ## 1. 初识和使用窗口
@@ -61,3 +63,6 @@ if __name__ == '__main__':
 <div align="right">
     <a href="#目录">返回目录⬆</a>
 </div>
+
+## 5. 使用 QSS 来美化界面
+https://blog.csdn.net/kuangshp128/article/details/87089446
