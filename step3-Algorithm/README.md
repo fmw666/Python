@@ -3,7 +3,7 @@
 
 ---
 
-⭐ 本章作者推荐读物
+***⭐ 本章作者推荐读物***
 
 + [《离散数学（第五版）》](https://www.baidu.com/link?url=4svn2zwEsw5PWP8ZJPr9WYONIA6nIvY5Ocoz_1Aa7VE6k4bjanu-_wmeI4RQAayZTdR_Mb7h8t-NVKhTixUvkshzzuMjtTVZc1adl8h0hnW&wd=&eqid=dd79a6f80008cecb000000035cdaaf08)- 清华大学出版社
 
