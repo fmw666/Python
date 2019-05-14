@@ -5,13 +5,13 @@
 
 ⭐ 本章作者推荐读物
 
-+ 《离散数学（第五版）》- 清华大学出版社
++ [《离散数学（第五版）》](https://www.baidu.com/link?url=4svn2zwEsw5PWP8ZJPr9WYONIA6nIvY5Ocoz_1Aa7VE6k4bjanu-_wmeI4RQAayZTdR_Mb7h8t-NVKhTixUvkshzzuMjtTVZc1adl8h0hnW&wd=&eqid=dd79a6f80008cecb000000035cdaaf08)- 清华大学出版社
 
-+ Python3.7 官方中文教程之数据结构
++ [Python3.7 官方中文教程之数据结构](https://docs.python.org/zh-cn/3/tutorial/datastructures.html)
 
-+ 《数据结构与算法:Python语言描述》
++ [《数据结构与算法:Python语言描述》](https://book.douban.com/subject/26702568/)
 
-+ 《算法图解》- 人民邮电出版社
++ [《算法图解》](https://book.douban.com/subject/26979890/)- 人民邮电出版社
 
 ## 第一部分
 
