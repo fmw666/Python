@@ -3,6 +3,8 @@
 
 ---
 
+> ⭐ python 的图形界面库有很多，常用的有 [Tkinter](#welcome)、[PyQt](#welcome)、[wxPython](#welcome)、[PyGTK](#welcome)、[PySide](#welcome)。我们这里采用的是跨平台的 GUI 工具，Qt 所有类的 Python 封装 PyQt5 这个库。
+
 🏷PyQt5 学习参考网站
 + [PyQt5 中文教程](https://maicss.gitbooks.io/pyqt5/content/)
 
