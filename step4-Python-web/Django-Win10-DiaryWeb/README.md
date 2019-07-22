@@ -18,16 +18,34 @@
 + **建立虚拟环境**
     ```shell
     # 在你想创建的项目文件夹下打开CMD，执行：
-    virtualenv django_diary_md_env
+    D:\My-Project> virtualenv django_diary_md_env
+    ```
++ **在 vs code 终端下开启虚拟环境**
+    ```shell
+    $ ls
+    Include  Lib  pip-selfcheck.json  Scripts  tcl
+    
+    # 'code' 文件夹用于存放一系列测试代码 
+    $ mkdir code
+    
+    # 'demo.py' 文件用于进行代码测试
+    $ touch code/demo.py
+    
+    # 开启虚拟环境。（tips，输入's'后按下tab，然后再输入'a'按下tab）
+    $ source Scripts/activate
+    
+    # 出现下面提示即成果开启虚拟环境
+    (django_day_write_github)
     ```
 + **下载django**
     ```shell
-    pip install django
+    # 在当前虚拟环境终端下（后面所有均在虚拟环境下）
+    $ pip install django
     ```
 + **建立django项目**
     ```django
     # 在项目文件夹下执行指令
-    django-admin startproject crawlweb
+    django-admin startproject web
     ```
 
     但是！执行后会出现下面报错：
