@@ -34,12 +34,12 @@
     # 开启虚拟环境。（tips，输入's'后按下tab，然后再输入'a'按下tab）
     $ source Scripts/activate
     
-    # 出现下面提示即成果开启虚拟环境
+    # 出现下面提示即成功开启虚拟环境
     (django_day_write_github)
     ```
 + **下载django**
     ```shell
-    # 在当前虚拟环境终端下（后面所有均在虚拟环境下）
+    # 在当前虚拟环境终端下（后面所有均默认在虚拟环境下）
     $ pip install django
     ```
 + **建立django项目**
