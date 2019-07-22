@@ -1,4 +1,4 @@
-> <h3><a href="#no-jump">《本文是基于 Windows 操作系统下 Django 开发的日记markdown自动模板生成篇》</a></h3>
+> <h3><a href="#no-jump">《本文是基于 Win10 操作系统下 Django 开发的日记markdown自动模板生成篇》</a></h3>
 
 .<br>.<br>.<br>.<br>.<br>
 
