@@ -46,27 +46,12 @@
     ```django
     # 在项目文件夹下执行指令
     django-admin startproject web
+    
+    # 查看当前目录下文件夹
+    $ ls
+    code  Include  Lib  pip-selfcheck.json  Scripts  tcl  web
+    (django_day_write_github)
     ```
-
-    但是！执行后会出现下面报错：
-    ```shell
-    zsh: command not found: django-admin
-    ```
-
-    ※解决方案：
-    1. 使用指令查找执行文件所在目录：
-        ```shell
-        cd ~
-        sudo find -name django-admin
-        ```
-        得到位置：`./.local/bin/django-admin`
-
-    1. 在项目文件夹下执行指令：
-        ```shell
-        python3  ~/.local/bin/django-admin.py startproject crawlweb
-        ```
-
-    1. ok，大功告成！
 + **运行django项目**
     ```shell
     cd crawlweb
