@@ -35,12 +35,9 @@
 
 &emsp;&emsp;[- 执行虚拟环境下的 Python](#-执行虚拟环境下的-python)
 
-<br>.
-<br>.
-<br>.
-<br>.
-<br>.
-<br>.
+---
+
+.<br>.<br>.
 
 <a name="1"></a>
 ## 1. 安装Python环境
