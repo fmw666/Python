@@ -251,7 +251,12 @@
     <a href="#-dictionary-字典">dictionary (字典)</a>
 </div><br><br>
 
-> **⚡Python3 中可以使用 [type()](#no-jump) 函数来查看变量数据类型！**
+> **💡 Python3 中可以使用 [type()](#no-jump) 函数来查看变量数据类型！**
+
+```python
+# 打印输出变量 variable 的数据类型
+print(type(variable))
+```
 
 <div align="right"><a href="#章节目录">返回目录⬆</a></div>
 
@@ -259,6 +264,7 @@
 &emsp;---
 
 + Python3中支持4种类型的数字：int(整数类型)、float(浮点类型)、bool(布尔类型)、complex(复数类型)
+
     ```python
     var_int = 123
     var_float = 1.23
