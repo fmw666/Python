@@ -39,28 +39,28 @@
 
 ## 第二部分
 ### [4. Python基本操作](#4)
-&emsp;&emsp;[4.1. Python注释](#4.1)
+&emsp;&emsp;[- Python注释](#4.1)
 
-&emsp;&emsp;[4.2. Python 的行与缩进](#4.2)
+&emsp;&emsp;[- Python 的行与缩进](#4.2)
 
-&emsp;&emsp;[4.3. 多行语句](#4.3)
+&emsp;&emsp;[- 多行语句](#4.3)
 
-&emsp;&emsp;[4.4. Python 输入与输出](#4.4)
+&emsp;&emsp;[- Python 输入与输出](#4.4)
 
-&emsp;&emsp;[4.5. Python 变量](#4.5)
+&emsp;&emsp;[- Python 变量](#4.5)
 
 ### [5. Python数据类型](#5)
-&emsp;&emsp;[5.1. number(数字)](#5.1)
+&emsp;&emsp;[- number (数字)](#5.1)
 
-&emsp;&emsp;[5.2. string(字符串)](#5.2)
+&emsp;&emsp;[- string (字符串)](#5.2)
 
-&emsp;&emsp;[5.3. list(列表)](#5.3)
+&emsp;&emsp;[- list (列表)](#5.3)
 
-&emsp;&emsp;[5.4. tuple(元组)](#5.4)
+&emsp;&emsp;[- tuple (元组)](#5.4)
 
-&emsp;&emsp;[5.5. sets(集合)](#5.5)
+&emsp;&emsp;[- sets (集合)](#5.5)
 
-&emsp;&emsp;[5.6. dictionary(字典)](#5.6)
+&emsp;&emsp;[- dictionary (字典)](#5.6)
 
 ## 第三部分
 ### [6. Python语句和函数](#6)

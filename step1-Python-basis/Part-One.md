@@ -1,16 +1,16 @@
 <div align="center">
-  <h2><a name="head"></a>📖</h2>
+	<h2><a name="head"></a>📖</h2>
 </div>  
 <div align="center">
-  <strong>⭐第一部分</strong> 
-  / 
-  <a href="">第二部分</a> 
-  / 
-  <a href="">第三部分</a> 
-  / 
-  <a href="#">第四部分</a> 
-  / 
-  <a href="#">第五部分</a>
+	<strong>⭐第一部分</strong> 
+  	/ 
+  	<a href="Part-Two.md#head">第二部分</a> 
+  	/ 
+  	<a href="Part-Three.md#head">第三部分</a> 
+  	/ 
+  	<a href="Part-Four.md#head">第四部分</a> 
+  	/ 
+  	<a href="Part-Five.md#head">第五部分</a>
 </div>
 
 <br>
@@ -39,7 +39,6 @@
 
 .<br>.<br>.
 
-<a name="1"></a>
 ## 1. 安装Python环境
 
 <div align="right"><a href="#章节目录">返回目录⬆</a></div>
