@@ -1,43 +1,66 @@
 <div align="center">
-    <img src="https://github.com/fmw666/Python/blob/master/pics/tit.png?raw=true">
+    <img src="pics/tit.png">
 </div>
 
 ---
 
-&ensp;&ensp;&ensp;&ensp; ***简介 :** 一个Python全系列的笔记。笔者以一个初学者的立场，用笔记、分享等形式来给大家总结一些东西。总之，Python为基础，让我们向全栈出发！（如果本文有任何问题，欢迎发起 Issues，如果本文帮助了你，欢迎 Star⭐）*
+&ensp;&ensp;&ensp;&ensp; ***简介 :** 一个 Python 全系列的笔记。笔者以一个初学者的立场，用笔记、分享等形式来给大家总结一些东西。总之，Python为基础，让我们向全栈出发！（如果本文有任何问题，欢迎发起 Issues，如果本文帮助了你，欢迎 Star⭐）*
 
 <div align="center">
-    <img src="https://github.com/fmw666/Python/blob/master/pics/cute1.jpg?raw=true">
+    <img src="https://github.com/fmw666/Python/blob/master/pics/cute1.jpg" width=400>
 </div>
 
 ---
 
 <div align="center">
-    💌这里有什么？我将从以下几个方面带你一步一步走向Python全栈：
+    💌 这里有什么？我将从以下几个方面带你一步一步走向 Python 全栈：
 </div>
 <br>
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;📖<a href="step0-Python-Script">Step0：Python 脚本</a>
+📖 **[Step0：Python 脚本](step0-Python-Script)**
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;📖<a href="step1-Python-basis">Step1：Python 基础</a>
+<details>
+    <summary>详情</summary>
+    <ul>
+        <li></li>
+    </ul>
+</details>
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;📖<a href="step2-Pygame">Step2：Pygame 游戏编程</a>
+📖 **[Step1：Python 基础](step1-Python-basis)**
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;📖<a href="step3-Algorithm">Step3：Python 数据结构与算法</a>
+<details>
+    <summary>详情</summary>
+    <ul>
+        <li></li>
+        <li>正则表达式（Regular Expression, RE）</li>
+    </ul>
+</details>
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;📖<a href="step4-Python-web">Step4：Python Web</a>
+📖 **[Step2：Pygame 游戏编程](step2-Pygame)**
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;📖<a href="step5-Crawl">Step5：爬虫</a>
+📖 **[Step3：PyQt5 GUI编程](step3-PyQt5-GUI)**
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;📖<a href="#no-jump">Step6：数据分析及可视化</a>
+📖 **[Step4：Python 数据结构与算法](step4-Algorithm)**
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;📖<a href="#no-jump">Step7：Python 机器学习</a>
+📖 **[Step5：Python Web](step5-Python-web)**
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;📖<a href="step8-PyQt5-GUI">Step8：PyQt5 GUI编程</a>
+<details>
+    <summary>详情</summary>
+    <ul>
+        <li>（前导知识点：前端 / 计算机网络）</li>
+        <li>正则表达式（Regular Expression, RE）</li>
+    </ul>
+</details>
+
+📖 **[Step6：Python 网络爬虫](step6-Crawl)**
+
+📖 **[Step7：数据分析及可视化](step7-Data-Analysis)**
+
+📖 **[Step8：Python 机器学习](step8-Machine-Learning)**
 
 ---
-<div align="center" style="width: 400px;height: 280px;">
-    <img src="https://github.com/fmw666/Python/blob/master/pics/emoj.gif?raw=true" style="width:400px;height:280px;">
+<div align="center">
+    <img src="https://github.com/fmw666/Python/blob/master/pics/emoj.gif?raw=true" width="400">
 </div>
 <br>
 <div align="center">
