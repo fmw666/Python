@@ -1,4 +1,4 @@
-<div align="left">
+<div align="center">
     <img src="pics/tit.png">
 </div>
 
@@ -12,9 +12,8 @@
 
 ---
 
-<div align="center">
-    💌 这里有什么？我将从以下几个方面带你一步一步走向 Python 全栈：
-</div>
+💌 这里有什么？我将从以下几个方面带你一步一步走向 Python 全栈：
+
 <br>
 
 📖 **[Step0：Python 脚本](step0-Python-Script)**
@@ -59,21 +58,17 @@
 📖 **[Step8：Python 机器学习](step8-Machine-Learning)**
 
 ---
-<div align="center">
-    <img src="https://github.com/fmw666/Python/blob/master/pics/emoj.gif?raw=true" width="400">
-</div>
-<br>
-<div align="center">
-    迫不及待了吗？赶快戳进我的Python目录主页
-</div>
-<div align="center">
-    👉<a href="https://fmw666.github.io/Python/">https://fmw666.github.io/Python/</a>
-</div>
 
+<div align="right">
+    <img src="https://github.com/fmw666/Python/blob/master/pics/emoj.gif?raw=true" width="50">
+    <br>
+    <p>迫不及待了吗？赶快戳进我的Python目录主页</p>
+    <p>👉<a href="https://fmw666.github.io/Python/">https://fmw666.github.io/Python/</a></p>
+</div>
 
 ---
 
-<br><br><br>
+<br><br>
 <div align="center">
     序
 </div>
