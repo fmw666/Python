@@ -27,3 +27,8 @@
 + **[图片转字符画](img2char)**
 
 + **[有道翻译接口](youdaoAPI)**
+
+<br>
+<div align="center">
+    <- 未完待续 ->
+</div>
