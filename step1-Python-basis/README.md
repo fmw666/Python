@@ -32,7 +32,7 @@
 <details>
     <summary><b>四、扩展</b></summary>
     <ol>
-        <li><p><b><a href="">正则表达式</a></b></p></li>
+        <b><li><p><a href="">正则表达式</a></p></li></b>
         <li><p><b><a href="">Python 操纵数据库</a></b></p></li>
     </ol>
 </details>
