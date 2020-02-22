@@ -31,6 +31,10 @@
 
 <details>
     <summary><b>四、扩展</b></summary>
+    <ol>
+        <li>正则表达式</li>
+        <li>Python 操纵数据库</li>
+    </ol>
 </details>
 
 ## 第一部分
