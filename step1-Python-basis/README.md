@@ -22,7 +22,7 @@
 </details>
 
 <details>
-    <summary><h2>二、语法及基本数据类型</h2></summary>
+    <h3><summary>二、语法及基本数据类型</summary></h3>
 </details>
 
 <details>
