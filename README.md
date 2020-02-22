@@ -1,4 +1,4 @@
-<div align="center">
+<div align="left">
     <img src="pics/tit.png">
 </div>
 
