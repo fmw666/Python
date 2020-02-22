@@ -17,6 +17,22 @@
 
 <br>
 
+<details>
+    <summary><h2>一、安装及运行</h2></summary>
+</details>
+
+<details>
+    <summary><h2>二、语法及基本数据类型</h2></summary>
+</details>
+
+<details>
+    <summary><h2>三、函数和类</h2></summary>
+</details>
+
+<details>
+    <summary><h2>四、扩展</h2></summary>
+</details>
+
 ## 第一部分
 #### [1. 安装Python环境](Part-One.md#1-安装python环境-1)
 &emsp;&emsp;[- Windows 操作系统下的安装](Part-One.md#-windows-操作系统下的安装)
