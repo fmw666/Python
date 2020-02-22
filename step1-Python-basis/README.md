@@ -22,15 +22,15 @@
 </details>
 
 <details>
-    <h3><summary>二、语法及基本数据类型</summary></h3>
+    <summary><b>二、语法及基本数据类型</b></summary>
 </details>
 
 <details>
-    <summary><h2>三、函数和类</h2></summary>
+    <summary><b>三、函数和类</b></summary>
 </details>
 
 <details>
-    <summary><h2>四、扩展</h2></summary>
+    <summary><b>四、扩展</b></summary>
 </details>
 
 ## 第一部分
