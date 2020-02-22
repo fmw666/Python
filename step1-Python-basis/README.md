@@ -18,7 +18,7 @@
 <br>
 
 <details>
-    <summary><h3>一、安装及运行</h3></summary>
+    <summary><b>一、安装及运行</b></summary>
 </details>
 
 <details>
