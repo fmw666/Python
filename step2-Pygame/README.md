@@ -366,6 +366,6 @@ while True:
 
 <br><br><br>
 <div align="right">
-    <a href="../step3-Algorithm">Python数据结构与算法➡</a>
+    <a href="../step3-PyQt5-GUI">PyQt5 GUI编程➡</a>
 </div>
 
