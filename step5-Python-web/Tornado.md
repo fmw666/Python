@@ -16,7 +16,7 @@
 
 1. **[异步——类视图方法](#-异步类视图方法)**
 
-1. **[异步——MySQL 操作](-异步mysql-操作)**
+1. **[异步——MySQL 操作](#-异步mysql-操作)**
 
 ---
 
@@ -66,68 +66,72 @@
 
 ### ⚙ 项目搭建
 
-```
-├── 项目文件夹
-│   ├── server.py       # 程序运行主入口
-│   ├── static          # 静态文件存放文件夹
-│   │   ├── css
-│   │   ├── js
-│   │   ├── ..
-│   ├── templates       # 模板页面存放文件夹
-│   │   ├── index.html
-│   │   ├── ..
-```
++ 项目结构
 
-```python
-# 导入模块
-import tornado.ioloop
-import tornado.web
+    ```
+    ├── 项目文件夹
+    │   ├── server.py       # 程序运行主入口
+    │   ├── static          # 静态文件存放文件夹
+    │   │   ├── css
+    │   │   ├── js
+    │   │   ├── ..
+    │   ├── templates       # 模板页面存放文件夹
+    │   │   ├── index.html
+    │   │   ├── ..
+    ```
 
-# 创建视图类
-class MainHandler(tornado.web.RequestHandler):
++ 基本框架
 
-    # 请求方式：get、post、put、delete
+    ```python
+    # 导入模块
+    import tornado.ioloop
+    import tornado.web
 
-    # 导入 html 方式1：读取文件
-    # def get(self):
-    #     # 打开文件返回
-    #     with open('./templates/index.html', 'rb') as f:
-    #         content = f.read()
-    #     self.write(content)
+    # 创建视图类
+    class MainHandler(tornado.web.RequestHandler):
 
-    # 导入 html 方式2：专门用来显示模板内容的方法
-    def get(self):
-        self.render('index.html')
+        # 请求方式：get、post、put、delete
 
-    def post(self):
-        self.write('post')
+        # 导入 html 方式1：读取文件
+        # def get(self):
+        #     # 打开文件返回
+        #     with open('./templates/index.html', 'rb') as f:
+        #         content = f.read()
+        #     self.write(content)
 
-    def put(self):
-        self.write('put')
+        # 导入 html 方式2：专门用来显示模板内容的方法
+        def get(self):
+            self.render('index.html')
 
-    def delete(self):
-        self.write('delete')
+        def post(self):
+            self.write('post')
 
-# 程序配置
-def make_app():
-    # 路由配置
-    return tornado.web.Application([
-        (r"/", MainHandler),
-    ],
-        static_path = './static',   # 静态文件夹路径
-        template_path = './templates'   # 模板路径
-    )
+        def put(self):
+            self.write('put')
+
+        def delete(self):
+            self.write('delete')
+
+    # 程序配置
+    def make_app():
+        # 路由配置
+        return tornado.web.Application([
+            (r"/", MainHandler),
+        ],
+            static_path = './static',   # 静态文件夹路径
+            template_path = './templates'   # 模板路径
+        )
 
 
-# 程序入口
-if __name__ == "__main__":
-    # 加载配置
-    app = make_app()
-    # 设置监听
-    app.listen(8888)
-    # 开启服务(ioloop 实际上是对 epoll 的封装)
-    tornado.ioloop.IOLoop.current().start()
-```
+    # 程序入口
+    if __name__ == "__main__":
+        # 加载配置
+        app = make_app()
+        # 设置监听
+        app.listen(8888)
+        # 开启服务(ioloop 实际上是对 epoll 的封装)
+        tornado.ioloop.IOLoop.current().start()
+    ```
 
 ### 📝 模板语言
 
@@ -235,7 +239,7 @@ if __name__ == "__main__":
 
 > 前端传值基于 jQuery ajax
 
-+ 增
++ **增**
 
     *前端模板 html 展示*：
 
@@ -316,7 +320,7 @@ if __name__ == "__main__":
         self.write('data': '添加成功')
     ```
 
-+ 删
++ **删**
 
     *前端模板 html 展示*：
 
@@ -352,9 +356,9 @@ if __name__ == "__main__":
     
     ```
 
-+ 改
++ **改**
 
-+ 查
++ **查**
 
 ```html
 {% for book in show_list %}
