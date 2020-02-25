@@ -244,7 +244,27 @@
     *前端模板 html 展示*：
 
     ```html
-
+    <table>
+        <tr>
+            <th>图书编号</th>
+            <th>图书名字</th>
+            <th>图书作者</th>
+            <th>书中人物</th>
+            <th>出版时间</th>
+            <th>阅读数</th>
+            <th>评论数</th>
+        </tr>
+        <tr class="addlist">
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input class="add" type="text" value="增加"></td>
+        </tr>
+    </table>
     ```
 
     *前端通过 ajax 向后端传值：*
@@ -325,7 +345,14 @@
     *前端模板 html 展示*：
 
     ```html
-
+    {% for book in show_list %}
+    <tr>
+        <td><input type="text" value="{{ book[0] }}"></td>
+        <td><input type="text" value="{{ book[1] }}"></td>
+        ...
+        <td class="del"><input type="button" value="删除"></td>
+    </tr>
+    {% end %}
     ```
 
     *前端通过 ajax 向后端传值：*
@@ -353,28 +380,143 @@
     *后端数据处理：*
 
     ```python
-    
+    import json
+    from pymysql import connect
+
+    ...
+
+    def delete(self):
+
+        # 1. 得到前端的数据 并 解码
+        decode_body = self.request.body.decode('utf-8')
+
+        # 2. 转成字典
+        params_dict = json.loads(decode_body)
+
+        # 3. 连接数据库
+        conn = connect(host='localhost', port=3306, database='book_manager', user='root', password='xxx', charset='utf8')
+        cs1 = conn.cursor()
+
+        # 4. 执行 sql 更新语句
+        cs1.execute("delete from books where id = %(id)s", params_dict)
+        # 提交
+        cs1.commit()
+        # 关闭连接
+        cs1.close()
+        conn.close()
+
+        # 5. 返回对应的数据
+        self.write({"data": "删除成功"})
     ```
 
 + **改**
 
+    *前端模板 html 展示*：
+
+    ```html
+    {% for book in show_list %}
+    <tr>
+        <td><input type="text" value="{{ book[0] }}"></td>
+        <td><input type="text" value="{{ book[1] }}"></td>
+        ...
+        <td class="update"><input type="button" value="修改"></td>
+    </tr>
+    {% end %}
+    ```
+
+    *前端通过 ajax 向后端传值：*
+
+    ```javascript
+
+    ```
+
+    *后端数据处理：*
+
+    ```python
+    import json
+    from pymysql import connect
+
+    ...
+
+    # put、delete 数据都是在 body 中获取
+    def put(self):
+
+        # 1. 得到前端传过来的 body 数据 并 解码
+        decode_body = self.request.body.decode('utf-8')
+
+        # 2. 把字符串转成字典
+        params_dict = json.loads(decode_body)
+
+        # 3. 连接数据库
+        conn = connect(host='localhost', port=3306, database='book_manager', user='root', password='xxx', charset='utf8')
+        cs1 = conn.cursor()
+
+        # 4. 执行 sql 更新语句
+        cs1.execute("update books set btitle=%(btitle)s, bauthor=%(bauthor)s, bperson=%(person)s, bpub_date=%(bpub_date)s, bread=%(bread)s, bcomment=%(bcomment)s where id = %(id)s", params_dict)
+        # 提交
+        cs1.commit()
+        # 关闭连接
+        cs1.close()
+        conn.close()
+
+        # 5. 返回对应的数据
+        self.write({"data": "更新成功"})
+    ```
+
 + **查**
 
-```html
-{% for book in show_list %}
-<tr>
-    <td><input class="idInput" type="text" value="{{ book[0] }}"></td>
-    <td><input type="text" value="{{ book[1] }}"></td>
-    <td><input type="text" value="{{ book[2] }}"></td>
-    <td><input type="text" value="{{ book[3] }}"></td>
-    <td><input type="text" value="{{ book[4] }}"></td>
-    <td><input type="text" value="{{ book[5] }}"></td>
-    <td><input type="text" value="{{ book[6] }}"></td>
-    <td class="del"><input type="button" value="删除"></td>
-    <td class="update"><input type="button" value="修改"></td>
-</tr>
-{% end %}
-```
+    *前端模板 html 展示*：
+
+    ```html
+    <table>
+        <tr>
+            <th>图书编号</th>
+            <th>图书名字</th>
+            <th>图书作者</th>
+            <th>书中人物</th>
+            <th>出版时间</th>
+            <th>阅读数</th>
+            <th>评论数</th>
+        </tr>
+        {% for book in show_list %}
+        <tr>
+            <td><input type="text" value="{{ book[0] }}"></td>
+            <td><input type="text" value="{{ book[1] }}"></td>
+            <td><input type="text" value="{{ book[2] }}"></td>
+            <td><input type="text" value="{{ book[3] }}"></td>
+            <td><input type="text" value="{{ book[4] }}"></td>
+            <td><input type="text" value="{{ book[5] }}"></td>
+            <td><input type="text" value="{{ book[6] }}"></td>
+        </tr>
+        {% end %}
+    </table>
+    ```
+
+    *后端数据处理：*
+
+    ```python
+    def get(self):
+
+        # 1. 连接数据库
+        conn = connect(host='localhost', port=3306, database='book_manager', user='root', password='xxx', charset='utf8')
+
+        # 获得 Cursor 对象
+        cs1 = conn.cursor()
+
+        # 2. 执行查询的 sql 语句
+        cs1.execute("select * from books;")
+        # 得到返回的数据
+        data = cs1.fetchall()
+
+        # 3. 关闭数据库连接
+        cs1.close()
+        conn.close()
+
+        # 传入模板页面
+        self.render('index.html', show_list=data)
+    ```
+
+
 
 ### 💡 异步——类视图方法
 
