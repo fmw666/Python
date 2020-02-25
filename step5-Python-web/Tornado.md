@@ -241,7 +241,7 @@
 
 + **增**
 
-    *前端模板 html 展示*：
+    *`html`：前端模板展示*
 
     ```html
     <table>
@@ -267,7 +267,7 @@
     </table>
     ```
 
-    *前端通过 ajax 向后端传值：*
+    *`js`：前端通过 ajax 向后端传值：*
 
     ```javascript
     $(function() {
