@@ -1,6 +1,6 @@
 ## Tornado 教程
 
-&emsp;&emsp;简介：
+&emsp;&emsp;简介：我们会使用 tornado 搭建一个最基本的项目，然后用 MySQL 数据库去连接，并实现增删改查方法。最后我们会使用 tornado 的特性——异步，以及 MySQL 异步操作，来重新实现增删改查功能。
 
 > 官方文档：[https://tornado-zh.readthedocs.io/zh/latest/index.html](https://tornado-zh.readthedocs.io/zh/latest/index.html)
 
@@ -11,6 +11,12 @@
 1. **[模板语言](#-模板语言)**
 
 1. **[连接数据库](#-连接数据库)**
+
+1. **[实现增删改查](#-实现增删改查)**
+
+1. **[异步——类视图方法](#-异步类视图方法)**
+
+1. **[异步——MySQL 操作](-异步mysql-操作)**
 
 ---
 
@@ -199,7 +205,7 @@ if __name__ == "__main__":
 + 读取数据库数据
 
     ```python
-    import pymysql
+    from pymysql import connect
 
     ...
 
@@ -224,3 +230,148 @@ if __name__ == "__main__":
         # 传入模板页面
         self.render('index.html', show_list=data)
     ```
+
+### 🔍 实现增删改查
+
+> 前端传值基于 jQuery ajax
+
++ 增
+
+    *前端模板 html 展示*：
+
+    ```html
+
+    ```
+
+    *前端通过 ajax 向后端传值：*
+
+    ```javascript
+    $(function() {
+        $('.add').on('click', function() {
+            var addTds = $('.addlist input')
+            dict_data = {}
+            for (var i=0; i<(addTds.length-1); i++) {
+                if (i == 0) {
+                    dict_data.btitle = addTds.eq(i).val()
+                } else if (i == 1) {
+                    dict_data.bauthor = addTds.eq(i).val()
+                } else if (i == 2) {
+                    dict_data.bperson = addTds.eq(i).val()
+                } else if (i == 3) {
+                    dict_data.bpub_date = addTds.eq(i).val()
+                } else if (i == 4) {
+                    dict_data.bread = addTds.eq(i).val()
+                } else if (i == 5) {
+                    dict_data.bcomment = addTds.eq(i).val()
+                }
+            }
+            if (dict_data.name == "" | dict_data.author == "" | dict_data.hero == "" | dict_data.time == "" | dict_data.read == "" | dict_data.comment == "") {
+                alert('输入内容不能为空！')
+                return
+            }
+            $.post({
+                url: '/',
+                dataType: 'json',
+                data: dict_data,
+                success: function(dat) {
+                    alert(dat.data)
+                    window.location.reload()
+                    // 清空所有输入框
+                    for (var i=0; i<(addTds.length-1); i++) {
+                        console.log(i)
+                        addTds.eq(i).val("")
+                    }
+                }
+            })
+        })
+    })
+    ```
+
+    *后端数据处理：*
+
+    ```python
+    def post(self):
+        # 得到前端的数据，再插入到数据库
+
+        # 1. 创建一个列表用以接收前端数据
+        params_list = list()
+        params_list.append(self.get_argument('btitle'))
+        params_list.append(self.get_argument('bauthor'))
+        params_list.append(self.get_argument('bperson'))
+        params_list.append(self.get_argument('bpub_date'))
+        params_list.append(self.get_argument('bread'))
+        params_list.append(self.get_argument('bcomment'))
+
+        # 2. 连接数据库，进行插入
+        conn = connect(host='localhost', port=3306, database='book_manager', user='root', password='xxx', charset='utf8')
+        cs1 = conn.cursor()
+        cs1.execute("insert into books(btitle, bauthor, bperson, bpub_date, bread, bcomment) values (%s, %s, %s, %s, %s, %s)", params_list)
+        # 提交数据
+        conn.commit()
+        # 关闭连接
+        cs1.close()
+        conn.close()
+
+        # 3. 返回一个 json 格式的数据，或直接返回一个字典
+        self.write('data': '添加成功')
+    ```
+
++ 删
+
+    *前端模板 html 展示*：
+
+    ```html
+
+    ```
+
+    *前端通过 ajax 向后端传值：*
+
+    ```javascript
+    $(function() {
+        $('.del').on('click', function() {
+            result = $(this).siblings().eq(0).children('input').val()
+            $.ajax({
+                url: '/',
+                dataType: 'json',
+                type: 'delete',
+                data: JSON.stringify({id: result}),
+                success: function(dat) {
+                    alert(dat.data)
+                    $(this).parent().remove()
+                    console.log($(this))
+                    window.location.reload()
+                }
+            })
+        })
+    })
+    ```
+
+    *后端数据处理：*
+
+    ```python
+    
+    ```
+
++ 改
+
++ 查
+
+```html
+{% for book in show_list %}
+<tr>
+    <td><input class="idInput" type="text" value="{{ book[0] }}"></td>
+    <td><input type="text" value="{{ book[1] }}"></td>
+    <td><input type="text" value="{{ book[2] }}"></td>
+    <td><input type="text" value="{{ book[3] }}"></td>
+    <td><input type="text" value="{{ book[4] }}"></td>
+    <td><input type="text" value="{{ book[5] }}"></td>
+    <td><input type="text" value="{{ book[6] }}"></td>
+    <td class="del"><input type="button" value="删除"></td>
+    <td class="update"><input type="button" value="修改"></td>
+</tr>
+{% end %}
+```
+
+### 💡 异步——类视图方法
+
+### ⚡ 异步——MySQL 操作
