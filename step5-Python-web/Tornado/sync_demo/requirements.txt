@@ -1,0 +1,2 @@
+PyMySQL==0.9.3
+tornado==6.0.3
