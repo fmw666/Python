@@ -267,7 +267,7 @@
     </table>
     ```
 
-    ***`js`：** 前端通过 ajax 向后端传值：*
+    ***`js`：** 前端通过 ajax 向后端传值*
 
     ```javascript
     $(function() {
@@ -311,7 +311,7 @@
     })
     ```
 
-    *后端数据处理：*
+    ***`python`：** 后端数据处理*
 
     ```python
     def post(self):
@@ -342,7 +342,7 @@
 
 + **删**
 
-    *前端模板 html 展示*：
+    ***`html`：** 前端模板展示*
 
     ```html
     {% for book in show_list %}
@@ -355,7 +355,7 @@
     {% end %}
     ```
 
-    *前端通过 ajax 向后端传值：*
+    ***`js`：** 前端通过 ajax 向后端传值*
 
     ```javascript
     $(function() {
@@ -377,7 +377,7 @@
     })
     ```
 
-    *后端数据处理：*
+    ***`python`：** 后端数据处理*
 
     ```python
     import json
@@ -411,7 +411,7 @@
 
 + **改**
 
-    *前端模板 html 展示*：
+    ***`html`：** 前端模板展示*
 
     ```html
     {% for book in show_list %}
@@ -424,13 +424,13 @@
     {% end %}
     ```
 
-    *前端通过 ajax 向后端传值：*
+    ***`js`：** 前端通过 ajax 向后端传值*
 
     ```javascript
 
     ```
 
-    *后端数据处理：*
+    ***`python`：** 后端数据处理*
 
     ```python
     import json
@@ -465,7 +465,7 @@
 
 + **查**
 
-    *前端模板 html 展示*：
+    ***`html`：** 前端模板展示*
 
     ```html
     <table>
@@ -492,7 +492,7 @@
     </table>
     ```
 
-    *后端数据处理：*
+    ***`python`：** 后端数据处理*
 
     ```python
     def get(self):
