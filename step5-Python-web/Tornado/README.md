@@ -538,8 +538,86 @@
         self.render('index.html', show_list=data)
     ```
 
-> 项目已开源在 Github，[点击访问]()
+> 项目已开源在 Github，[点击访问](sync_demo)
 
 ### 💡 异步——类视图方法
 
++ 创建一个异步方法：
+
+    ```python
+    import asyncio
+
+    ...
+
+    async def get(self):
+        print('get')
+        await asyncio.sleep(3)
+        self.write("返回内容")
+    ```
+
++ `async`/`await` 为 Python 3.5+ 新语法，`await` 相当于替换了 `yield from`
+
 ### ⚡ 异步——MySQL 操作
+
++ MySQL 异步数据库操作推荐库：`aiomysql`
+
+    ```python
+    pip install aiomysql
+    ```
+
++ Low-level API（底层 API）调用，官方示例：
+
+    ```python
+    import asyncio
+    import aiomysql
+
+    async def test_example(loop):
+        conn = await aiomysql.connect(host='127.0.0.1', port=3306, user='root', password='', db='mysql', loop=loop)
+
+        async with conn.cursor() as cur:
+            await cur.execute("SELECT Host, User FROM user")
+            print(cur.description)
+            r = await cur.fetchall()
+            print(r)
+        conn.close()
+
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(text_example(loop))
+    ```
+
++ 针对本文中 tornado 示例项目修改（部分）：
+
+    ```python
+    import aiomysql
+    
+    ...
+
+    async def get(self):
+
+        # 1. 连接数据库
+        conn = await aiomysql.connect(host='localhost', port=3306, db='book_manager', user='root', password='fmw19990718', charset='utf8')
+
+        # 使用 aiomysql 异步上下文管理器。类似于 with open，可以不使用 cur.close 对游标关闭
+        async with conn.cursor() as cur:
+            await cur.execute("select * from books;")
+            data = await cur.fetchall()
+
+        '''
+        # 获得 Cursor 对象
+        cs1 = await conn.cursor()
+
+        # 2. 执行查询的 sql 语句
+        await cs1.execute("select * from books;")
+        # 得到返回的数据
+        data = await cs1.fetchall()
+
+        # 3. 关闭数据库连接
+        await cs1.close()
+        '''
+        conn.close()
+
+        # 传入模板页面
+        self.render('index.html', show_list=data)
+    ```
+
+    > 完整版请直接参考项目源文件，[async_demo](async_demo)

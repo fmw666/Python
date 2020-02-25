@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+</head>
+<body>
+    <h2>图书操作（删、查、改）</h2>
+
+    <table>
+        <tr>
+            <th>图书编号</th>
+            <th>图书名字</th>
+            <th>图书作者</th>
+            <th>书中人物</th>
+            <th>出版时间</th>
+            <th>阅读数</th>
+            <th>评论数</th>
+        </tr>
+        {% for book in show_list %}
+        <tr>
+            <td><input type="text" value="{{ book[0] }}"></td>
+            <td><input type="text" value="{{ book[1] }}"></td>
+            <td><input type="text" value="{{ book[2] }}"></td>
+            <td><input type="text" value="{{ book[3] }}"></td>
+            <td><input type="text" value="{{ book[4] }}"></td>
+            <td><input type="text" value="{{ book[5] }}"></td>
+            <td><input type="text" value="{{ book[6] }}"></td>
+            <td class="update"><input type="button" value="修改"></td>
+            <td class="del"><input type="button" value="删除"></td>
+        </tr>
+        {% end %}
+    </table>
+
+    <hr>
+
+    <h2>新增图书</h2>
+
+    <table>
+        <tr>
+            <th>图书名字</th>
+            <th>图书作者</th>
+            <th>书中人物</th>
+            <th>出版时间</th>
+            <th>阅读数</th>
+            <th>评论数</th>
+        </tr>
+        <tr class="addlist">
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input class="add" type="button" value="增加"></td>
+        </tr>
+    </table>
+
+    <script src="/static/jquery-3.3.1.min.js"></script>
+    <script src="/static/book.js"></script>
+</body>
+</html>
