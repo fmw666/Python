@@ -184,7 +184,7 @@
     use book_manager;
 
     -- 创建表
-    create table books(id in unsigned primary key auto_increment, btitle varchar(30) not null, bauthor varchar(30) not null, bperson varchar(30), bpub_date date not null, bread int unsigned, bcomment int unsigned);
+    create table books(id int unsigned primary key auto_increment, btitle varchar(30) not null, bauthor varchar(30) not null, bperson varchar(30), bpub_date date not null, bread int unsigned, bcomment int unsigned);
 
     -- 查看表结构
     desc books;
@@ -237,40 +237,73 @@
 
 ### 🔍 实现增删改查
 
-> 前端传值基于 jQuery ajax
+> 前端传值基于 jQuery ajax，所以依赖于 jQuery.js 插件
+
+***`html`：** 前端模板展示*
+
+```html
+<h2>图书操作（删、查、改）</h2>
+
+<table>
+    <tr>
+        <th>图书编号</th>
+        <th>图书名字</th>
+        <th>图书作者</th>
+        <th>书中人物</th>
+        <th>出版时间</th>
+        <th>阅读数</th>
+        <th>评论数</th>
+    </tr>
+    {% for book in show_list %}
+    <tr>
+        <td><input type="text" value="{{ book[0] }}"></td>
+        <td><input type="text" value="{{ book[1] }}"></td>
+        <td><input type="text" value="{{ book[2] }}"></td>
+        <td><input type="text" value="{{ book[3] }}"></td>
+        <td><input type="text" value="{{ book[4] }}"></td>
+        <td><input type="text" value="{{ book[5] }}"></td>
+        <td><input type="text" value="{{ book[6] }}"></td>
+        <td class="update"><input type="button" value="修改"></td>
+        <td class="del"><input type="button" value="删除"></td>
+    </tr>
+    {% end %}
+</table>
+
+<hr>
+
+<h2>新增图书</h2>
+
+<table>
+    <tr>
+        <th>图书名字</th>
+        <th>图书作者</th>
+        <th>书中人物</th>
+        <th>出版时间</th>
+        <th>阅读数</th>
+        <th>评论数</th>
+    </tr>
+    <tr class="addlist">
+        <td><input type="text" value=""></td>
+        <td><input type="text" value=""></td>
+        <td><input type="text" value=""></td>
+        <td><input type="text" value=""></td>
+        <td><input type="text" value=""></td>
+        <td><input type="text" value=""></td>
+        <td><input class="add" type="button" value="增加"></td>
+    </tr>
+</table>
+
+<script src="/static/jquery-3.3.1.min.js"></script>
+<script src="/static/book.js"></script>
+```
 
 + **增**
 
-    ***`html`：** 前端模板展示*
-
-    ```html
-    <table>
-        <tr>
-            <th>图书编号</th>
-            <th>图书名字</th>
-            <th>图书作者</th>
-            <th>书中人物</th>
-            <th>出版时间</th>
-            <th>阅读数</th>
-            <th>评论数</th>
-        </tr>
-        <tr class="addlist">
-            <td><input type="text" value=""></td>
-            <td><input type="text" value=""></td>
-            <td><input type="text" value=""></td>
-            <td><input type="text" value=""></td>
-            <td><input type="text" value=""></td>
-            <td><input type="text" value=""></td>
-            <td><input type="text" value=""></td>
-            <td><input class="add" type="text" value="增加"></td>
-        </tr>
-    </table>
-    ```
-
-    ***`js`：** 前端通过 ajax 向后端传值*
+    ***`book.js`：** 前端通过 ajax 向后端传值*
 
     ```javascript
     $(function() {
+        // 增添
         $('.add').on('click', function() {
             var addTds = $('.addlist input')
             dict_data = {}
@@ -289,7 +322,7 @@
                     dict_data.bcomment = addTds.eq(i).val()
                 }
             }
-            if (dict_data.name == "" | dict_data.author == "" | dict_data.hero == "" | dict_data.time == "" | dict_data.read == "" | dict_data.comment == "") {
+            if (dict_data.btitle == "" | dict_data.bauthor == "" | dict_data.bperson == "" | dict_data.bpub_date == "" | dict_data.bread == "" | dict_data.bcomment == "") {
                 alert('输入内容不能为空！')
                 return
             }
@@ -337,28 +370,16 @@
         conn.close()
 
         # 3. 返回一个 json 格式的数据，或直接返回一个字典
-        self.write('data': '添加成功')
+        self.write({'data': '添加成功'})
     ```
 
 + **删**
 
-    ***`html`：** 前端模板展示*
-
-    ```html
-    {% for book in show_list %}
-    <tr>
-        <td><input type="text" value="{{ book[0] }}"></td>
-        <td><input type="text" value="{{ book[1] }}"></td>
-        ...
-        <td class="del"><input type="button" value="删除"></td>
-    </tr>
-    {% end %}
-    ```
-
-    ***`js`：** 前端通过 ajax 向后端传值*
+    ***`book.js`：** 前端通过 ajax 向后端传值*
 
     ```javascript
     $(function() {
+        // 删除
         $('.del').on('click', function() {
             result = $(this).siblings().eq(0).children('input').val()
             $.ajax({
@@ -400,7 +421,7 @@
         # 4. 执行 sql 更新语句
         cs1.execute("delete from books where id = %(id)s", params_dict)
         # 提交
-        cs1.commit()
+        conn.commit()
         # 关闭连接
         cs1.close()
         conn.close()
@@ -411,23 +432,47 @@
 
 + **改**
 
-    ***`html`：** 前端模板展示*
-
-    ```html
-    {% for book in show_list %}
-    <tr>
-        <td><input type="text" value="{{ book[0] }}"></td>
-        <td><input type="text" value="{{ book[1] }}"></td>
-        ...
-        <td class="update"><input type="button" value="修改"></td>
-    </tr>
-    {% end %}
-    ```
-
-    ***`js`：** 前端通过 ajax 向后端传值*
+    ***`book.js`：** 前端通过 ajax 向后端传值*
 
     ```javascript
-
+    $(function() {
+        // 更新
+        $('.update').on('click', function() {
+            var upTds = $(this).siblings()
+            dict_data = {}
+            for (var i=0; i<(upTds.length-1); i++) {
+                if (i == 0) {
+                    dict_data.bid = upTds.eq(i).children('input').val()
+                } else if (i == 1) {
+                    dict_data.btitle = upTds.eq(i).children('input').val()
+                } else if (i == 2) {
+                    dict_data.bauthor = upTds.eq(i).children('input').val()
+                } else if (i == 3) {
+                    dict_data.bperson = upTds.eq(i).children('input').val()
+                } else if (i == 4) {
+                    dict_data.bpub_date = upTds.eq(i).children('input').val()
+                } else if (i == 5) {
+                    dict_data.bread = upTds.eq(i).children('input').val()
+                } else if (i == 6) {
+                    dict_data.bcomment = upTds.eq(i).children('input').val()
+                }
+            }
+            if (dict_data.bid == "" | dict_data.btitle == "" | dict_data.bauthor == "" | dict_data.bperson == "" | dict_data.bpub_date == "" | dict_data.bread == "" | dict_data.bcomment == "") {
+                alert('输入内容不能为空！')
+                return
+            }
+            $.ajax({
+                url: '/',
+                dataType: 'json',
+                type: 'put',
+                data: dict_data,
+                success: function(dat) {
+                    alert(dat.data)
+                    window.location.reload()
+                }
+            })
+        })
+    })
     ```
 
     ***`python`：** 后端数据处理*
@@ -441,20 +486,24 @@
     # put、delete 数据都是在 body 中获取
     def put(self):
 
-        # 1. 得到前端传过来的 body 数据 并 解码
-        decode_body = self.request.body.decode('utf-8')
+        # 1. 得到前端传过来的 body 数据
+        params_list = list()
+        params_list.append(self.get_argument('btitle'))
+        params_list.append(self.get_argument('bauthor'))
+        params_list.append(self.get_argument('bperson'))
+        params_list.append(self.get_argument('bpub_date'))
+        params_list.append(self.get_argument('bread'))
+        params_list.append(self.get_argument('bcomment'))
+        params_list.append(self.get_argument('bid'))
 
-        # 2. 把字符串转成字典
-        params_dict = json.loads(decode_body)
-
-        # 3. 连接数据库
+        # 2. 连接数据库
         conn = connect(host='localhost', port=3306, database='book_manager', user='root', password='xxx', charset='utf8')
         cs1 = conn.cursor()
 
-        # 4. 执行 sql 更新语句
-        cs1.execute("update books set btitle=%(btitle)s, bauthor=%(bauthor)s, bperson=%(person)s, bpub_date=%(bpub_date)s, bread=%(bread)s, bcomment=%(bcomment)s where id = %(id)s", params_dict)
+        # 3. 执行 sql 更新语句
+        cs1.execute("update books set btitle=%s, bauthor=%s, bperson=%s, bpub_date=%s, bread=%s, bcomment=%s where id = %s", params_list)
         # 提交
-        cs1.commit()
+        conn.commit()
         # 关闭连接
         cs1.close()
         conn.close()
@@ -464,33 +513,6 @@
     ```
 
 + **查**
-
-    ***`html`：** 前端模板展示*
-
-    ```html
-    <table>
-        <tr>
-            <th>图书编号</th>
-            <th>图书名字</th>
-            <th>图书作者</th>
-            <th>书中人物</th>
-            <th>出版时间</th>
-            <th>阅读数</th>
-            <th>评论数</th>
-        </tr>
-        {% for book in show_list %}
-        <tr>
-            <td><input type="text" value="{{ book[0] }}"></td>
-            <td><input type="text" value="{{ book[1] }}"></td>
-            <td><input type="text" value="{{ book[2] }}"></td>
-            <td><input type="text" value="{{ book[3] }}"></td>
-            <td><input type="text" value="{{ book[4] }}"></td>
-            <td><input type="text" value="{{ book[5] }}"></td>
-            <td><input type="text" value="{{ book[6] }}"></td>
-        </tr>
-        {% end %}
-    </table>
-    ```
 
     ***`python`：** 后端数据处理*
 
@@ -516,7 +538,7 @@
         self.render('index.html', show_list=data)
     ```
 
-
+> 项目已开源在 Github，[点击访问]()
 
 ### 💡 异步——类视图方法
 
