@@ -58,7 +58,7 @@
         app.run()
     ```
 
-    > 代码用 Python 解释器来运行。注意：确保你的应用文件名不是 flask.py ，因为这将与 Flask 本身冲突。
+    > 代码用 Python 解释器来运行。注意：确保你的应用文件名不是 flask.py ，因为这将与 Flask 本身冲突。本示例此脚本名均为 **app.py**
 
 ### 🛢 连接数据库
 
@@ -68,6 +68,13 @@
 
     ```python
     pip install Flask-SQLAlchemy
+    ```
+
++ 预先创建 MySQL 数据库
+
+    ```sql
+    -- 创建数据库
+    create database net_news charset=utf8mb4;
     ```
 
 + 在 flask 项目中配置数据库
@@ -94,6 +101,37 @@
 
         def __repr__(self):
             return '<News %r>' % self.title
+    ```
+
++ 生成数据库表命令：
+
+    ```python
+    from app import db
+
+    db.create_all()
+    ```
+
++ 插入数据库表命令：
+
+    ```python
+    from app import News
+
+    new_obj = News(
+        title = '标题',
+        content = '内容',
+        types = '分类',
+    )
+
+    db.session.add(new_obj)
+    db.session.commit()
+    ```
+
++ 查询数据库表命令：
+
+    ```python
+    from app import News
+
+    news = News.query.all()
     ```
 
 ### ⚙ 项目搭建
