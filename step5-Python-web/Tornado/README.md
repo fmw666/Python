@@ -176,7 +176,7 @@
 
 + 预先创建 MySQL 数据库以及相应表
 
-    ```
+    ```sql
     -- 创建数据库
     create database book_manager charset=utf8;
 
