@@ -5,11 +5,8 @@
 &emsp;&emsp;flask 自 2010 年发布第一个版本以来，大受欢迎，深得开发者的喜爱，并且在多个公司已经得到了应用，flask 能如此流行的原因，可以分为以下几点：
 
 + 微框架、简洁，只做他需要做的，给开发提供了很大的扩展性。
-
 + flask 和相关的依赖（Jinja2、Werkzeug）设计得非常优秀，用起来很爽。
-
 + 开发效率非常高，比如使用 SQLAlchemy 的 ORM 操作数据库可以节省开发者大量书写 sql 的时间。
-
 + 社会活跃度非常高，保证了一个良好的生态。
 
 > 中文文档：[http://docs.jinkan.org/docs/flask/](http://docs.jinkan.org/docs/flask/)
@@ -168,8 +165,23 @@
 
 + 我们整篇教程将以一个 **新闻前台展示** 和 **后台数据管理** 项目为例
 
-    ```
-    
+    ```bash
+    ├── 项目文件夹
+    │   ├── app.py              # 程序运行主入口
+    │   ├── static              # 静态文件存放文件夹
+    │   │   ├── css
+    │   │   ├── js
+    │   │   ├── ..
+    │   ├── templates           # 模板页面存放文件夹
+    │   │   ├── admin
+    │   │   │   ├── add.html
+    │   │   │   ├── admin_base.html
+    │   │   │   ├── index.html
+    │   │   │   ├── update.html
+    │   │   ├── base.html
+    │   │   ├── cat.html
+    │   │   ├── detail.html
+    │   │   ├── index.html
     ```
 
 
