@@ -264,6 +264,41 @@
 
 ### ✂ 分页实现
 
++ 后台：
+
+    ```python
+    @app.route('/admin/<int:page>/')
+    def admin(page=None):
+        # 新闻后台管理首页
+        if page is None:
+            page = 1
+        news_list = News.query.paginate(page=page, per_page=5)
+        return render_template('admin/index.html', news_list=news_list)
+    ```
+
++ 前端（引入了 bootstrap）：
+
+    ```html
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li>
+                {% if news_list.has_prev %}
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+                {% endif %}
+            </li>
+            {% for page in news_list.iter_pages() %}
+            <li><a href="{{ url_for('admin', page=page) }}">{{ page }}</a></li>
+            {% endfor %}
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    ```
 
 ### 🔍 实现增删改查
 
