@@ -140,7 +140,10 @@
     ```python
     from app import News
 
-    news = News.query.all()
+    news_all = News.query.all()
+    news_list1 = News.query.filter_by(is_valid=1)
+    news_list2 = News.query.filter(News.types=='推荐')
+    news_obj = News.query.get(pk=1)
     ```
 
 ### ⚙ 项目搭建
@@ -184,5 +187,84 @@
     │   │   ├── index.html
     ```
 
+### 📝 模板语言
+
++ 变量
+
+    ***`app.py`：** 后台传值*
+
+    ```python
+    @app.route('/cat/')
+    @app.route('/cat/<name>/')
+    def cat(name=None):
+        # 新闻类别，查询类别为 name 的新闻数据
+        news_list = News.query.filter(News.types==name)
+        return render_template('cat.html', name=name, news_list=news_list)
+    ```
+
+    ***`cat.html`：** 模板变量*
+
+    ```html
+    <h3>新闻类别：{{ name }}</h3>
+
+    {% for news in news_list %}
+    <div>
+        <div>
+            <img src="{{ news.image }}" alt="图片">
+        </div>
+        <div class="right-content">
+            <h3><a href="{{ url_for('detail', pk=news.id) }}">{{ news.title }}</a></h3>
+            <small>{{ news.created_at }}</small>
+        </div>
+    </div>
+    {% endfor %}
+    ```
+
+    *引用静态文件* 和 *url 跳转*
+
+    ```html
+    {# 引用静态文件 #}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css', _external=True) }}">
+
+
+    {# url 跳转 #}
+
+    <a href="{{ url_for('index', param='参数值') }}">点击跳转</a>
+    ```
+
++ 标签
+
+    ```html
+    {# for 循环 #}
+
+    {% for item in items %}
+        {{ item.attr }}
+    {% endfor %}
+
+
+    {# if 条件判断 #}
+
+    {% if item == "1" %}
+        <span>yes</span>
+    {% else %}
+        <span>no</span>
+    {% endif %}
+
+
+    {# 继承 #}
+    {% extends 'base.html' %}
+
+
+    {# 插槽 #}
+
+    {% block content %}
+    {% endblock %}
+    ```
+
+### ✂ 分页实现
+
+
+### 🔍 实现增删改查
 
 **[⤴ get to top](#flask-教程)**
