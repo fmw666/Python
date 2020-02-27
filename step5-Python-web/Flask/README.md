@@ -20,7 +20,12 @@
 
 1. **[项目搭建](#-项目搭建)**
 
-1. **[使用 ORM 数据库](#-使用-orm-数据库)**
+1. **[模板语言](#-模板语言)**
+
+1. **[分页实现](#-分页实现)**
+
+1. **[实现增删改查](#-实现增删改查)**
+
 ---
 
 ### 🔨 安装 flask
@@ -70,6 +75,12 @@
     pip install Flask-SQLAlchemy
     ```
 
++ 下载 Python 第三方 MySQL 模块 `mysqlclient`：
+
+    ```python
+    pip install mysqlclient
+    ```
+
 + 预先创建 MySQL 数据库
 
     ```sql
@@ -115,11 +126,12 @@
 
     ```python
     from app import News
+    from app import db
 
     new_obj = News(
         title = '标题',
         content = '内容',
-        types = '分类',
+        types = '推荐',
     )
 
     db.session.add(new_obj)
@@ -138,7 +150,7 @@
 
 + 项目结构（`*` 代表可选）
 
-    ```
+    ```bash
     ├── 项目文件夹
     │   ├── app.py          # 程序运行主入口
     │   ├── *models.py      # ORM 数据库生成
@@ -154,9 +166,9 @@
     │   │   ├── ..
     ```
 
-+ 基本框架
++ 我们整篇教程将以一个 **新闻前台展示** 和 **后台数据管理** 项目为例
 
-    ```python
+    ```
     
     ```
 
