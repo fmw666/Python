@@ -21,6 +21,8 @@
 
 1. **[分页实现](#-分页实现)**
 
+1. **[扩展插件](#-扩展插件)**
+
 1. **[实现增删改查](#-实现增删改查)**
 
 ---
@@ -299,6 +301,26 @@
         </ul>
     </nav>
     ```
+
+### 🔌 扩展插件
+
++ 部分插件项目教程：<http://www.pythondoc.com/>
+
+    > 后以 Flask-WTF 这个表单插件为例
+
++ 介绍
+
+    &emsp;&emsp;使用Flask-WTF，可以在Python脚本中定义表单域并使用HTML模板来呈现它们。
+
++ 安装
+
+    ```python
+    pip install Flask-WTF
+    ```
+
+    > GitHub：<https://github.com/lepture/flask-wtf>
+
++ 
 
 ### 🔍 实现增删改查
 
