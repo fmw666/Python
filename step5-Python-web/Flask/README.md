@@ -371,7 +371,8 @@
                 content = form.content.data,
                 types = form.types.data,
                 image = form.image.data,
-                created_at = datetime.now()
+                created_at = datetime.now(),
+                is_valid = True
             )
             # 保存数据
             db.session.add(new_obj)
@@ -381,5 +382,244 @@
     ```
 
 ### 🔍 实现增删改查
+
++ 增
+
+    `app.py`
+
+    ```python
+    @app.route('/admin/add/', methods=('GET', 'POST'))
+    def add():
+        # 新闻后台数据新增
+        form = NewsForm()
+        if form.validate_on_submit():
+            # 获取数据
+            new_obj = News(
+                title = form.title.data,
+                content = form.content.data,
+                types = form.types.data,
+                image = form.image.data,
+                created_at = datetime.now(),
+                is_valid = True
+            )
+            # 保存数据
+            db.session.add(new_obj)
+            db.session.commit()
+            return redirect(url_for('admin'))
+        return render_template('admin/add.html', form=form)
+    ```
+
+    `add.html`
+
+    ```html
+    <form class="form-horizontal" role="form" method="post">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">
+                {{ form.title.label.text }}
+            </label>
+            <div class="col-sm-10">
+                {{ form.title }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">
+                {{ form.content.label.text }}
+            </label>
+            <div class="col-sm-10">
+                {{ form.content }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">
+                {{ form.types.label.text }}
+            </label>
+            <div class="col-sm-10">
+                {{ form.types }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">
+                {{ form.image.label.text }}
+            </label>
+            <div class="col-sm-10">
+                {{ form.image }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                {{ form.csrf_token }}
+                {{ form.submit }}
+            </div>
+        </div>
+    </form>
+    ```
+
++ 删
+
+    `app.py`
+
+    ```python
+    @app.route('/admin/delete/<int:pk>/', methods=('GET', 'POST'))
+    def delete(pk):
+        # 新闻后台数据删除
+        news_obj = News.query.get(pk)
+        if not news_obj:
+            return 'no'
+        news_obj.is_valid = False
+        db.session.add(news_obj)
+        db.session.commit()
+        return 'yes'
+    ```
+
+    `index.html`
+
+    ```html
+    <a class="btn btn-danger" href="javascript:;" data-url="{{ url_for('delete', pk=news_obj.id) }}">删除</a>
+
+    <script>
+        $(function() {
+            $('.btn-danger').on('click', function() {
+                var btn = $(this);
+                if(confirm('确定删除该记录吗？')) {
+                    $.post(btn.attr('data-url'), function(data) {
+                        if(data === 'yes') {
+                            btn.parents('tr').hide();
+                        } else {
+                            alert('删除失败');
+                        }
+                    })
+                }
+            })
+        })
+    </script>
+    ```
+
++ 改
+
+    `app.py`
+
+    ```python
+    @app.route('/admin/update/<int:pk>/', methods=('GET', 'POST'))
+    def update(pk):
+        # 新闻后台数据修改
+        news_obj = News.query.get(pk)
+        # 如果没有数据，则返回
+        if not news_obj:
+            return redirect(url_for('admin'))
+        form = NewsForm(obj=news_obj)
+        if form.validate_on_submit():
+            # 获取数据
+            news_obj.title = form.title.data
+            news_obj.content = form.content.data
+            # 保存数据
+            db.session.add(news_obj)
+            db.session.commit()
+            return redirect(url_for('admin'))
+        return render_template('admin/update.html', form=form)
+    ```
+
+    `index.html`
+
+    ```html
+    <a class="btn btn-info" href="{{ url_for('update', pk=news_obj.id) }}">修改</a>
+    ```
+
+    `update.html`
+
+    ```html
+    <form class="form-horizontal" role="form" method="post">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">
+                {{ form.title.label.text }}
+            </label>
+            <div class="col-sm-10">
+                {{ form.title }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">
+                {{ form.content.label.text }}
+            </label>
+            <div class="col-sm-10">
+                {{ form.content }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">
+                {{ form.types.label.text }}
+            </label>
+            <div class="col-sm-10">
+                {{ form.types }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">
+                {{ form.image.label.text }}
+            </label>
+            <div class="col-sm-10">
+                {{ form.image }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                {{ form.csrf_token }}
+                {{ form.submit }}
+            </div>
+        </div>
+    </form>
+    ```
+
++ 查
+
+    `app.py`
+
+    ```python
+    @app.route('/admin/')
+    @app.route('/admin/<int:page>/')
+    def admin(page=None):
+        # 新闻后台管理首页
+        if page is None:
+            page = 1
+        news_list = News.query.filter_by(is_valid=True).paginate(page=page, per_page=5)
+        return render_template('admin/index.html', news_list=news_list)
+    ```
+
+    `index.html`
+
+    ```html
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>新闻标题</th>
+                <th>类别</th>
+                <th>添加时间</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for news_obj in news_list.items %}
+            <tr>
+                <td>{{ news_obj.id }}</td>
+                <td>{{ news_obj.title }}</td>
+                <td>{{ news_obj.types }}</td>
+                <td>{{ news_obj.created_at }}</td>
+                <td>
+                    <a class="btn btn-info" href="{{ url_for('update', pk=news_obj.id) }}">修改</a>
+                    <a class="btn btn-danger" href="javascript:;" data-url="{{ url_for('delete', pk=news_obj.id) }}">删除</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    ```
 
 **[⤴ get to top](#flask-教程)**
