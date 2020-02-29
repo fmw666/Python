@@ -1,0 +1,71 @@
+{% extends 'admin/admin_base.html' %}
+
+{% block title %}
+<title>新闻管理首页</title>
+{% endblock %}
+
+{% block content %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>编号</th>
+            <th>新闻标题</th>
+            <th>类别</th>
+            <th>添加时间</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for news_obj in news_list.items %}
+        <tr>
+            <td>{{ news_obj.id }}</td>
+            <td>{{ news_obj.title }}</td>
+            <td>{{ news_obj.types }}</td>
+            <td>{{ news_obj.created_at }}</td>
+            <td>
+                <a class="btn btn-info" href="{{ url_for('update', pk=news_obj.id) }}">修改</a>
+                <a class="btn btn-danger" href="javascript:;" data-url="{{ url_for('delete', pk=news_obj.id) }}">删除</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        <li>
+            {% if news_list.has_prev %}
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+            {% endif %}
+        </li>
+        {% for page in news_list.iter_pages() %}
+        <li><a href="{{ url_for('admin', page=page) }}">{{ page }}</a></li>
+        {% endfor %}
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+{% endblock %}
+
+{% block extrajs %}
+<script>
+    $(function() {
+        $('.btn-danger').on('click', function() {
+            var btn = $(this);
+            if(confirm('确定删除该记录吗？')) {
+                $.post(btn.attr('data-url'), function(data) {
+                    if(data === 'yes') {
+                        btn.parents('tr').hide();
+                    } else {
+                        alert('删除失败');
+                    }
+                })
+            }
+        })
+    })
+</script>
+{% endblock %}

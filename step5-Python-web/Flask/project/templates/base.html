@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css', _external=True) }}">
+    {% block title %}
+    <title>首页</title>
+    {% endblock %}
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">首页</a></li>
+                <li><a href="{{ url_for('cat', name='推荐') }}">推荐</a></li>
+                <li><a href="{{ url_for('cat', name='百家') }}">百家</a></li>
+                <li><a href="{{ url_for('cat', name='本地') }}">本地</a></li>
+                <li><a href="{{ url_for('cat', name='图片') }}">图片</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- 新闻内容部分 -->
+    <article>
+        {% block content %}
+        <!-- 内容区域 -->
+        {% endblock %}
+    </article>
+    
+    {% block extrajs %}
+    <!-- 其他脚本 -->
+    {% endblock %}
+</body>
+</html>

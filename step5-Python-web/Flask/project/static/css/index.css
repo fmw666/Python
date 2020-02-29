@@ -1,0 +1,27 @@
+header > nav {
+    text-align: center;
+}
+
+header > nav > ul {
+    display: inline;
+    white-space: nowrap;
+}
+
+header > nav > ul > li {
+    list-style: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background: pink;
+    white-space: nowrap;
+
+    border: 1px solid;
+}
+
+article {
+    text-align: center;
+}
+
+.list-news {
+    border: 1px solid black;
+    margin-top: 10px;
+}

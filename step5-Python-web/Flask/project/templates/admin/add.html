@@ -1,0 +1,52 @@
+{% extends 'admin/admin_base.html' %}
+
+{% block title %}
+<title>新增新闻</title>
+{% endblock %}
+
+{% block content %}
+<form class="form-horizontal" role="form" method="post">
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">
+            {{ form.title.label.text }}
+        </label>
+        <div class="col-sm-10">
+            {{ form.title }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">
+            {{ form.content.label.text }}
+        </label>
+        <div class="col-sm-10">
+            {{ form.content }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">
+            {{ form.types.label.text }}
+        </label>
+        <div class="col-sm-10">
+            {{ form.types }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">
+            {{ form.image.label.text }}
+        </label>
+        <div class="col-sm-10">
+            {{ form.image }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            {{ form.csrf_token }}
+            {{ form.submit }}
+        </div>
+    </div>
+</form>
+{% endblock%}

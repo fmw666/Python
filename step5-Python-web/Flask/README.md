@@ -173,6 +173,7 @@
     ```bash
     ├── 项目文件夹
     │   ├── app.py              # 程序运行主入口
+    │   ├── forms.py            # 前端表单数据获取
     │   ├── static              # 静态文件存放文件夹
     │   │   ├── css
     │   │   ├── js
@@ -188,6 +189,8 @@
     │   │   ├── detail.html
     │   │   ├── index.html
     ```
+
+    > 本章 demo，[访问](project)
 
 ### 📝 模板语言
 
@@ -320,7 +323,62 @@
 
     > GitHub：<https://github.com/lepture/flask-wtf>
 
-+ 
++ `forms.py`
+
+    ```python
+    #coding=utf-8
+
+    from flask_wtf import FlaskForm
+    from wtforms import StringField, TextAreaField, SubmitField, SelectField, RadioField
+    from wtforms.validators import DataRequired
+
+
+    class NewsForm(FlaskForm):
+        # 新闻表单
+        title = StringField(label='新闻标题', validators=[DataRequired('请输入标题')], 
+            description='请输入标题', 
+            render_kw={'required': 'required', 'class': 'form-control'})
+        content = TextAreaField(label='新闻内容', validators=[DataRequired('请输入内容')], 
+            description='请输入内容', 
+            render_kw={'required': 'required', 'class': 'form-control'})
+        types = SelectField('新闻类型', 
+            choices=[('推荐', '推荐'), ('百家', '百家'), ('本地', '本地'), ('图片', '图片')])
+        image = StringField(label='新闻图片', 
+            description='请输入图片地址', 
+            render_kw={'required': 'required', 'class': 'form-control'})
+        submit = SubmitField('提交')
+    ```
+
++ `app.py`
+
+    ```python
+    ...
+    from flask import Flask, render_template, redirect, url_for
+    from forms import NewsForm
+    from datetime import datetime
+
+    app.config['SECRET_KEY'] = 'a random string'
+    ...
+
+    @app.route('/admin/add/', methods=('GET', 'POST'))
+    def add():
+        # 新闻后台数据新增
+        form = NewsForm()
+        if form.validate_on_submit():
+            # 获取数据
+            new_obj = News(
+                title = form.title.data,
+                content = form.content.data,
+                types = form.types.data,
+                image = form.image.data,
+                created_at = datetime.now()
+            )
+            # 保存数据
+            db.session.add(new_obj)
+            db.session.commit()
+            return redirect(url_for('admin'))
+        return render_template('admin/add.html', form=form)
+    ```
 
 ### 🔍 实现增删改查
 

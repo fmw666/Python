@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>新闻详情页</title>
+{% endblock %}
+
+{% block content %}
+<h3>{{ news_obj.title }}</h3>
+<p>{{ news_obj.content }}</p>
+{% endblock %}
