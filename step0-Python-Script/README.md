@@ -28,6 +28,8 @@
 
 + **[有道翻译接口](youdaoAPI)**
 
++ **[图片分辨率及大小处理](imgDeal)**
+
 <br>
 <div align="center">
     <- 未完待续 ->
